@@ -1,4 +1,6 @@
 import React from "react";
+import myBanner from "./assets/my-banner.png";
+import profilePic from "./assets/profile-pic.jpg";
 
 const Home = () => (
   <div class="content home-page">
@@ -17,6 +19,8 @@ const Home = () => (
       I'm addicted to giving my all and am looking forward to combining that passion with my skills in software engineering and business to
       help you!
     </p>
+    <img class="banner-pic" src={myBanner} alt="Personal Banner"/>
+    <img class="profile-pic" src={profilePic} alt="Profile Picture"/>
   </div>
 );
 

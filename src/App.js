@@ -4,7 +4,6 @@ import Contact from "./Contact";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Navbar";
-import logo from './assets/ba-logo.png';
 
 const App = () => (
   <>
@@ -25,11 +24,6 @@ const App = () => (
         </Route>
       </Switch>
     </Router>
-    <img
-      alt="Personal Logo"
-      class="footer-logo"
-      src={logo}
-    />
   </>
 );
 
