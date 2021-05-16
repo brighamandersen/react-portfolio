@@ -20,7 +20,7 @@ const Home = () => (
       help you!
     </p>
     <img class="banner-pic" src={myBanner} alt="Personal Banner"/>
-    <img class="profile-pic" src={profilePic} alt="Profile Picture"/>
+    <img class="profile-pic" src={profilePic} alt="Me"/>
   </div>
 );
 
