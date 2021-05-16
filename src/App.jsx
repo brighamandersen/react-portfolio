@@ -4,6 +4,7 @@ import Contact from "./Contact";
 import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Navbar";
+import Resume from "./Resume";
 
 const App = () => (
   <>
@@ -15,6 +16,9 @@ const App = () => (
           </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/resume">
+          <Resume />
         </Route>
         <Route path="/contact">
           <Contact />

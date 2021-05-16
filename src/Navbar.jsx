@@ -9,6 +9,9 @@ const Navbar = () => (
     <NavLink class="nav-link" activeClassName="active" to="/about">
       About
     </NavLink>
+    <NavLink class="nav-link" activeClassName="active" to="/resume">
+      Resume
+    </NavLink>
     <NavLink class="nav-link" activeClassName="active" to="/contact">
       Contact
     </NavLink>
