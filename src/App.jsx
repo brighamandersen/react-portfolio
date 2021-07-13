@@ -6,25 +6,25 @@ import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-d
 import Navbar from "./Navbar";
 import Resume from "./Resume";
 
+const pages = [
+  {component: <Home />, displayText: "Home", link: "/"},
+  {component: <About />, displayText: "About", link: "/about"},
+  {component: <Resume />, displayText: "Resume", link: "/resume"},
+  {component: <Contact />, displayText: "Contact", link: "/contact"},
+]
+
 const App = () => (
   <>
     <Router>
-    <Navbar />
+    <Navbar pages={pages} />
       <Switch>
-        <Route exact path="/">
-            <Home />
+        {pages.map(page => (
+          <Route exact={page.link === "/"} path={page.link}>
+            {page.component}
           </Route>
-        <Route path="/about">
-          <About />
-        </Route>
-        <Route path="/resume">
-          <Resume />
-        </Route>
-        <Route path="/contact">
-          <Contact />
-        </Route>
+        ))}
         <Route path="*">
-          <Redirect to="/" />
+           <Redirect to="/" />
         </Route>
       </Switch>
     </Router>

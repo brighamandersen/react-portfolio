@@ -1,26 +1,22 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const links = [
-  { displayText: "Home", redirectTo: "/"},
-  { displayText: "About", redirectTo: "/about"},
-  { displayText: "Resume", redirectTo: "/resume"},
-  { displayText: "Contact", redirectTo: "/contact"}
-]
+const Navbar = (props) => {
+  const { pages } = props;
 
-const Navbar = () => (
+  return (
   <nav class="nav-bar">
-    {links.map(link => (
+    {pages.map(page => (
       <NavLink 
         class="nav-link"
         activeClassName="active"
-        exact={link.redirectTo === "/"}
-        to={link.redirectTo}
+        exact={page.link === "/"}
+        to={page.link}
       >
-        {link.displayText}
+        {page.displayText}
       </NavLink>
     ))}
   </nav>
-);
+);}
 
 export default Navbar;
