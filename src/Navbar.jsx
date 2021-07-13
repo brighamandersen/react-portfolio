@@ -1,20 +1,25 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+const links = [
+  { displayText: "Home", redirectTo: "/"},
+  { displayText: "About", redirectTo: "/about"},
+  { displayText: "Resume", redirectTo: "/resume"},
+  { displayText: "Contact", redirectTo: "/contact"}
+]
+
 const Navbar = () => (
   <nav class="nav-bar">
-    <NavLink class="nav-link" activeClassName="active" exact to="/">
-      Home
-    </NavLink>
-    <NavLink class="nav-link" activeClassName="active" to="/about">
-      About
-    </NavLink>
-    <NavLink class="nav-link" activeClassName="active" to="/resume">
-      Resume
-    </NavLink>
-    <NavLink class="nav-link" activeClassName="active" to="/contact">
-      Contact
-    </NavLink>
+    {links.map(link => (
+      <NavLink 
+        class="nav-link"
+        activeClassName="active"
+        exact={link.redirectTo === "/"}
+        to={link.redirectTo}
+      >
+        {link.displayText}
+      </NavLink>
+    ))}
   </nav>
 );
 
