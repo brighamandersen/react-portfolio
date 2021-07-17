@@ -1,10 +1,10 @@
 import React from "react";
 
 const About = () => (
-  <div class="content about-page">
+  <div className="content about-page">
     <h1>About Me</h1>
-    <div class="about-cards">
-      <div class="about-card">
+    <div className="about-cards">
+      <div className="card about-card">
         <h2>
           My Work Experience
           <em>(Companies Where I've Done Web Development)</em>
@@ -15,7 +15,7 @@ const About = () => (
           <li>Village Book Builders</li>
         </ol>
       </div>
-      <div class="about-card">
+      <div className="card about-card">
         <h2>My Top Languages</h2>
         <ol>
           <li>JavaScript (esp. React)</li>
@@ -25,7 +25,7 @@ const About = () => (
           <li>Java</li>
         </ol>
       </div>
-      <div class="about-card">
+      <div className="card about-card">
         <h2>My Top Projects</h2>
         <ul>
           <li>County Record Search,Preview, and Download Site</li>
@@ -37,7 +37,7 @@ const About = () => (
           <li>Modernized Todo-List Site</li>
         </ul>
       </div>
-      <div class="about-card">
+      <div className="card about-card">
         <h2>Personal Websites</h2>
         <ol>
           <li>brighamband.com (yep, this site was hand-crafted using React)</li>
@@ -57,7 +57,7 @@ const About = () => (
           <li>photobomb.brighamband.com -- Photo Bomb Picture Gallery</li>
         </ol>
       </div>
-      <div class="about-card">
+      <div className="card about-card">
         <h2>Work Websites</h2>
         <ol>
           <li>47fund.byu.edu -- Silver Fund Web App (Stocks/Trades Performance Predictor/Calculator Site)</li>
@@ -66,7 +66,7 @@ const About = () => (
           <li>portal.villagebookbuilders.org -- International Mentoring Booking Site</li>
         </ol>
       </div>
-      <div className="about-card">
+      <div className="card about-card">
         <iframe width="100%" height="100%" title="Web Dev Snapshot" 
         src="https://www.youtube.com/embed/jSeLgZsF5_U" allowFullScreen />
       </div>

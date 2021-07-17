@@ -3,7 +3,7 @@ import myBanner from "./assets/my-banner.png";
 import profilePic from "./assets/profile-pic.jpg";
 
 const Home = () => (
-  <div class="content home-page">
+  <div className="content home-page">
     <h1>Home</h1>
     <p>
       Hi, my name is <strong>Brigham Andersen</strong>. I'm a student at Brigham
@@ -19,8 +19,8 @@ const Home = () => (
       I'm addicted to giving my all and am looking forward to combining that passion with my skills in software engineering and business to
       help you!
     </p>
-    <img class="banner-pic" src={myBanner} alt="Personal Banner"/>
-    <img class="profile-pic" src={profilePic} alt="Me"/>
+    <img className="banner-pic" src={myBanner} alt="Personal Banner"/>
+    <img className="profile-pic" src={profilePic} alt="Me"/>
   </div>
 );
 

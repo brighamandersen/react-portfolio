@@ -5,12 +5,14 @@ import Home from "./Home";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 import Navbar from "./Navbar";
 import Resume from "./Resume";
+import Sites from "./Sites";
 
 const pages = [
   {component: <Home />, displayText: "Home", link: "/"},
   {component: <About />, displayText: "About", link: "/about"},
   {component: <Resume />, displayText: "Resume", link: "/resume"},
   {component: <Contact />, displayText: "Contact", link: "/contact"},
+  {component: <Sites />, displayText: "Sites", link: "/sites"},
 ]
 
 const App = () => (

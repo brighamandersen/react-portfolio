@@ -5,10 +5,10 @@ const Navbar = (props) => {
   const { pages } = props;
 
   return (
-  <nav class="nav-bar">
+  <nav className="nav-bar">
     {pages.map(page => (
       <NavLink 
-        class="nav-link"
+        className="nav-link"
         activeClassName="active"
         exact={page.link === "/"}
         to={page.link}
