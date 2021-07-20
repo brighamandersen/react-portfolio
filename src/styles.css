@@ -36,6 +36,7 @@ h6 {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  z-index: 1;
 }
 
 nav > a {
@@ -69,7 +70,7 @@ nav > :not(.active):hover {
   background-color: white;
   padding: 1rem;
   margin: 1rem;
-  border-radius: 15px;
+  border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
@@ -84,10 +85,11 @@ img.banner-pic {
 }
 
 img.resume {
-  display: flex;
+  /* display: flex; */
   width: 70vw;
-  margin: auto;
+  /* margin: auto; */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
 }
 
 .url-code {
