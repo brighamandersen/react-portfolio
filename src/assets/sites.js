@@ -57,7 +57,7 @@ const sites = [
         screenshot: null,
         category: 'school',
         tags: ['api'],
-        description: '',
+        description: 'A weather app that lets you search by city, then interacts with an API to display current weather conditions, 5-day, and 3-hour forecasts',
         srcCode: 'https://github.com/brighamband/weather-rain-or-shine',
     },
     {
@@ -82,7 +82,7 @@ const sites = [
         url: 'https://piano.brighamband.com',
         screenshot: null,
         category: 'side',
-        description: '',
+        description: 'Online mini piano (1 octave) created using vanilla JavaScript',
         srcCode: 'https://github.com/brighamband/piano',
     },
     {
@@ -175,7 +175,7 @@ const sites = [
   // SITES TO ADD EVENTUALLY
   // {
   //     name: 'Museum of Ordinary Objects',
-  //     url: 'https://museum.brighamband.com/',
+  //     url: 'https://museum.brighamband.com',
   //     category: 'school',
   //     description: '',
   //     srcCode: '',
@@ -185,6 +185,20 @@ const sites = [
   //     url: 'https://photobomb.brighamband.com/',
   //     category: 'side',
   //     description: 'Photos uploader, sharer, and viewer',
+  //     srcCode: 'https://github.com/brighamband/photobomb',
+  // },
+   // {
+  //     name: 'Silver Fund Web App',
+  //     url: 'https://47fund.byu.edu',
+  //     category: 'work',
+  //     description: 'Stocks/Trades Performance Predictor/Calculator Site',
+  //     srcCode: 'https://github.com/brighamband/photobomb',
+  // },
+   // {
+  //     name: 'VBB Mentoring Portal',
+  //     url: 'https://portal.villagebookbuilders.org',
+  //     category: 'work',
+  //     description: 'International Mentoring Booking Site',
   //     srcCode: 'https://github.com/brighamband/photobomb',
   // },
 

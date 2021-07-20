@@ -85,11 +85,11 @@ img.banner-pic {
 }
 
 img.resume {
-  /* display: flex; */
-  width: 70vw;
-  /* margin: auto; */
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width: 100%;
+  display: flex;
+  margin: 4rem auto;
+  max-height: 70vh;
+  height: 500px;
 }
 
 .url-code {
