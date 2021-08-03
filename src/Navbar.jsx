@@ -1,3 +1,4 @@
+import { Box, Hidden } from "@material-ui/core";
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -14,8 +15,12 @@ const Navbar = (props) => {
           exact={page.link === "/"}
           to={page.link}
         >
-          {page.icon}
-          {page.displayText}
+          <Box display="flex" justifyContent="space-evenly" alignItems="center">
+            <div className="flex-child navlink-icon">{page.icon}</div>
+            <Hidden smDown>
+              <div className="flex-child navlink-text">{page.displayText}</div>
+            </Hidden>
+          </Box>
         </NavLink>
       ))}
     </nav>

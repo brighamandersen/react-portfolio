@@ -7,14 +7,39 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
+import HomeIcon from "@material-ui/icons/Home";
+import LanguageIcon from "@material-ui/icons/Language";
+import InfoIcon from "@material-ui/icons/Info";
+import DescriptionIcon from "@material-ui/icons/Description";
+import AccountBoxIcon from "@material-ui/icons/AccountBox";
 
 /* List of pages on this portfolio website */
 export const pages = [
-  { component: <Home />, displayText: "Home", link: "/" },
-  { component: <Sites />, displayText: "Sites", link: "/sites" },
-  { component: <About />, displayText: "About", link: "/about" },
-  { component: <Resume />, displayText: "Resume", link: "/resume" },
-  { component: <Contact />, displayText: "Contact", link: "/contact" },
+  { component: <Home />, displayText: "Home", link: "/", icon: <HomeIcon /> },
+  {
+    component: <Sites />,
+    displayText: "Sites",
+    link: "/sites",
+    icon: <LanguageIcon />,
+  },
+  {
+    component: <About />,
+    displayText: "About",
+    link: "/about",
+    icon: <InfoIcon />,
+  },
+  {
+    component: <Resume />,
+    displayText: "Resume",
+    link: "/resume",
+    icon: <DescriptionIcon />,
+  },
+  {
+    component: <Contact />,
+    displayText: "Contact",
+    link: "/contact",
+    icon: <AccountBoxIcon />,
+  },
 ];
 
 export default pages;

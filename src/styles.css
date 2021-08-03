@@ -125,3 +125,12 @@ img.resume {
   width: 100%;
   height: 100%;
 }
+
+.flex-child.navlink-icon {
+  display: inherit;
+  align-self: center;
+}
+
+.flex-child.navlink-text {
+  padding-left: 0.5rem;
+}
