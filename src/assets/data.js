@@ -334,4 +334,8 @@ export const languages = [
     name: "C++",
     className: "devicon-cplusplus-plain-wordmark colored",
   },
+  // {
+  //   name: "C",
+  //   className: "devicon-c-plain-wordmark colored",
+  // },
 ];
