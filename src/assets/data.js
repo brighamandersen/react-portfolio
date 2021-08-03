@@ -42,7 +42,7 @@ export const sites = [
     screenshot: null,
     category: "school",
     description:
-      "Full-stack scripture memorization app - make an account, then save and ponderize your favorite scripture verses! Created with VueJS, Express, and MongoDB.  ",
+      "Full-stack scripture memorization app - make an account, then save and ponderize your favorite scripture verses! Created with VueJS, Node, Express, and MongoDB.  ",
     srcCode: "https://github.com/brighamband/ponderizer",
   },
   {
@@ -284,8 +284,7 @@ export const languages = [
   {
     name: "JavaScript",
     className: "devicon-javascript-plain colored",
-    searchUrl:
-      "https://github.com/brighamband?tab=repositories&language=javascript",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=javascript",
   },
   {
     name: "React",
@@ -295,28 +294,27 @@ export const languages = [
   {
     name: "Vue",
     className: "devicon-vuejs-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&language=vue",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=vue",
   },
   {
     name: "HTML",
     className: "devicon-html5-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&language=html",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=html",
   },
   {
     name: "CSS",
     className: "devicon-css3-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&language=css",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=css",
   },
   {
     name: "Python",
     className: "devicon-python-plain-wordmark colored",
-    searchUrl:
-      "https://github.com/brighamband?tab=repositories&language=python",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=python",
   },
   {
     name: "Java",
     className: "devicon-java-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&language=java",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=java",
   },
   {
     name: "Android",
@@ -326,13 +324,12 @@ export const languages = [
   {
     name: "C++",
     className: "devicon-cplusplus-plain-wordmark colored",
-    searchUrl:
-      "https://github.com/brighamband?tab=repositories&language=c%2B%2B",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=c-plus-plus",
   },
   // {
   //   name: "C",
   //   className: "devicon-c-plain-wordmark colored",
   //   searchUrl:
-  //     "https://github.com/brighamband?tab=repositories&language=c",
+  //     "https://github.com/brighamband?tab=repositories&q=c",
   // },
 ];
