@@ -115,15 +115,6 @@ img.resume {
   margin: 2rem;
 }
 
-.intro-vid {
-  height: 500px;
-  margin: 5rem 0;
-}
-
-.icon-button {
-  border-radius: 0;
-}
-
 .contact-icon {
   width: 100%;
   height: 100%;
@@ -153,10 +144,6 @@ img.resume {
 
 .languages-container i {
   font-size: 100px;
-}
-
-.no-corners {
-  border-radius: 0;
 }
 
 .corner-logo {

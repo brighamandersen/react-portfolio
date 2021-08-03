@@ -1,10 +1,4 @@
-import {
-  Box,
-  Container,
-  Grid,
-  IconButton,
-  Typography,
-} from "@material-ui/core";
+import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import React from "react";
 import { languages } from "../assets/data";
 import resume from "../assets/resume.png";

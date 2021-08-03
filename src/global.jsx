@@ -1,6 +1,6 @@
 /* This file contains global components that are reused across the site */
 import React from "react";
-import { Box, IconButton, makeStyles, Tooltip } from "@material-ui/core";
+import { Box, makeStyles, Tooltip } from "@material-ui/core";
 
 export const useGlobalStyles = makeStyles(() => ({
   noCorners: {
