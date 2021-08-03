@@ -1,6 +1,6 @@
 import { Container, Grid } from "@material-ui/core";
 import React from "react";
-import profile from "./assets/profile.jpg";
+import profile from "../assets/profile.jpg";
 
 const Home = () => (
   <Container maxWidth="md" className="content">

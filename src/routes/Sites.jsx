@@ -1,15 +1,15 @@
 import React from "react";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import { Card, Container, IconButton, Tooltip } from "@material-ui/core";
-import { sites } from "./assets/data";
+import { Card, Container, IconButton } from "@material-ui/core";
+import { sites } from "../assets/data";
+import { BigTooltip } from "../global";
 
-const TooltipTitle = ({ url, isSrcCode = false }) => (
-  <h1>
-    {isSrcCode ? "Source Code:" : "Site:"}
-    <br />
-    <code className="url-code">{url}</code>
-  </h1>
+const CustomTitle = ({ url, isSrcCode = false }) => (
+  <>
+    <h3 className="tooltip-header">{isSrcCode ? "Source Code:" : "Site:"}</h3>
+    <code className="tooltip-url">{url}</code>
+  </>
 );
 
 const Sites = () => (
@@ -17,15 +17,15 @@ const Sites = () => (
     <h1>My Websites</h1>
     {sites.map((site) => (
       <Card key={site.url} className="card">
-        <h3>{site.name}</h3>
+        <h2>{site.name}</h2>
         <p>{site.description}</p>
-        <Tooltip title={<TooltipTitle url={site.url} />} arrow>
+        <BigTooltip title={<CustomTitle url={site.url} />}>
           <IconButton href={site.url} target="_blank" rel="noopener noreferrer">
             <LaunchSharpIcon />
           </IconButton>
-        </Tooltip>
+        </BigTooltip>
         {site.srcCode && (
-          <Tooltip title={<TooltipTitle url={site.srcCode} isSrcCode />} arrow>
+          <BigTooltip title={<CustomTitle url={site.srcCode} isSrcCode />}>
             <IconButton
               href={site.url}
               target="_blank"
@@ -33,7 +33,7 @@ const Sites = () => (
             >
               <GitHubIcon />
             </IconButton>
-          </Tooltip>
+          </BigTooltip>
         )}
       </Card>
     ))}

@@ -1,33 +1,16 @@
 import React from "react";
-import {
-  IconButton,
-  Tooltip,
-  makeStyles,
-  Grid,
-  Container,
-} from "@material-ui/core";
-import { resources } from "./assets/data";
+import { IconButton, makeStyles, Grid, Container } from "@material-ui/core";
+import { resources } from "../assets/data";
+import { BigTooltip } from "../global";
 
 const useStyles = makeStyles(() => ({
   iconButton: {
     borderRadius: 0,
   },
-  longTooltip: {
-    maxWidth: "none",
-  },
-  tooltipText: {
-    color: "white",
-  },
 }));
 
 const Contact = () => {
   const classes = useStyles();
-
-  const TooltipTitle = ({ title }) => (
-    <>
-      <h1 className={classes.tooltipText}>{title}</h1>
-    </>
-  );
 
   return (
     <Container maxWidth="md" className="content">
@@ -36,11 +19,7 @@ const Contact = () => {
       <Grid container spacing={3}>
         {resources.map((res) => (
           <Grid key={res.name} item xs={6} md={3}>
-            <Tooltip
-              title={<TooltipTitle title={res.tooltip} />}
-              classes={{ tooltip: classes.longTooltip }}
-              arrow
-            >
+            <BigTooltip title={res.tooltip}>
               <IconButton
                 href={res.link}
                 target="_blank"
@@ -49,7 +28,7 @@ const Contact = () => {
               >
                 {res.icon}
               </IconButton>
-            </Tooltip>
+            </BigTooltip>
           </Grid>
         ))}
       </Grid>

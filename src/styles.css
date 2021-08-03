@@ -31,6 +31,10 @@
   background: var(--secondaryDark);
 }
 
+code {
+  font-family: "Consolas", "Courier New", Courier, monospace;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -102,11 +106,6 @@ img.resume {
   width: 100%;
 }
 
-.url-code {
-  color: white;
-  padding: 0.5rem;
-}
-
 .card {
   padding: 2rem;
   margin: 2rem;
@@ -133,4 +132,13 @@ img.resume {
 
 .flex-child.navlink-text {
   padding-left: 0.5rem;
+}
+
+.tooltip-header,
+.tooltip-url {
+  color: white;
+}
+
+.tooltip-url {
+  padding: 0.5rem;
 }

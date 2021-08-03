@@ -1,6 +1,6 @@
 import { Container } from "@material-ui/core";
 import React from "react";
-import resume from "./assets/resume.png";
+import resume from "../assets/resume.png";
 
 const Resume = () => (
   <Container maxWidth="md" className="content">
