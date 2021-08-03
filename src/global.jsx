@@ -1,6 +1,17 @@
 /* This file contains global components that are reused across the site */
 import React from "react";
 import { Box, makeStyles, Tooltip } from "@material-ui/core";
+import { createTheme } from "@material-ui/core/styles";
+
+export const theme = createTheme({
+  palette: {
+    primary: { main: "#215481" },
+    secondary: { main: "#808080" },
+  },
+  typography: {
+    fontFamily: "Rubik",
+  },
+});
 
 export const useGlobalStyles = makeStyles(() => ({
   noCorners: {
