@@ -34,8 +34,6 @@ export const pages = [
   },
 ];
 
-export default pages;
-
 /* List of the websites I've made */
 export const sites = [
   {
@@ -52,9 +50,8 @@ export const sites = [
     url: "https://pecos-solutions.com",
     screenshot: null,
     category: ["work"],
-    tags: ["react", "mui", "aws"],
     description:
-      "My latest commercial website.  A full-stack web app used to preview and download records/documents by county.  Features user authentication, custom theming, an Admin Dashboard, and dynamic routing.  Created in React, using Styled Components and Material UI for styling.",
+      "My latest commercial website.  A full-stack web app used to preview and download records/documents by county.  Features user authentication, custom theming, an Admin Dashboard, and dynamic routing.  Back-end is AWS, front-end is React, using Styled Components and Material UI for styling.",
     srcCode: "https://github.com/Pecos-Solutions/pecos",
   },
   {
@@ -62,7 +59,6 @@ export const sites = [
     url: "https://bball.brighamband.com",
     screenshot: null,
     category: "school",
-    tags: ["api"],
     description:
       "4 words: Basketball Player Search Index.  Front-end client which connects the balldontlie API, allowing users to see a table of NBA Teams, then search by player name to see latest player stats. Uses Vanilla JavaScript, HTML, and Bootstrap CSS.",
     srcCode: "https://github.com/brighamband/nba-insider-hub",
@@ -108,7 +104,6 @@ export const sites = [
     url: "https://weather.brighamband.com",
     screenshot: null,
     category: "school",
-    tags: ["api"],
     description:
       "A weather app that lets you search by city, then interacts with an API to display current weather conditions, 5-day, and 3-hour forecasts.  Uses Vanilla JavaScript, HTML, and Bootstrap CSS.",
     srcCode: "https://github.com/brighamband/weather-rain-or-shine",
@@ -118,7 +113,6 @@ export const sites = [
     url: "https://brighamband.github.io/k9-directory",
     screenshot: null,
     category: "side",
-    tags: ["api"],
     description:
       "Consider yourself a dog-lover?  Here's a simple React app made in CodeSandbox which interfaces with an API to show random dog pictures based on the breed you select.",
     srcCode: "https://github.com/brighamband/k9-directory",
@@ -173,7 +167,6 @@ export const sites = [
     url: "https://silverfund.byu.edu",
     screenshot: null,
     category: "work",
-    tags: ["wordpress"],
     description:
       "My first no-code website, used making WordPress.  The head of our organization was looking to create an informational page for visitors and wanted to be able to go in later and make adjustments himself, so we opted to make the site in WordPress.",
     srcCode: null,
@@ -201,7 +194,6 @@ export const sites = [
     url: "https://groceries.brighamband.com",
     screenshot: null,
     category: "school",
-    tags: ["vue", "css"],
     description:
       "Sick of going in-person to the store just to see their selection?  This site showcases a grocery store and their unique product offering, allowing users to search for specific items, then add desired ones to their cart.  Made using VueJS.",
     srcCode: "https://github.com/brighamband/groceries",
@@ -212,7 +204,6 @@ export const sites = [
     url: "https://codepen.io/brighamband/pen/qBrxPgg",
     screenshot: null,
     category: "side",
-    tags: ["html", "css", "js"],
     description:
       "A simple app which greets a user based on the name they enter.  I was learning Android and picked this basic project, but decided to first implement it using Vanilla JavaScript to compare and contrast the two.",
     srcCode: "https://codepen.io/brighamband/pen/qBrxPgg",
