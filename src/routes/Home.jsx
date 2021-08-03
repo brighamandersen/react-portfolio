@@ -26,6 +26,7 @@ const Home = () => (
         </p>
       </Grid>
       <Grid item xs={8} md={4}>
+        <div className="profile" />
         <img className="profile" src={profile} alt="Me" />
       </Grid>
     </Grid>

@@ -6,9 +6,10 @@ import {
   Redirect,
 } from "react-router-dom";
 import Navbar from "./Navbar";
-import { ThemeProvider } from "@material-ui/core";
+import { Hidden, ThemeProvider } from "@material-ui/core";
 import theme from "./theme";
 import { pages } from "./assets/data";
+import cornerLogo from "./assets/corner-logo.png";
 
 const App = () => (
   <ThemeProvider theme={theme}>
@@ -25,6 +26,9 @@ const App = () => (
         </Route>
       </Switch>
     </Router>
+    <Hidden mdDown>
+      <img src={cornerLogo} alt="My Logo" className="corner-logo" />
+    </Hidden>
   </ThemeProvider>
 );
 

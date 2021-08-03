@@ -158,3 +158,12 @@ img.resume {
 .no-corners {
   border-radius: 0;
 }
+
+.corner-logo {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  height: 120px;
+  z-index: 2;
+}
