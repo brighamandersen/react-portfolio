@@ -146,3 +146,11 @@ img.resume {
 .tooltip-url {
   padding: 0.5rem;
 }
+
+.languages-container > div {
+  text-align: center;
+}
+
+.languages-container i {
+  font-size: 100px;
+}

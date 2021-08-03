@@ -295,3 +295,43 @@ export const resources = [
     icon: <PhoneIcon style={fullSize} />,
   },
 ];
+
+/* My top languages - used on '/resume' */
+export const languages = [
+  {
+    name: "JavaScript",
+    className: "devicon-javascript-plain colored",
+  },
+  {
+    name: "React",
+    className: "devicon-react-original-wordmark colored",
+  },
+  {
+    name: "Vue",
+    className: "devicon-vuejs-plain-wordmark colored",
+  },
+  {
+    name: "HTML",
+    className: "devicon-html5-plain-wordmark colored",
+  },
+  {
+    name: "CSS",
+    className: "devicon-css3-plain-wordmark colored",
+  },
+  {
+    name: "Python",
+    className: "devicon-python-plain-wordmark colored",
+  },
+  {
+    name: "Java",
+    className: "devicon-java-plain-wordmark colored",
+  },
+  {
+    name: "Android",
+    className: "devicon-android-plain-wordmark colored",
+  },
+  {
+    name: "C++",
+    className: "devicon-cplusplus-plain-wordmark colored",
+  },
+];
