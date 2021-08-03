@@ -52,8 +52,18 @@ export const sites = [
     screenshot: null,
     category: "school",
     description:
-      "Full stack app created with VueJS, Express, and MongoDB.  Allows users to make an account, then save and ponderize their favorite scripture verses!",
+      "Full-stack scripture memorization app - make an account, then save and ponderize your favorite scripture verses! Created with VueJS, Express, and MongoDB.  ",
     srcCode: "https://github.com/brighamband/ponderizer",
+  },
+  {
+    name: "Pecos Solutions",
+    url: "https://pecos-solutions.com",
+    screenshot: null,
+    category: ["work"],
+    tags: ["react", "mui", "aws"],
+    description:
+      "My latest commercial website.  A full-stack web app used to preview and download records/documents by county.  Features user authentication, custom theming, an Admin Dashboard, and dynamic routing.  Created in React, using Styled Components and Material UI for styling.",
+    srcCode: "https://github.com/Pecos-Solutions/pecos",
   },
   {
     name: "NBA Insider Hub",
@@ -62,7 +72,7 @@ export const sites = [
     category: "school",
     tags: ["api"],
     description:
-      "Front-end client which connects the balldontlie API, allowing users to see a table of NBA Teams, then search by player name to see latest player stats.",
+      "4 words: Basketball Player Search Index.  Front-end client which connects the balldontlie API, allowing users to see a table of NBA Teams, then search by player name to see latest player stats. Uses Vanilla JavaScript, HTML, and Bootstrap CSS.",
     srcCode: "https://github.com/brighamband/nba-insider-hub",
   },
   {
@@ -71,7 +81,7 @@ export const sites = [
     screenshot: null,
     category: "side",
     description:
-      "A website which displays random coding and dad jokes, then allows you to save your favorites so you can view them later",
+      "A website which displays random coding and dad jokes, then allows you to save your favorites so you can view them later.  Uses Vanilla JavaScript, HTML, and Bulma CSS (decided I'd try a different CS framework on this one).",
     srcCode: "https://github.com/brighamband/jokester",
   },
   {
@@ -80,7 +90,7 @@ export const sites = [
     screenshot: null,
     category: "side",
     description:
-      "Birthday present for my dad (he loves sports and stats, so he naturally loves scorekeeping)",
+      "Birthday present for my dad (he loves sports and stats, so he naturally loves scorekeeping).  I've made many sites in React, but this was my first website made using Material UI for styling.",
     srcCode: "https://github.com/brighamband/scoreboard",
   },
   {
@@ -88,7 +98,8 @@ export const sites = [
     url: "https://brighamband.github.io/simple-counter",
     screenshot: null,
     category: "side",
-    description: "",
+    description:
+      "Ever run out of fingers while counting?  Use this app to keep tally! Simple Counter was one of my first React apps back when I was first learning about React Hooks.",
     srcCode: "https://github.com/brighamband/simple-counter",
   },
   {
@@ -96,7 +107,8 @@ export const sites = [
     url: "https://brighamband.github.io/simple-calculator",
     screenshot: null,
     category: "side",
-    description: "",
+    description:
+      "Simple reactive calculator that takes to inputs and returns the result on the fly after performing basic arithmetic ( + - * / ).  Made with React.",
     srcCode: "https://github.com/brighamband/simple-calculator",
   },
   {
@@ -106,7 +118,7 @@ export const sites = [
     category: "school",
     tags: ["api"],
     description:
-      "A weather app that lets you search by city, then interacts with an API to display current weather conditions, 5-day, and 3-hour forecasts",
+      "A weather app that lets you search by city, then interacts with an API to display current weather conditions, 5-day, and 3-hour forecasts.  Uses Vanilla JavaScript, HTML, and Bootstrap CSS.",
     srcCode: "https://github.com/brighamband/weather-rain-or-shine",
   },
   {
@@ -115,7 +127,8 @@ export const sites = [
     screenshot: null,
     category: "side",
     tags: ["api"],
-    description: "",
+    description:
+      "Consider yourself a dog-lover?  Here's a simple React app made in CodeSandbox which interfaces with an API to show random dog pictures based on the breed you select.",
     srcCode: "https://github.com/brighamband/k9-directory",
   },
   {
@@ -123,7 +136,8 @@ export const sites = [
     url: "https://snake.brighamband.com",
     screenshot: null,
     category: "side",
-    description: "",
+    description:
+      "A blast from the past, this retro snake game will give you some serious nostalgia.  Made using Vanilla JavaScript, HTML, and Standard CSS.",
     srcCode: "https://github.com/brighamband/snake",
   },
   {
@@ -132,7 +146,7 @@ export const sites = [
     screenshot: null,
     category: "side",
     description:
-      "Online mini piano (1 octave) created using vanilla JavaScript",
+      "On the go but dying to pound some horse teeth?  Here's this online mini piano (1 octave) created using Vanilla JavaScript, HTML, and Standard CSS.",
     srcCode: "https://github.com/brighamband/piano",
   },
   {
@@ -140,7 +154,8 @@ export const sites = [
     url: "https://tictactoe.brighamband.com",
     screenshot: null,
     category: "side",
-    description: "",
+    description:
+      "Don't have a pen and paper but one play some good 'ole Tic Tac Toe?  Here you go!  This website was made using Vanilla JavaScript, HTML, and Standard CSS.",
     srcCode: "https://github.com/brighamband/tictactoe",
   },
   {
@@ -148,7 +163,8 @@ export const sites = [
     url: "https://photography.brighamband.com",
     screenshot: null,
     category: "school",
-    description: "",
+    description:
+      "Have an exciting event coming up and want to make sure you capture those memories?  Here's an photographer informational site where you look into hiring a photographer.  Created using HTML and Bootstrap CSS.",
     srcCode: "https://github.com/brighamband/photography",
   },
   {
@@ -157,7 +173,7 @@ export const sites = [
     screenshot: null,
     category: ["side", "work", "beta"],
     description:
-      "Still missing a lot of functionality.  For a job interview I made this showing my skills in Material UI and React, now I need to hook up a back-end or at least add add/delete functionality.",
+      "For a job interview I made this basic todo list showing my skills in Material UI and React.  This was back when I was less experienced and I was on a time crunch so it still needs advanced functionality (needs to add todos, remove them, and save them for future reference.",
     srcCode: "https://github.com/brighamband/material-todo",
   },
   {
@@ -176,7 +192,7 @@ export const sites = [
     screenshot: null,
     category: ["school", "side", "beta"],
     description:
-      "Still under development, only the front-end was completed for school.  Now I'm working on hooking it up to a back-end for fun!",
+      "An online social media platform for sharing uplifting insights!  Still under development, only the front-end (HTML and Bootstrap CSS) was completed for school.  Now I'm working on hooking it up to a back-end for fun!",
     srcCode: "https://github.com/brighamband/no-end-insight",
   },
   {
@@ -184,7 +200,8 @@ export const sites = [
     url: "https://comics.brighamband.com",
     screenshot: null,
     category: "school",
-    description: "",
+    description:
+      "Online comics browser.  Look through comics, then leave ratings and comments.  Made possible with an API for comic data, then created with VueJS.",
     srcCode: "https://github.com/brighamband/comics",
   },
   {
@@ -193,7 +210,8 @@ export const sites = [
     screenshot: null,
     category: "school",
     tags: ["vue", "css"],
-    description: "",
+    description:
+      "Sick of going in-person to the store just to see their selection?  This site showcases a grocery store and their unique product offering, allowing users to search for specific items, then add desired ones to their cart.  Made using VueJS.",
     srcCode: "https://github.com/brighamband/groceries",
   },
 
@@ -204,25 +222,16 @@ export const sites = [
     category: "side",
     tags: ["html", "css", "js"],
     description:
-      "I was learning Android, and before I made this greeter there, I made it using javascript to compare and contrast the two.",
+      "A simple app which greets a user based on the name they enter.  I was learning Android and picked this basic project, but decided to first implement it using Vanilla JavaScript to compare and contrast the two.",
     srcCode: "https://codepen.io/brighamband/pen/qBrxPgg",
   },
   {
-    name: "Pecos Solutions",
-    url: "https://pecos-solutions.com",
-    screenshot: null,
-    category: ["work"],
-    tags: ["react", "mui", "aws"],
-    description:
-      "A web app used to preview and download records/documents by county",
-    srcCode: "https://github.com/Pecos-Solutions/pecos",
-  },
-  {
-    name: "Portfolio (This Website!)",
+    name: "Portfolio (This Website)",
     url: "https://brighamband.com",
     screenshot: null,
     category: ["side", "work", "beta"],
-    description: "",
+    description:
+      "This website was made using React and styled using Material UI.  It was built with the purpose of helping prospective clients/employers get a feel for who I am and the work I do.",
     srcCode: "https://github.com/brighamband/portfolio",
   },
 ];
