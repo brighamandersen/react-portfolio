@@ -1,4 +1,10 @@
-import { IconButton, Tooltip, makeStyles, Grid } from "@material-ui/core";
+import {
+  IconButton,
+  Tooltip,
+  makeStyles,
+  Grid,
+  Container,
+} from "@material-ui/core";
 import React from "react";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
@@ -31,7 +37,7 @@ const Contact = () => {
   );
 
   return (
-    <div className="content contact-page">
+    <Container maxWidth="md" className="content">
       <h1>Contact Me</h1>
 
       <Grid container spacing={3}>
@@ -51,7 +57,7 @@ const Contact = () => {
             </IconButton>
           </Tooltip>
         </Grid>
-        <Grid item xs={6} sm={6} md={3}>
+        <Grid item xs={6} md={3}>
           <Tooltip
             title={<TooltipTitle title={"Connect with me on LinkedIn"} />}
             classes={{ tooltip: classes.longTooltip }}
@@ -67,7 +73,7 @@ const Contact = () => {
             </IconButton>
           </Tooltip>
         </Grid>
-        <Grid item xs={6} sm={6} md={3}>
+        <Grid item xs={6} md={3}>
           <Tooltip
             title={<TooltipTitle title={"Email brighamband@gmail.com"} />}
             classes={{ tooltip: classes.longTooltip }}
@@ -81,7 +87,7 @@ const Contact = () => {
             </IconButton>
           </Tooltip>
         </Grid>
-        <Grid item xs={6} sm={6} md={3}>
+        <Grid item xs={6} md={3}>
           <Tooltip
             title={<TooltipTitle title={"Text / Call 385-499-8277"} />}
             classes={{ tooltip: classes.longTooltip }}
@@ -93,7 +99,7 @@ const Contact = () => {
           </Tooltip>
         </Grid>
       </Grid>
-    </div>
+    </Container>
   );
 };
 
