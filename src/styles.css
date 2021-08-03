@@ -154,3 +154,7 @@ img.resume {
 .languages-container i {
   font-size: 100px;
 }
+
+.no-corners {
+  border-radius: 0;
+}

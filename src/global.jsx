@@ -1,8 +1,11 @@
 /* This file contains global components that are reused across the site */
 import React from "react";
-import { Box, makeStyles, Tooltip } from "@material-ui/core";
+import { Box, IconButton, makeStyles, Tooltip } from "@material-ui/core";
 
-const useStyles = makeStyles(() => ({
+export const useGlobalStyles = makeStyles(() => ({
+  noCorners: {
+    borderRadius: 0,
+  },
   longTooltip: {
     maxWidth: "none",
   },
@@ -11,12 +14,12 @@ const useStyles = makeStyles(() => ({
 export const BigTooltip = (props) => {
   const { title, children } = props;
 
-  const classes = useStyles();
+  const global = useGlobalStyles();
 
   return (
     <Tooltip
       title={<p>{title}</p>}
-      classes={{ tooltip: classes.longTooltip }}
+      classes={{ tooltip: global.longTooltip }}
       arrow
     >
       {children}

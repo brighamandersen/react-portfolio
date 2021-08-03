@@ -1,4 +1,3 @@
-import About from "../routes/About";
 import Contact from "../routes/Contact";
 import Home from "../routes/Home";
 import Resume from "../routes/Resume";
@@ -9,7 +8,6 @@ import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import HomeIcon from "@material-ui/icons/Home";
 import LanguageIcon from "@material-ui/icons/Language";
-import InfoIcon from "@material-ui/icons/Info";
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 
@@ -21,12 +19,6 @@ export const pages = [
     displayText: "Sites",
     link: "/sites",
     icon: <LanguageIcon />,
-  },
-  {
-    component: <About />,
-    displayText: "About",
-    link: "/about",
-    icon: <InfoIcon />,
   },
   {
     component: <Resume />,
@@ -301,41 +293,55 @@ export const languages = [
   {
     name: "JavaScript",
     className: "devicon-javascript-plain colored",
+    searchUrl:
+      "https://github.com/brighamband?tab=repositories&language=javascript",
   },
   {
     name: "React",
     className: "devicon-react-original-wordmark colored",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=react",
   },
   {
     name: "Vue",
     className: "devicon-vuejs-plain-wordmark colored",
+    searchUrl: "https://github.com/brighamband?tab=repositories&language=vue",
   },
   {
     name: "HTML",
     className: "devicon-html5-plain-wordmark colored",
+    searchUrl: "https://github.com/brighamband?tab=repositories&language=html",
   },
   {
     name: "CSS",
     className: "devicon-css3-plain-wordmark colored",
+    searchUrl: "https://github.com/brighamband?tab=repositories&language=css",
   },
   {
     name: "Python",
     className: "devicon-python-plain-wordmark colored",
+    searchUrl:
+      "https://github.com/brighamband?tab=repositories&language=python",
   },
   {
     name: "Java",
     className: "devicon-java-plain-wordmark colored",
+    searchUrl: "https://github.com/brighamband?tab=repositories&language=java",
   },
   {
     name: "Android",
     className: "devicon-android-plain-wordmark colored",
+    searchUrl: "https://github.com/brighamband?tab=repositories&q=android",
   },
   {
     name: "C++",
     className: "devicon-cplusplus-plain-wordmark colored",
+    searchUrl:
+      "https://github.com/brighamband?tab=repositories&language=c%2B%2B",
   },
   // {
   //   name: "C",
   //   className: "devicon-c-plain-wordmark colored",
+  //   searchUrl:
+  //     "https://github.com/brighamband?tab=repositories&language=c",
   // },
 ];

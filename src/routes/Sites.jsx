@@ -27,7 +27,7 @@ const Sites = () => (
         {site.srcCode && (
           <BigTooltip title={<CustomTitle url={site.srcCode} isSrcCode />}>
             <IconButton
-              href={site.url}
+              href={site.srcCode}
               target="_blank"
               rel="noopener noreferrer"
             >
