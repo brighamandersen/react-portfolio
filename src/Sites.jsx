@@ -18,6 +18,7 @@ const Sites = () => (
     {sites.map((site) => (
       <Card key={site.url} className="card">
         <h3>{site.name}</h3>
+        <p>{site.description}</p>
         <Tooltip title={<TooltipTitle url={site.url} />} arrow>
           <IconButton href={site.url} target="_blank" rel="noopener noreferrer">
             <LaunchSharpIcon />
