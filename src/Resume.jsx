@@ -1,4 +1,4 @@
-import { Container, makeStyles } from "@material-ui/core";
+import { Container } from "@material-ui/core";
 import React from "react";
 import resume from "./assets/resume.png";
 
