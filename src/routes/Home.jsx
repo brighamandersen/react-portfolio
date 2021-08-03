@@ -1,6 +1,8 @@
-import { Container, Grid } from "@material-ui/core";
+import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import React from "react";
 import profile from "../assets/profile.jpg";
+import { BigTooltip, WebVideo } from "../global";
+import YouTubeIcon from "@material-ui/icons/YouTube";
 
 const Home = () => (
   <Container maxWidth="md" className="content">
@@ -27,7 +29,7 @@ const Home = () => (
         <img className="profile" src={profile} alt="Me" />
       </Grid>
     </Grid>
-    <div className="intro-vid">
+    {/* <div className="intro-vid">
       <iframe
         width="100%"
         height="100%"
@@ -35,7 +37,29 @@ const Home = () => (
         src="https://www.youtube.com/embed/jSeLgZsF5_U"
         allowFullScreen
       />
-    </div>
+    </div> */}
+    <Box my={8}>
+      <h2>
+        Latest Content{" "}
+        <BigTooltip title="Check out my YouTube channel">
+          <IconButton
+            href="https://www.youtube.com/channel/UC5h98VfEfhqHkSMlt4ejCeg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <YouTubeIcon />
+          </IconButton>
+        </BigTooltip>
+      </h2>
+      <WebVideo
+        title="Web Dev (HTML/CSS) Crash Course"
+        url="https://www.youtube.com/embed/vGIRW00pB9w"
+      />
+      <WebVideo
+        title="Web Dev Snapshot"
+        url="https://www.youtube.com/embed/jSeLgZsF5_U"
+      />
+    </Box>
   </Container>
 );
 

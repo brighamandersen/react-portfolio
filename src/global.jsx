@@ -1,6 +1,6 @@
 /* This file contains global components that are reused across the site */
 import React from "react";
-import { makeStyles, Tooltip } from "@material-ui/core";
+import { Box, makeStyles, Tooltip } from "@material-ui/core";
 
 const useStyles = makeStyles(() => ({
   longTooltip: {
@@ -21,5 +21,21 @@ export const BigTooltip = (props) => {
     >
       {children}
     </Tooltip>
+  );
+};
+
+export const WebVideo = (props) => {
+  const { title, url } = props;
+
+  return (
+    <Box my={5} height={500}>
+      <iframe
+        width="100%"
+        height="100%"
+        title={title}
+        src={url}
+        allowFullScreen
+      />
+    </Box>
   );
 };
