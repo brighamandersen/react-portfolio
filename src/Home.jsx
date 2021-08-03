@@ -1,10 +1,10 @@
-import { Container, Grid, Typography } from "@material-ui/core";
+import { Container, Grid } from "@material-ui/core";
 import React from "react";
-import profile from "./assets/profile-square.jpg";
+import profile from "./assets/profile.jpg";
 
 const Home = () => (
   <Container maxWidth="md" className="content">
-    <Typography variant="h3">Home</Typography>
+    <h1>Home</h1>
     <Grid container spacing={5} justifyContent="center" alignItems="center">
       <Grid item xs={12} md={8}>
         <p>

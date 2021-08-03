@@ -1,6 +1,6 @@
-import { Container, makeStyles } from "@material-ui/core";
+import { Container, makeStyles, Typography } from "@material-ui/core";
 import React from "react";
-import resumePng from "./assets/resume.png";
+import resume from "./assets/resume.png";
 
 const useStyles = makeStyles(() => ({
   resume: {
@@ -13,12 +13,10 @@ const Resume = () => {
   const classes = useStyles();
 
   return (
-    <div className="content resume-page">
+    <Container maxWidth="md" className="content">
       <h1>Resume</h1>
-      <Container maxWidth="sm">
-        <img src={resumePng} alt="Resume" className={classes.resume} />
-      </Container>
-    </div>
+      <img src={resume} alt="Resume" className={classes.resume} />
+    </Container>
   );
 };
 
