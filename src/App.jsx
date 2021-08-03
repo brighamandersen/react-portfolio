@@ -16,10 +16,10 @@ import theme from "./theme";
 
 const pages = [
   { component: <Home />, displayText: "Home", link: "/" },
+  { component: <Sites />, displayText: "Sites", link: "/sites" },
   { component: <About />, displayText: "About", link: "/about" },
   { component: <Resume />, displayText: "Resume", link: "/resume" },
   { component: <Contact />, displayText: "Contact", link: "/contact" },
-  { component: <Sites />, displayText: "Sites", link: "/sites" },
 ];
 
 const App = () => (
@@ -28,7 +28,7 @@ const App = () => (
       <Navbar pages={pages} />
       <Switch>
         {pages.map((page) => (
-          <Route exact={page.link === "/"} path={page.link}>
+          <Route key={page.link} exact={page.link === "/"} path={page.link}>
             {page.component}
           </Route>
         ))}

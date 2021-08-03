@@ -8,6 +8,7 @@ const Navbar = (props) => {
     <nav className="nav-bar">
       {pages?.map((page) => (
         <NavLink
+          key={page.link}
           className="nav-link"
           activeClassName="active"
           exact={page.link === "/"}

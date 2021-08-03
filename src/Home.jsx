@@ -27,6 +27,15 @@ const Home = () => (
         <img className="profile" src={profile} alt="Me" />
       </Grid>
     </Grid>
+    <div className="intro-vid">
+      <iframe
+        width="100%"
+        height="100%"
+        title="Web Dev Snapshot"
+        src="https://www.youtube.com/embed/jSeLgZsF5_U"
+        allowFullScreen
+      />
+    </div>
   </Container>
 );
 
