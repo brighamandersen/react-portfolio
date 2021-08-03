@@ -2,7 +2,7 @@ import React from "react";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, IconButton, Tooltip } from "@material-ui/core";
-import sites from "./assets/sites";
+import { sites } from "./assets/data";
 
 const TooltipTitle = ({ url, isSrcCode = false }) => (
   <>

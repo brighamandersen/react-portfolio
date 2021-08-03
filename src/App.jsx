@@ -1,7 +1,4 @@
 import React from "react";
-import About from "./About";
-import Contact from "./Contact";
-import Home from "./Home";
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,18 +6,9 @@ import {
   Redirect,
 } from "react-router-dom";
 import Navbar from "./Navbar";
-import Resume from "./Resume";
-import Sites from "./Sites";
 import { ThemeProvider } from "@material-ui/core";
 import theme from "./theme";
-
-const pages = [
-  { component: <Home />, displayText: "Home", link: "/" },
-  { component: <Sites />, displayText: "Sites", link: "/sites" },
-  { component: <About />, displayText: "About", link: "/about" },
-  { component: <Resume />, displayText: "Resume", link: "/resume" },
-  { component: <Contact />, displayText: "Contact", link: "/contact" },
-];
+import { pages } from "./assets/data";
 
 const App = () => (
   <ThemeProvider theme={theme}>

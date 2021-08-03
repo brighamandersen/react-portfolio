@@ -5,8 +5,8 @@ const Navbar = (props) => {
   const { pages } = props;
 
   return (
-    <nav className="nav-bar">
-      {pages?.map((page) => (
+    <nav className="navbar">
+      {pages.map((page) => (
         <NavLink
           key={page.link}
           className="nav-link"
