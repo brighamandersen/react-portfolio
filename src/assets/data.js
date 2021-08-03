@@ -1,4 +1,3 @@
-import React from "react";
 import About from "../About";
 import Contact from "../Contact";
 import Home from "../Home";
@@ -27,7 +26,8 @@ export const sites = [
     url: "https://ponderizer.brighamband.com",
     screenshot: null,
     category: "school",
-    description: "",
+    description:
+      "Full stack app created with VueJS, Express, and MongoDB.  Allows users to make an account, then save and ponderize their favorite scripture verses!",
     srcCode: "https://github.com/brighamband/ponderizer",
   },
   {
@@ -36,7 +36,8 @@ export const sites = [
     screenshot: null,
     category: "school",
     tags: ["api"],
-    description: "",
+    description:
+      "Front-end client which connects the balldontlie API, allowing users to see a table of NBA Teams, then search by player name to see latest player stats.",
     srcCode: "https://github.com/brighamband/nba-insider-hub",
   },
   {

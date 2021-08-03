@@ -1,3 +1,4 @@
+import React from "react";
 import {
   IconButton,
   Tooltip,
@@ -5,11 +6,6 @@ import {
   Grid,
   Container,
 } from "@material-ui/core";
-import React from "react";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import PhoneIcon from "@material-ui/icons/Phone";
 import { resources } from "./assets/data";
 
 const useStyles = makeStyles(() => ({

@@ -5,11 +5,11 @@ import { Card, Container, IconButton, Tooltip } from "@material-ui/core";
 import { sites } from "./assets/data";
 
 const TooltipTitle = ({ url, isSrcCode = false }) => (
-  <>
+  <h1>
     {isSrcCode ? "Source Code:" : "Site:"}
     <br />
     <code className="url-code">{url}</code>
-  </>
+  </h1>
 );
 
 const Sites = () => (

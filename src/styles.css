@@ -1,17 +1,40 @@
-/*  COLOR SCHEME: */
-* {
-  --primary: #215481;
-  --hoverBlue: #487194;
-  --gray: #f7f7f7;
-
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+}
+
+* {
   font-family: "Rubik", sans-serif;
+
+  /*  Color scheme */
+  --primary: #215481;
+  --secondary: #808080;
+  --whiteGray: #f7f7f7;
+
+  /* Helper colors */
+  --primaryLight: #487194;
+  --secondaryDark: #6d6d6d;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  /* Width */
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  /* Bar */
+  background: var(--secondary);
+}
+::-webkit-scrollbar-thumb:hover {
+  /* Bar on hover */
+  background: var(--secondaryDark);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background: var(--gray);
+  background: var(--whiteGray);
 }
 
 h1,
@@ -52,7 +75,7 @@ nav > a {
   flex-direction: row;
   padding: 1rem;
   text-decoration: none;
-  color: var(--gray);
+  color: var(--whiteGray);
   letter-spacing: 1px;
   font-weight: 400;
 }
@@ -61,12 +84,12 @@ nav > a {
   text-decoration: none;
   color: white;
   font-weight: bold;
-  background: var(--gray);
+  background: var(--whiteGray);
   color: var(--primary);
 }
 
 nav > :not(.active):hover {
-  background-color: var(--hoverBlue);
+  background: var(--primaryLight);
 }
 
 img.profile {
@@ -101,8 +124,4 @@ img.resume {
 .contact-icon {
   width: 100%;
   height: 100%;
-}
-
-.long-tooltip {
-  background: "red";
 }
