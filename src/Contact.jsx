@@ -41,7 +41,7 @@ const Contact = () => {
       <h1>Contact Me</h1>
 
       <Grid container spacing={3}>
-        <Grid item xs={6} sm={6} md={3}>
+        <Grid item xs={6} md={3}>
           <Tooltip
             title={<TooltipTitle title={"Check out my GitHub"} />}
             classes={{ tooltip: classes.longTooltip }}
@@ -53,7 +53,7 @@ const Contact = () => {
               rel="noopener noreferrer"
               className={classes.iconButton}
             >
-              <GitHubIcon fontSize="large" className={classes.icon} />
+              <GitHubIcon className={classes.icon} />
             </IconButton>
           </Tooltip>
         </Grid>

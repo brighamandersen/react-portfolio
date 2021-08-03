@@ -75,12 +75,17 @@ nav > :not(.active):hover {
   flex-wrap: wrap;
 }
 
-.card {
+/* .card {
   background-color: white;
   padding: 1rem;
   margin: 1rem;
   border-radius: 4px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+} */
+
+.card {
+  padding: 2rem;
+  margin: 2rem;
 }
 
 .about-card {
@@ -90,11 +95,16 @@ nav > :not(.active):hover {
 
 img.profile {
   border-radius: 50%;
+  width: 100%;
 }
 
 img.resume {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width: 100%;
+}
+
+.test {
+  color: purple;
 }
 
 .url-code {
