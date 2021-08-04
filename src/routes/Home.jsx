@@ -1,11 +1,15 @@
 import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import React from "react";
 import profile from "../assets/profile.jpg";
-import { BigTooltip, WebVideo } from "../global";
+import { BigTooltip, documentTitleTail, WebVideo } from "../global";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import { Helmet } from "react-helmet";
 
 const Home = () => (
   <Container maxWidth="md" className="content">
+    <Helmet>
+      <title>{`Home${documentTitleTail}`}</title>
+    </Helmet>
     <h1>Home</h1>
     <Grid container spacing={5} justifyContent="center" alignItems="center">
       <Grid item xs={12} md={8}>

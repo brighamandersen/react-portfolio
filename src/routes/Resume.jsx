@@ -1,14 +1,18 @@
 import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import React from "react";
+import { Helmet } from "react-helmet";
 import { languages } from "../assets/data";
 import resume from "../assets/resume.png";
-import { BigTooltip, useGlobalStyles } from "../global";
+import { BigTooltip, documentTitleTail, useGlobalStyles } from "../global";
 
 const Resume = () => {
   const global = useGlobalStyles();
 
   return (
     <Container maxWidth="md" className="content">
+      <Helmet>
+        <title>{`Resume${documentTitleTail}`}</title>
+      </Helmet>
       <h1>Resume</h1>
       <img src={resume} alt="Resume" className="resume" />
       <Box my={8}>

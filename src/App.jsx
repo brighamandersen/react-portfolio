@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Navbar from "./Navbar";
 import { Hidden, ThemeProvider } from "@material-ui/core";
-import theme from "./theme";
+import { theme } from "./global";
 import { pages } from "./assets/data";
 import cornerLogo from "./assets/corner-logo.png";
 
@@ -17,7 +17,7 @@ const App = () => (
       <Navbar pages={pages} />
       <Switch>
         {pages.map((page) => (
-          <Route key={page.link} exact={page.link === "/"} path={page.link}>
+          <Route key={page.name} exact={page.path === "/"} path={page.path}>
             {page.component}
           </Route>
         ))}

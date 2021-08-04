@@ -13,6 +13,8 @@ export const theme = createTheme({
   },
 });
 
+export const documentTitleTail = " - Brigham Andersen's Portfolio";
+
 export const useGlobalStyles = makeStyles(() => ({
   noCorners: {
     borderRadius: 0,

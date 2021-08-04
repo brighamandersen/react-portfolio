@@ -3,7 +3,8 @@ import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, IconButton } from "@material-ui/core";
 import { sites } from "../assets/data";
-import { BigTooltip } from "../global";
+import { BigTooltip, documentTitleTail } from "../global";
+import { Helmet } from "react-helmet";
 
 const CustomTitle = ({ url, isSrcCode = false }) => (
   <>
@@ -14,6 +15,9 @@ const CustomTitle = ({ url, isSrcCode = false }) => (
 
 const Sites = () => (
   <Container maxWidth="md" className="content">
+    <Helmet>
+      <title>{`My Websites${documentTitleTail}`}</title>
+    </Helmet>
     <h1>My Websites</h1>
     {sites.map((site) => (
       <Card key={site.url} className="card">
