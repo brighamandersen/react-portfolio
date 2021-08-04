@@ -15,7 +15,7 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 export const pages = [
   {
     name: "Home",
-    component: <Home title="Welcome" />,
+    component: <Home title="Welcome!" />,
     path: "/",
     icon: <HomeIcon />,
   },
