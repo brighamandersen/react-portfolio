@@ -3,14 +3,14 @@ import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, IconButton, makeStyles } from "@material-ui/core";
 import { sites } from "../assets/data";
-import { BigTooltip, PageTop } from "../global";
+import { BigTooltip, COLORS, PageTop } from "../global";
 
 const useLocalStyles = makeStyles((theme) => ({
   header: {
-    color: "white",
+    color: COLORS.white,
   },
   url: {
-    color: "white",
+    color: COLORS.white,
     padding: theme.spacing(2),
   },
   card: {
