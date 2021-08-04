@@ -33,7 +33,7 @@ export const pages = [
   },
   {
     name: "Contact",
-    component: <Contact />,
+    component: <Contact title="Contact Me" />,
     path: "/contact",
     icon: <AccountBoxIcon />,
   },

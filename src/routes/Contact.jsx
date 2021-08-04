@@ -1,24 +1,15 @@
 import React from "react";
-import { IconButton, makeStyles, Grid, Container } from "@material-ui/core";
+import PropTypes from "prop-types";
+import { IconButton, Grid, Container } from "@material-ui/core";
 import { resources } from "../assets/data";
-import { BigTooltip, documentTitleTail } from "../global";
-import { Helmet } from "react-helmet";
+import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
-const useStyles = makeStyles(() => ({
-  iconButton: {
-    borderRadius: 0,
-  },
-}));
-
-const Contact = () => {
-  const classes = useStyles();
+const Contact = ({ title }) => {
+  const global = useGlobalStyles();
 
   return (
     <Container maxWidth="md" className="content">
-      <Helmet>
-        <title>{`Contact Me${documentTitleTail}`}</title>
-      </Helmet>
-      <h1>Contact Me</h1>
+      <PageTop pageTitle={title} />
       <Grid container spacing={3}>
         {resources.map((res) => (
           <Grid key={res.name} item xs={6} md={3}>
@@ -27,7 +18,7 @@ const Contact = () => {
                 href={res.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={classes.iconButton}
+                className={global.noCorners}
               >
                 {res.icon}
               </IconButton>
@@ -40,3 +31,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
+Contact.propTypes = {
+  title: PropTypes.string.isRequired,
+};

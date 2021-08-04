@@ -2,6 +2,7 @@
 import React from "react";
 import { Box, makeStyles, Tooltip } from "@material-ui/core";
 import { createTheme } from "@material-ui/core/styles";
+import { Helmet } from "react-helmet";
 
 export const theme = createTheme({
   palette: {
@@ -13,8 +14,6 @@ export const theme = createTheme({
   },
 });
 
-export const documentTitleTail = " - Brigham Andersen's Portfolio";
-
 export const useGlobalStyles = makeStyles(() => ({
   noCorners: {
     borderRadius: 0,
@@ -24,9 +23,18 @@ export const useGlobalStyles = makeStyles(() => ({
   },
 }));
 
-export const BigTooltip = (props) => {
-  const { title, children } = props;
+export const documentTitleTail = " - Brigham Andersen's Portfolio";
 
+export const PageTop = ({ pageTitle }) => (
+  <>
+    <Helmet>
+      <title>{`${pageTitle}${documentTitleTail}`}</title>
+    </Helmet>
+    <h1>{pageTitle}</h1>
+  </>
+);
+
+export const BigTooltip = ({ title, children }) => {
   const global = useGlobalStyles();
 
   return (
@@ -40,18 +48,14 @@ export const BigTooltip = (props) => {
   );
 };
 
-export const WebVideo = (props) => {
-  const { title, url } = props;
-
-  return (
-    <Box my={5} height={500}>
-      <iframe
-        width="100%"
-        height="100%"
-        title={title}
-        src={url}
-        allowFullScreen
-      />
-    </Box>
-  );
-};
+export const WebVideo = ({ title, url }) => (
+  <Box my={5} height={500}>
+    <iframe
+      width="100%"
+      height="100%"
+      title={title}
+      src={url}
+      allowFullScreen
+    />
+  </Box>
+);
