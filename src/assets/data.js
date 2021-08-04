@@ -15,13 +15,13 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 export const pages = [
   {
     name: "Home",
-    component: <Home />,
+    component: <Home title="Welcome" />,
     path: "/",
     icon: <HomeIcon />,
   },
   {
     name: "Sites",
-    component: <Sites />,
+    component: <Sites title="My Websites" />,
     path: "/sites",
     icon: <LanguageIcon />,
   },

@@ -1,16 +1,13 @@
-import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import React from "react";
+import PropTypes from "prop-types";
+import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import profile from "../assets/profile.jpg";
-import { BigTooltip, documentTitleTail, WebVideo } from "../global";
+import { BigTooltip, PageTop, WebVideo } from "../global";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import { Helmet } from "react-helmet";
 
-const Home = () => (
+const Home = ({ title }) => (
   <Container maxWidth="md" className="content">
-    <Helmet>
-      <title>{`Home${documentTitleTail}`}</title>
-    </Helmet>
-    <h1>Home</h1>
+    <PageTop pageTitle={title} />
     <Grid container spacing={5} justifyContent="center" alignItems="center">
       <Grid item xs={12} md={8}>
         <p>
@@ -60,3 +57,7 @@ const Home = () => (
 );
 
 export default Home;
+
+Home.propTypes = {
+  title: PropTypes.string.isRequired,
+};

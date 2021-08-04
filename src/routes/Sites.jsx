@@ -1,47 +1,73 @@
 import React from "react";
+import PropTypes from "prop-types";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import { Card, Container, IconButton } from "@material-ui/core";
+import { Card, Container, IconButton, makeStyles } from "@material-ui/core";
 import { sites } from "../assets/data";
-import { BigTooltip, documentTitleTail } from "../global";
-import { Helmet } from "react-helmet";
+import { BigTooltip, PageTop } from "../global";
 
-const CustomTitle = ({ url, isSrcCode = false }) => (
-  <>
-    <h3 className="tooltip-header">{isSrcCode ? "Source Code:" : "Site:"}</h3>
-    <code className="tooltip-url">{url}</code>
-  </>
-);
+const useStyles = makeStyles((theme) => ({
+  header: {
+    color: "white",
+  },
+  url: {
+    color: "white",
+    padding: theme.spacing(1),
+  },
+}));
 
-const Sites = () => (
-  <Container maxWidth="md" className="content">
-    <Helmet>
-      <title>{`My Websites${documentTitleTail}`}</title>
-    </Helmet>
-    <h1>My Websites</h1>
-    {sites.map((site) => (
-      <Card key={site.url} className="card">
-        <h2>{site.name}</h2>
-        <p>{site.description}</p>
-        <BigTooltip title={<CustomTitle url={site.url} />}>
-          <IconButton href={site.url} target="_blank" rel="noopener noreferrer">
-            <LaunchSharpIcon />
-          </IconButton>
-        </BigTooltip>
-        {site.srcCode && (
-          <BigTooltip title={<CustomTitle url={site.srcCode} isSrcCode />}>
+const Sites = ({ title }) => {
+  const classes = useStyles();
+
+  return (
+    <Container maxWidth="md" className="content">
+      <PageTop pageTitle={title} />
+      {sites.map((site) => (
+        <Card key={site.url} className="card">
+          <h2>{site.name}</h2>
+          <p>{site.description}</p>
+          <BigTooltip
+            title={
+              <>
+                <h3 className={classes.header}>Site:</h3>
+                <code className={classes.url}>{site.url}</code>
+              </>
+            }
+          >
             <IconButton
-              href={site.srcCode}
+              href={site.url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <GitHubIcon />
+              <LaunchSharpIcon />
             </IconButton>
           </BigTooltip>
-        )}
-      </Card>
-    ))}
-  </Container>
-);
+          {site.srcCode && (
+            <BigTooltip
+              title={
+                <>
+                  <h3 className={classes.header}>Source Code:</h3>
+                  <code className={classes.url}>{site.srcCode}</code>
+                </>
+              }
+            >
+              <IconButton
+                href={site.srcCode}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <GitHubIcon />
+              </IconButton>
+            </BigTooltip>
+          )}
+        </Card>
+      ))}
+    </Container>
+  );
+};
 
 export default Sites;
+
+Sites.propTypes = {
+  title: PropTypes.string.isRequired,
+};

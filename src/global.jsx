@@ -23,7 +23,7 @@ export const useGlobalStyles = makeStyles(() => ({
   },
 }));
 
-export const documentTitleTail = " - Brigham Andersen's Portfolio";
+const documentTitleTail = " - Brigham Andersen's Portfolio";
 
 export const PageTop = ({ pageTitle }) => (
   <>

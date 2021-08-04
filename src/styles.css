@@ -124,15 +124,6 @@ img.resume {
   padding-left: 0.5rem;
 }
 
-.tooltip-header,
-.tooltip-url {
-  color: white;
-}
-
-.tooltip-url {
-  padding: 0.5rem;
-}
-
 .languages-container > div {
   text-align: center;
 }
