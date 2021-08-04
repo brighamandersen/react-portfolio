@@ -284,57 +284,57 @@ export const resources = [
   },
 ];
 
+const baseSearchUrl = "https://github.com/brighamband?tab=repositories&q=";
 /* My top languages - used on '/resume' */
 export const languages = [
   {
     name: "JavaScript",
     className: "devicon-javascript-plain colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=javascript",
+    searchUrl: `${baseSearchUrl}javascript`,
   },
   {
     name: "React",
     className: "devicon-react-original-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=react",
+    searchUrl: `${baseSearchUrl}react`,
   },
   {
     name: "Vue",
     className: "devicon-vuejs-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=vue",
+    searchUrl: `${baseSearchUrl}vue`,
   },
   {
     name: "HTML",
     className: "devicon-html5-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=html",
+    searchUrl: `${baseSearchUrl}html`,
   },
   {
     name: "CSS",
     className: "devicon-css3-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=css",
+    searchUrl: `${baseSearchUrl}css`,
   },
   {
     name: "Python",
     className: "devicon-python-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=python",
+    searchUrl: `${baseSearchUrl}python`,
   },
   {
     name: "Java",
     className: "devicon-java-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=java",
+    searchUrl: `${baseSearchUrl}java`,
   },
   {
     name: "Android",
     className: "devicon-android-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=android",
+    searchUrl: `${baseSearchUrl}android`,
   },
   {
     name: "C++",
     className: "devicon-cplusplus-plain-wordmark colored",
-    searchUrl: "https://github.com/brighamband?tab=repositories&q=c-plus-plus",
+    searchUrl: `${baseSearchUrl}c-plus-plus`,
   },
   // {
   //   name: "C",
   //   className: "devicon-c-plain-wordmark colored",
-  //   searchUrl:
-  //     "https://github.com/brighamband?tab=repositories&q=c",
+  // searchUrl: `${baseSearchUrl}c`,
   // },
 ];
