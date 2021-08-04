@@ -58,13 +58,8 @@ a {
   color: var(--secondary);
 }
 
-.content {
-  padding: 5rem 0;
-}
-
-/* Page Titles */
-.content > h1 {
-  font-size: 40px;
+main {
+  margin: 7rem 0;
 }
 
 .navbar {
@@ -100,21 +95,6 @@ nav > :not(.active):hover {
   background: var(--primaryLight);
 }
 
-img.profile {
-  border-radius: 50%;
-  width: 100%;
-}
-
-img.resume {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  width: 100%;
-}
-
-.card {
-  padding: 2rem;
-  margin: 2rem;
-}
-
 .flex-child.navlink-icon {
   display: inherit;
   align-self: center;
@@ -122,21 +102,4 @@ img.resume {
 
 .flex-child.navlink-text {
   padding-left: 0.5rem;
-}
-
-.languages-container > div {
-  text-align: center;
-}
-
-.languages-container i {
-  font-size: 100px;
-}
-
-.corner-logo {
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  width: 120px;
-  height: 120px;
-  z-index: 2;
 }

@@ -16,24 +16,39 @@ export const theme = createTheme({
 });
 
 export const useGlobalStyles = makeStyles(() => ({
+  pageHeader: {
+    fontSize: 40,
+  },
   noCorners: {
     borderRadius: 0,
   },
   longTooltip: {
     maxWidth: "none",
   },
+  cornerLogo: {
+    position: "fixed",
+    bottom: 0,
+    right: 0,
+    width: 120,
+    height: 120,
+    zIndex: 2,
+  },
 }));
 
 const documentTitleTail = " - Brigham Andersen's Portfolio";
 
-export const PageTop = ({ pageTitle }) => (
-  <>
-    <Helmet>
-      <title>{`${pageTitle}${documentTitleTail}`}</title>
-    </Helmet>
-    <h1>{pageTitle}</h1>
-  </>
-);
+export const PageTop = ({ pageTitle }) => {
+  const global = useGlobalStyles();
+
+  return (
+    <>
+      <Helmet>
+        <title>{`${pageTitle}${documentTitleTail}`}</title>
+      </Helmet>
+      <h1 className={global.pageHeader}>{pageTitle}</h1>
+    </>
+  );
+};
 
 PageTop.propTypes = {
   pageTitle: PropTypes.string.isRequired,
