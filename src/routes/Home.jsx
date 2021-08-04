@@ -1,13 +1,12 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import profile from "../assets/profile.jpg";
 import { BigTooltip, PageTop, WebVideo } from "../global";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 
-const Home = ({ title }) => (
+const Home = () => (
   <Container maxWidth="md" className="content">
-    <PageTop pageTitle={title} />
+    <PageTop pageTitle="Welcome!" />
     <Grid container spacing={5} justifyContent="center" alignItems="center">
       <Grid item xs={12} md={8}>
         <p>
@@ -57,7 +56,3 @@ const Home = ({ title }) => (
 );
 
 export default Home;
-
-Home.propTypes = {
-  title: PropTypes.string.isRequired,
-};

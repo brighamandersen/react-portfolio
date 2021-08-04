@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, IconButton, makeStyles } from "@material-ui/core";
@@ -16,12 +15,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-const Sites = ({ title }) => {
+const Sites = () => {
   const classes = useStyles();
 
   return (
     <Container maxWidth="md" className="content">
-      <PageTop pageTitle={title} />
+      <PageTop pageTitle="My Websites" />
       {sites.map((site) => (
         <Card key={site.url} className="card">
           <h2>{site.name}</h2>
@@ -67,7 +66,3 @@ const Sites = ({ title }) => {
 };
 
 export default Sites;
-
-Sites.propTypes = {
-  title: PropTypes.string.isRequired,
-};

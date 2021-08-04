@@ -1,16 +1,15 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Box, Container, Grid, IconButton } from "@material-ui/core";
 import { languages } from "../assets/data";
 import resume from "../assets/resume.png";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
-const Resume = ({ title }) => {
+const Resume = () => {
   const global = useGlobalStyles();
 
   return (
     <Container maxWidth="md" className="content">
-      <PageTop pageTitle={title} />
+      <PageTop pageTitle="My Resume" />
       <img src={resume} alt="Resume" className="resume" />
       <Box my={8}>
         <h2>My Top Languages</h2>
@@ -42,7 +41,3 @@ const Resume = ({ title }) => {
 };
 
 export default Resume;
-
-Resume.propTypes = {
-  title: PropTypes.string.isRequired,
-};

@@ -1,15 +1,14 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { IconButton, Grid, Container } from "@material-ui/core";
 import { resources } from "../assets/data";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
-const Contact = ({ title }) => {
+const Contact = () => {
   const global = useGlobalStyles();
 
   return (
     <Container maxWidth="md" className="content">
-      <PageTop pageTitle={title} />
+      <PageTop pageTitle="Contact Me" />
       <Grid container spacing={3}>
         {resources.map((res) => (
           <Grid key={res.name} item xs={6} md={3}>
@@ -31,7 +30,3 @@ const Contact = ({ title }) => {
 };
 
 export default Contact;
-
-Contact.propTypes = {
-  title: PropTypes.string.isRequired,
-};

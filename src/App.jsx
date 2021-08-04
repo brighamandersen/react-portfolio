@@ -17,9 +17,12 @@ const App = () => (
       <Navbar pages={pages} />
       <Switch>
         {pages.map((page) => (
-          <Route key={page.name} exact={page.path === "/"} path={page.path}>
-            {page.component}
-          </Route>
+          <Route
+            key={page.name}
+            exact={page.path === "/"}
+            path={page.path}
+            component={page.component}
+          />
         ))}
         <Route path="*">
           <Redirect to="/" />

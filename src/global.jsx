@@ -1,5 +1,6 @@
 /* This file contains global components that are reused across the site */
 import React from "react";
+import PropTypes from "prop-types";
 import { Box, makeStyles, Tooltip } from "@material-ui/core";
 import { createTheme } from "@material-ui/core/styles";
 import { Helmet } from "react-helmet";
@@ -34,6 +35,10 @@ export const PageTop = ({ pageTitle }) => (
   </>
 );
 
+PageTop.propTypes = {
+  pageTitle: PropTypes.string.isRequired,
+};
+
 export const BigTooltip = ({ title, children }) => {
   const global = useGlobalStyles();
 
@@ -48,6 +53,11 @@ export const BigTooltip = ({ title, children }) => {
   );
 };
 
+BigTooltip.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};
+
 export const WebVideo = ({ title, url }) => (
   <Box my={5} height={500}>
     <iframe
@@ -59,3 +69,8 @@ export const WebVideo = ({ title, url }) => (
     />
   </Box>
 );
+
+WebVideo.propTypes = {
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+};
