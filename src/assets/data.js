@@ -13,23 +13,28 @@ import AccountBoxIcon from "@material-ui/icons/AccountBox";
 
 /* List of pages on this portfolio website */
 export const pages = [
-  { component: <Home />, displayText: "Home", link: "/", icon: <HomeIcon /> },
   {
+    name: "Home",
+    component: <Home />,
+    path: "/",
+    icon: <HomeIcon />,
+  },
+  {
+    name: "Sites",
     component: <Sites />,
-    displayText: "Sites",
-    link: "/sites",
+    path: "/sites",
     icon: <LanguageIcon />,
   },
   {
+    name: "Resume",
     component: <Resume />,
-    displayText: "Resume",
-    link: "/resume",
+    path: "/resume",
     icon: <DescriptionIcon />,
   },
   {
+    name: "Contact",
     component: <Contact />,
-    displayText: "Contact",
-    link: "/contact",
+    path: "/contact",
     icon: <AccountBoxIcon />,
   },
 ];
