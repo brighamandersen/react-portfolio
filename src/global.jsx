@@ -15,6 +15,11 @@ export const theme = createTheme({
   },
 });
 
+export const COLORS = {
+  white: "#fff",
+  whiteGray: "#f7f7f7",
+};
+
 export const useGlobalStyles = makeStyles(() => ({
   pageHeader: {
     fontSize: 40,
@@ -31,7 +36,6 @@ export const useGlobalStyles = makeStyles(() => ({
     right: 0,
     width: 120,
     height: 120,
-    zIndex: 2,
   },
 }));
 

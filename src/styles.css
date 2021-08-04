@@ -85,7 +85,6 @@ nav > a {
 
 .active {
   text-decoration: none;
-  color: white;
   font-weight: bold;
   background: var(--whiteGray);
   color: var(--primary);
@@ -93,13 +92,4 @@ nav > a {
 
 nav > :not(.active):hover {
   background: var(--primaryLight);
-}
-
-.flex-child.navlink-icon {
-  display: inherit;
-  align-self: center;
-}
-
-.flex-child.navlink-text {
-  padding-left: 0.5rem;
 }
