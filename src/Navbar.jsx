@@ -4,11 +4,11 @@ import { Box, Hidden, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 
 const useLocalStyles = makeStyles((theme) => ({
-  navIcon: {
+  iconWrapper: {
     display: "inherit",
     alignSelf: "center",
   },
-  navText: {
+  textWrapper: {
     paddingLeft: theme.spacing(1),
   },
 }));
@@ -26,9 +26,9 @@ const Navbar = ({ pages }) => {
           to={page.path}
         >
           <Box display="flex" justifyContent="space-evenly" alignItems="center">
-            <i className={local.navIcon}>{page.icon}</i>
+            <div className={local.iconWrapper}>{page.icon}</div>
             <Hidden smDown>
-              <div className={local.navText}>{page.name}</div>
+              <div className={local.textWrapper}>{page.name}</div>
             </Hidden>
           </Box>
         </NavLink>
