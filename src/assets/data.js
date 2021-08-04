@@ -27,7 +27,7 @@ export const pages = [
   },
   {
     name: "Resume",
-    component: <Resume />,
+    component: <Resume title="My Resume" />,
     path: "/resume",
     icon: <DescriptionIcon />,
   },
