@@ -13,7 +13,6 @@
   --whiteGray: #f7f7f7;
 
   /* Helper colors */
-  --primaryLight: #487194;
   --secondaryDark: #6d6d6d;
 }
 
@@ -60,36 +59,4 @@ a {
 
 main {
   margin: 7rem 0;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: var(--primary);
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  z-index: 1;
-}
-
-nav > a {
-  display: inline-block;
-  flex-direction: row;
-  padding: 1rem;
-  text-decoration: none;
-  color: var(--whiteGray);
-  letter-spacing: 1px;
-  font-weight: 400;
-}
-
-.active {
-  text-decoration: none;
-  font-weight: bold;
-  background: var(--whiteGray);
-  color: var(--primary);
-}
-
-nav > :not(.active):hover {
-  background: var(--primaryLight);
 }

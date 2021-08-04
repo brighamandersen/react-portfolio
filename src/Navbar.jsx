@@ -2,6 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Box, Hidden, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
+import { COLORS } from "./global";
 
 const useLocalStyles = makeStyles((theme) => ({
   iconWrapper: {
@@ -11,17 +12,42 @@ const useLocalStyles = makeStyles((theme) => ({
   textWrapper: {
     paddingLeft: theme.spacing(1),
   },
+  navbar: {
+    background: theme.palette.primary.main,
+    position: "fixed",
+    top: 0,
+    width: "100%",
+    zIndex: 1,
+
+    "& > a": {
+      display: "inline-block",
+      padding: theme.spacing(2),
+      color: COLORS.whiteGray,
+      textDecoration: "none",
+      letterSpacing: 1,
+
+      "&.active": {
+        background: COLORS.whiteGray,
+        color: theme.palette.primary.main,
+        fontWeight: "bold",
+      },
+
+      "&:not(.active):hover": {
+        background: theme.palette.primary.light,
+      },
+    },
+  },
 }));
 
 const Navbar = ({ pages }) => {
   const local = useLocalStyles();
 
   return (
-    <nav className="navbar">
+    <nav className={local.navbar}>
       {pages.map((page) => (
         <NavLink
           key={page.path}
-          activeClassName="active"
+          activeClassName={local.active}
           exact={page.path === "/"}
           to={page.path}
         >
