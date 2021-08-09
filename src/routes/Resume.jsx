@@ -10,7 +10,7 @@ import { languages } from "../assets/data";
 import resume from "../assets/resume.png";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
-const useLocalStyles = makeStyles((theme) => ({
+const useLocalStyles = makeStyles(() => ({
   resumeImg: {
     width: "100%",
     boxShadow: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)",
