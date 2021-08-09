@@ -10,6 +10,7 @@ import HomeIcon from "@material-ui/icons/Home";
 import LanguageIcon from "@material-ui/icons/Language";
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import Designs from "../routes/Designs";
 
 /* List of pages on this portfolio website */
 export const pages = [
@@ -18,6 +19,12 @@ export const pages = [
     component: Home,
     path: "/",
     icon: <HomeIcon />,
+  },
+  {
+    name: "Designs",
+    component: Designs,
+    path: "/designs",
+    icon: <LanguageIcon />,   // FIXME - Replace with designs/screenshots icon
   },
   {
     name: "Sites",
