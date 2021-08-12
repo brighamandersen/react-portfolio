@@ -7,7 +7,8 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import HomeIcon from "@material-ui/icons/Home";
-import LanguageIcon from "@material-ui/icons/Language";
+import PhotoLibraryIcon from '@material-ui/icons/PhotoLibrary';
+import DesktopMacIcon from '@material-ui/icons/DesktopMac';
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import Designs from "../routes/Designs";
@@ -24,13 +25,13 @@ export const pages = [
     name: "Designs",
     component: Designs,
     path: "/designs",
-    icon: <LanguageIcon />,   // FIXME - Replace with designs/screenshots icon
+    icon: <PhotoLibraryIcon />, 
   },
   {
     name: "Sites",
     component: Sites,
     path: "/sites",
-    icon: <LanguageIcon />,
+    icon: <DesktopMacIcon />,
   },
   {
     name: "Resume",
