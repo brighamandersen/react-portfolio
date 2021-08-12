@@ -8,7 +8,7 @@ const Contact = () => {
 
   return (
     <main>
-      <Container maxWidth="md" className="content">
+      <Container maxWidth="md">
         <PageTop pageTitle="Contact Me" />
         <Grid container spacing={3}>
           {resources.map((res) => (

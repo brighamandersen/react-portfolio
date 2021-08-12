@@ -7,9 +7,29 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import HomeIcon from "@material-ui/icons/Home";
-import LanguageIcon from "@material-ui/icons/Language";
+import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
+import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
+import Designs from "../routes/Designs";
+import adminDashboardAllUsersShot from "../assets/designs/admin-dashboard-all-users.jpeg";
+import adminDashboardCreateUserShot from "../assets/designs/admin-dashboard-create-user.jpeg";
+import adminDashboardEditUserShot from "../assets/designs/admin-dashboard-edit-user.jpeg";
+import adminDashboardFilterUsersShot from "../assets/designs/admin-dashboard-filter-users.jpeg";
+import advancedSearchShot from "../assets/designs/AdvancedSearch.png";
+import clerkDashboardShot from "../assets/designs/clerk-dashboard.jpeg";
+import contactShot from "../assets/designs/contact.jpeg";
+import vbbDashboard from "../assets/designs/DashboardDesktopWithSessions.png";
+import documentManagementShot from "../assets/designs/document-management.jpeg";
+import sfHomeShot from "../assets/designs/Home1.5-HistorySlider.png";
+import landingShot from "../assets/designs/landing.jpeg";
+import loginShot from "../assets/designs/login-desktop.jpeg";
+import notFoundShot from "../assets/designs/not-found.png";
+import sfHistoryShot from "../assets/designs/OurHistory1.4.png";
+import quickSearchShot from "../assets/designs/QuickSearch.png";
+import recordsTableShot from "../assets/designs/records-table.png";
+import recordsShot from "../assets/designs/records.png";
+import registerShot from "../assets/designs/register.png";
 
 /* List of pages on this portfolio website */
 export const pages = [
@@ -20,10 +40,16 @@ export const pages = [
     icon: <HomeIcon />,
   },
   {
+    name: "Designs",
+    component: Designs,
+    path: "/designs",
+    icon: <PhotoLibraryIcon />,
+  },
+  {
     name: "Sites",
     component: Sites,
     path: "/sites",
-    icon: <LanguageIcon />,
+    icon: <DesktopMacIcon />,
   },
   {
     name: "Resume",
@@ -37,6 +63,28 @@ export const pages = [
     path: "/contact",
     icon: <AccountBoxIcon />,
   },
+];
+
+/* List of screenshots of designs I've made */
+export const designShots = [
+  adminDashboardAllUsersShot,
+  adminDashboardCreateUserShot,
+  adminDashboardEditUserShot,
+  adminDashboardFilterUsersShot,
+  advancedSearchShot,
+  clerkDashboardShot,
+  contactShot,
+  vbbDashboard,
+  documentManagementShot,
+  sfHomeShot,
+  landingShot,
+  loginShot,
+  notFoundShot,
+  sfHistoryShot,
+  quickSearchShot,
+  recordsTableShot,
+  recordsShot,
+  registerShot,
 ];
 
 /* List of the websites I've made */
