@@ -135,6 +135,15 @@ export const sites = [
     srcCode: "https://github.com/brighamband/scoreboard",
   },
   {
+    name: "Svelter",
+    url: "https://svelter.brighamband.com",
+    screenshot: null,
+    category: "side",
+    description:
+      "A simple website I made using Svelte Kit which showcases basic features of Svelte.",
+    srcCode: "https://github.com/brighamband/svelter",
+  },
+  {
     name: "Simple Counter",
     url: "https://brighamband.github.io/simple-counter",
     screenshot: null,
