@@ -90,15 +90,6 @@ export const designShots = [
 /* List of the websites I've made */
 export const sites = [
   {
-    name: "Ponderizer",
-    url: "https://ponderizer.brighamband.com",
-    screenshot: null,
-    category: "school",
-    description:
-      "Full-stack scripture memorization app - make an account, then save and ponderize your favorite scripture verses! Created with VueJS, Node, Express, and MongoDB.  ",
-    srcCode: "https://github.com/brighamband/ponderizer",
-  },
-  {
     name: "Pecos Solutions",
     url: "https://pecos-solutions.com",
     screenshot: null,
@@ -106,6 +97,23 @@ export const sites = [
     description:
       "My latest commercial website.  A full-stack web app used to preview and download records/documents by county.  Features user authentication, custom theming, an Admin Dashboard, and dynamic routing.  Back-end is AWS, front-end is React, using Styled Components and Material UI for styling.",
     srcCode: "https://github.com/Pecos-Solutions/pecos",
+  },
+  {
+    name: "VBB Mentoring Portal",
+    url: "https://vbb.brighamband.com",
+    category: ["work", "side"],
+    description:
+      "International Mentoring Booking Site used by Nike and Oracle.  I did full stack development on this project, but focused primarily on front end.  After I left the project broke, so I recreated the front end side of things on my domain as a side project.",
+    srcCode: "https://github.com/brighamband/vbb-portal",
+  },
+  {
+    name: "Ponderizer",
+    url: "https://ponderizer.brighamband.com",
+    screenshot: null,
+    category: "school",
+    description:
+      "Full-stack scripture memorization app - make an account, then save and ponderize your favorite scripture verses! Created with VueJS, Node, Express, and MongoDB.  ",
+    srcCode: "https://github.com/brighamband/ponderizer",
   },
   {
     name: "NBA Insider Hub",
@@ -294,21 +302,14 @@ export const sites = [
 //     url: 'https://photobomb.brighamband.com/',
 //     category: 'side',
 //     description: 'Photos uploader, sharer, and viewer',
-//     srcCode: 'https://github.com/brighamband/photobomb',
+//     srcCode: 'FIXME',
 // },
 // {
 //     name: 'Silver Fund Web App',
 //     url: 'https://47fund.byu.edu',
 //     category: 'work',
 //     description: 'Stocks/Trades Performance Predictor/Calculator Site',
-//     srcCode: 'https://github.com/brighamband/photobomb',
-// },
-// {
-//     name: 'VBB Mentoring Portal',
-//     url: 'https://portal.villagebookbuilders.org',
-//     category: 'work',
-//     description: 'International Mentoring Booking Site',
-//     srcCode: 'https://github.com/brighamband/photobomb',
+//     srcCode: 'FIXME',
 // },
 
 const fullSize = { width: "100%", height: "100%" };
