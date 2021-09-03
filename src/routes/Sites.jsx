@@ -30,22 +30,24 @@ const Sites = () => {
           <Card key={site.url} className={local.card}>
             <h2>{site.name}</h2>
             <p>{site.description}</p>
-            <BigTooltip
-              title={
-                <>
-                  <h3 className={local.header}>Site:</h3>
-                  <code className={local.url}>{site.url}</code>
-                </>
-              }
-            >
-              <IconButton
-                href={site.url}
-                target="_blank"
-                rel="noopener noreferrer"
+            {site.url && (
+              <BigTooltip
+                title={
+                  <>
+                    <h3 className={local.header}>Site:</h3>
+                    <code className={local.url}>{site.url}</code>
+                  </>
+                }
               >
-                <LaunchSharpIcon />
-              </IconButton>
-            </BigTooltip>
+                <IconButton
+                  href={site.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <LaunchSharpIcon />
+                </IconButton>
+              </BigTooltip>
+            )}
             {site.srcCode && (
               <BigTooltip
                 title={
