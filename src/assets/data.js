@@ -238,7 +238,7 @@ export const sites = [
     category: ["side", "work", "beta"],
     description:
       "For a job interview I made this basic todo list showing my skills in Material UI and React.  This was back when I was less experienced and I was on a time crunch so it still needs advanced functionality (needs to add todos, remove them, and save them for future reference.",
-    srcCode: "https://github.com/brighamband/material-todo",
+    srcCode: "https://github.com/brighamband/mui-todo",
   },
   {
     name: "Silver Fund Visitor Site",
