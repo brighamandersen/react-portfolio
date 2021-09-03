@@ -125,7 +125,7 @@ export const sites = [
   },
   {
     name: "NBA Insider Hub",
-    url: "https://bball.brighamband.com",
+    url: "https://nba.brighamband.com",
     screenshot: null,
     category: "school",
     description:
