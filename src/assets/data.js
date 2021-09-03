@@ -99,11 +99,19 @@ export const sites = [
     srcCode: "https://github.com/Pecos-Solutions/pecos",
   },
   {
+    name: "Silver Fund Web App",
+    url: "https://47fund.brighamband.com",
+    category: ["work", "side"],
+    description:
+      "Silver Fund Web App - A Stocks/Trades Performance Tracker/Predictor Site.  I created this while working as a Software Engineer for Silver Fund (BYU's MBA Finance Program) during the second half of 2020.  After I left the project broke, so I recreated the front end side of things on my domain as a side project.",
+    srcCode: "FIXME",
+  },
+  {
     name: "VBB Mentoring Portal",
     url: "https://vbb.brighamband.com",
     category: ["work", "side"],
     description:
-      "International Mentoring Booking Site used by Nike and Oracle.  I did full stack development on this project, but focused primarily on front end.  After I left the project broke, so I recreated the front end side of things on my domain as a side project.",
+      "International Mentoring Booking Site used by Nike and Oracle.  I did full stack development on this project, but focused primarily on front end.  After I left this project also broke, so I likewise recreated the front end side of things on my domain as a side project.",
     srcCode: "https://github.com/brighamband/vbb-portal",
   },
   {
@@ -153,7 +161,7 @@ export const sites = [
   },
   {
     name: "Simple Counter",
-    url: "https://brighamband.github.io/simple-counter",
+    url: "https://counter.brighamband.com",
     screenshot: null,
     category: "side",
     description:
@@ -162,7 +170,7 @@ export const sites = [
   },
   {
     name: "Simple Calculator",
-    url: "https://brighamband.github.io/simple-calculator",
+    url: "https://calculator.brighamband.com",
     screenshot: null,
     category: "side",
     description:
@@ -180,7 +188,7 @@ export const sites = [
   },
   {
     name: "K9 Directory",
-    url: "https://brighamband.github.io/k9-directory",
+    url: "https://k9.brighamband.com",
     screenshot: null,
     category: "side",
     description:
@@ -225,7 +233,7 @@ export const sites = [
   },
   {
     name: "Material Todo",
-    url: "https://brighamband.github.io/material-todo",
+    url: "https://mui-todo.brighamband.com",
     screenshot: null,
     category: ["side", "work", "beta"],
     description:
@@ -243,7 +251,7 @@ export const sites = [
   },
   {
     name: "No End Insight",
-    url: "https://nei.brighamband.com",
+    url: "https://insight.brighamband.com",
     screenshot: null,
     category: ["school", "side", "beta"],
     description:
@@ -268,7 +276,22 @@ export const sites = [
       "Sick of going in-person to the store just to see their selection?  This site showcases a grocery store and their unique product offering, allowing users to search for specific items, then add desired ones to their cart.  Made using VueJS.",
     srcCode: "https://github.com/brighamband/groceries",
   },
-
+  {
+    name: "Photo Bomb",
+    url: null,
+    category: "school",
+    description:
+      "Photos uploader, sharer, and viewer.  Now deprecated since previous hosting subscription expired.",
+    srcCode: "https://github.com/brighamband/photobomb",
+  },
+  {
+    name: "Museum of Ordinary Objects",
+    url: null,
+    category: "school",
+    description:
+      "Random picture uploader/viewer that introduced me to MongoDB.  Now deprecated since previous hosting subscription expired.",
+    srcCode: "https://github.com/brighamband/museum",
+  },
   {
     name: "Say Hello Greeter",
     url: "https://codepen.io/brighamband/pen/qBrxPgg",
@@ -288,29 +311,6 @@ export const sites = [
     srcCode: "https://github.com/brighamband/portfolio",
   },
 ];
-
-// SITES TO ADD EVENTUALLY
-// {
-//     name: 'Museum of Ordinary Objects',
-//     url: 'https://museum.brighamband.com',
-//     category: 'school',
-//     description: '',
-//     srcCode: '',
-// },
-// {
-//     name: 'Photo Bomb',
-//     url: 'https://photobomb.brighamband.com/',
-//     category: 'side',
-//     description: 'Photos uploader, sharer, and viewer',
-//     srcCode: 'FIXME',
-// },
-// {
-//     name: 'Silver Fund Web App',
-//     url: 'https://47fund.byu.edu',
-//     category: 'work',
-//     description: 'Silver Fund Web App - A Stocks/Trades Performance Tracker/Predictor Site.  I created this while working as a Software Engineer for Silver Fund (BYU's MBA Finance Program) during the second half of 2020.",
-//     srcCode: 'FIXME',
-// },
 
 const fullSize = { width: "100%", height: "100%" };
 
