@@ -104,7 +104,7 @@ export const sites = [
     category: ["work", "side"],
     description:
       "Silver Fund Web App - A Stocks/Trades Performance Tracker/Predictor Site.  I created this while working as a Software Engineer for Silver Fund (BYU's MBA Finance Program) during the second half of 2020.  After I left the project broke, so I recreated the front end side of things on my domain as a side project.",
-    srcCode: "FIXME",
+    srcCode: "https://github.com/brighamband/47fund",
   },
   {
     name: "VBB Mentoring Portal",
