@@ -9,6 +9,7 @@ import {
 import profile from "../assets/profile.jpg";
 import { BigTooltip, PageTop, WebVideo } from "../global";
 import YouTubeIcon from "@material-ui/icons/YouTube";
+import { latestVidContent } from "../assets/data";
 
 const useLocalStyles = makeStyles(() => ({
   profileImg: {
@@ -59,14 +60,9 @@ const Home = () => {
               </IconButton>
             </BigTooltip>
           </h2>
-          <WebVideo
-            title="Web Dev (HTML/CSS) Crash Course"
-            url="https://www.youtube.com/embed/vGIRW00pB9w"
-          />
-          <WebVideo
-            title="Web Dev Snapshot"
-            url="https://www.youtube.com/embed/jSeLgZsF5_U"
-          />
+          {latestVidContent.map((vid) => (
+            <WebVideo key={vid.url} title={vid.title} url={vid.url} />
+          ))}
         </Box>
       </Container>
     </main>

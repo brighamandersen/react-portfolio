@@ -390,9 +390,25 @@ export const languages = [
     className: "devicon-cplusplus-plain-wordmark colored",
     searchUrl: `${baseSearchUrl}c-plus-plus`,
   },
-  // {
-  //   name: "C",
-  //   className: "devicon-c-plain-wordmark colored",
-  // searchUrl: `${baseSearchUrl}c`,
-  // },
+  {
+    name: "C",
+    className: "devicon-c-plain-wordmark colored",
+    searchUrl: `${baseSearchUrl}&language=c`,
+  },
+];
+
+/* List of my latest youtube videos with embed links - used on Home page */
+export const latestVidContent = [
+  {
+    title: "Web Dev (JavaScript) Crash Course 2.0",
+    url: "https://www.youtube.com/embed/UJC2Gyaxd_s",
+  },
+  {
+    title: "Web Dev (HTML/CSS) Crash Course 1.0",
+    url: "https://www.youtube.com/embed/vGIRW00pB9w",
+  },
+  {
+    title: "Web Dev Snapshot",
+    url: "https://www.youtube.com/embed/jSeLgZsF5_U",
+  },
 ];
