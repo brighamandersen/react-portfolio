@@ -19,17 +19,33 @@ import adminDashboardFilterUsersShot from "../assets/designs/admin-dashboard-fil
 import advancedSearchShot from "../assets/designs/AdvancedSearch.png";
 import clerkDashboardShot from "../assets/designs/clerk-dashboard.jpeg";
 import contactShot from "../assets/designs/contact.jpeg";
-import vbbDashboard from "../assets/designs/DashboardDesktopWithSessions.png";
+import vbbDashboardShot from "../assets/designs/DashboardDesktopWithSessions.png";
 import documentManagementShot from "../assets/designs/document-management.jpeg";
 import sfHomeShot from "../assets/designs/Home1.5-HistorySlider.png";
 import landingShot from "../assets/designs/landing.jpeg";
-import loginShot from "../assets/designs/login-desktop.jpeg";
+import pecosLoginShot from "../assets/designs/pecos-login-desktop.jpeg";
 import notFoundShot from "../assets/designs/not-found.png";
 import sfHistoryShot from "../assets/designs/OurHistory1.4.png";
 import quickSearchShot from "../assets/designs/QuickSearch.png";
 import recordsTableShot from "../assets/designs/records-table.png";
 import recordsShot from "../assets/designs/records.png";
 import registerShot from "../assets/designs/register.png";
+import scoreboardShot from "../assets/designs/scoreboard.png";
+import jokesterShot from "../assets/designs/jokester.png";
+import jokesterPopupShot from "../assets/designs/jokester-popup.png";
+import vbbBookingShot from "../assets/designs/BookingDesktop.png";
+import neiFeedShot from "../assets/designs/feed-desktop.jpeg";
+import sfFundObjectivesShot from "../assets/designs/FundObjectives1.4.png";
+import photographyHomeShot from "../assets/designs/home-desktop.jpeg";
+import neiLoginShot from "../assets/designs/nei-login-desktop.jpeg";
+import nbaInsiderHubShot from "../assets/designs/nba-ih-desktop.jpeg";
+import sfPositionsHistoryShot from "../assets/designs/PositionsHistoryPercent.png";
+import sfPositionsSnapshotShot from "../assets/designs/PositionsSnapshot$.png";
+import vbbUnbookingShot from "../assets/designs/UnbookingDesktop.png";
+import vbbSigninMobileShot from "../assets/designs/VBBSigninMobile.png";
+import frenchToast1Shot from "../assets/designs/FrenchToastProcessPaper-1.png";
+import frenchToast2Shot from "../assets/designs/FrenchToastProcessPaper-2.png";
+
 
 /* List of pages on this portfolio website */
 export const pages = [
@@ -74,17 +90,32 @@ export const designShots = [
   advancedSearchShot,
   clerkDashboardShot,
   contactShot,
-  vbbDashboard,
+  vbbDashboardShot,
   documentManagementShot,
   sfHomeShot,
   landingShot,
-  loginShot,
+  pecosLoginShot,
   notFoundShot,
   sfHistoryShot,
   quickSearchShot,
   recordsTableShot,
   recordsShot,
   registerShot,
+  scoreboardShot,
+  jokesterShot,
+  jokesterPopupShot,
+  vbbBookingShot,
+  neiFeedShot,
+  sfFundObjectivesShot,
+  photographyHomeShot,
+  neiLoginShot,
+  nbaInsiderHubShot,
+  sfPositionsHistoryShot,
+  sfPositionsSnapshotShot,
+  vbbUnbookingShot,
+  vbbSigninMobileShot,
+  frenchToast1Shot,
+  frenchToast2Shot
 ];
 
 /* List of the websites I've made */
