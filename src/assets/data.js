@@ -12,6 +12,19 @@ import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
 import Designs from "../routes/Designs";
+import scoreboardShot from "../assets/designs/scoreboard.png";
+import jokesterShot from "../assets/designs/jokester.png";
+import jokesterPopupShot from "../assets/designs/jokester-popup.png";
+import vbbBookingShot from "../assets/designs/BookingDesktop.png";
+import neiFeedShot from "../assets/designs/feed-desktop.jpeg";
+import sfFundObjectivesShot from "../assets/designs/FundObjectives1.4.png";
+import photographyHomeShot from "../assets/designs/home-desktop.jpeg";
+import neiLoginShot from "../assets/designs/nei-login-desktop.jpeg";
+import nbaInsiderHubShot from "../assets/designs/nba-ih-desktop.jpeg";
+import sfPositionsHistoryShot from "../assets/designs/PositionsHistoryPercent.png";
+import sfPositionsSnapshotShot from "../assets/designs/PositionsSnapshot$.png";
+import vbbUnbookingShot from "../assets/designs/UnbookingDesktop.png";
+import vbbSigninMobileShot from "../assets/designs/VBBSigninMobile.png";
 import adminDashboardAllUsersShot from "../assets/designs/admin-dashboard-all-users.jpeg";
 import adminDashboardCreateUserShot from "../assets/designs/admin-dashboard-create-user.jpeg";
 import adminDashboardEditUserShot from "../assets/designs/admin-dashboard-edit-user.jpeg";
@@ -30,19 +43,6 @@ import quickSearchShot from "../assets/designs/QuickSearch.png";
 import recordsTableShot from "../assets/designs/records-table.png";
 import recordsShot from "../assets/designs/records.png";
 import registerShot from "../assets/designs/register.png";
-import scoreboardShot from "../assets/designs/scoreboard.png";
-import jokesterShot from "../assets/designs/jokester.png";
-import jokesterPopupShot from "../assets/designs/jokester-popup.png";
-import vbbBookingShot from "../assets/designs/BookingDesktop.png";
-import neiFeedShot from "../assets/designs/feed-desktop.jpeg";
-import sfFundObjectivesShot from "../assets/designs/FundObjectives1.4.png";
-import photographyHomeShot from "../assets/designs/home-desktop.jpeg";
-import neiLoginShot from "../assets/designs/nei-login-desktop.jpeg";
-import nbaInsiderHubShot from "../assets/designs/nba-ih-desktop.jpeg";
-import sfPositionsHistoryShot from "../assets/designs/PositionsHistoryPercent.png";
-import sfPositionsSnapshotShot from "../assets/designs/PositionsSnapshot$.png";
-import vbbUnbookingShot from "../assets/designs/UnbookingDesktop.png";
-import vbbSigninMobileShot from "../assets/designs/VBBSigninMobile.png";
 import frenchToast1Shot from "../assets/designs/FrenchToastProcessPaper-1.png";
 import frenchToast2Shot from "../assets/designs/FrenchToastProcessPaper-2.png";
 
@@ -83,6 +83,19 @@ export const pages = [
 
 /* List of screenshots of designs I've made */
 export const designShots = [
+  scoreboardShot,
+  jokesterShot,
+  jokesterPopupShot,
+  vbbBookingShot,
+  neiFeedShot,
+  sfFundObjectivesShot,
+  photographyHomeShot,
+  neiLoginShot,
+  nbaInsiderHubShot,
+  sfPositionsHistoryShot,
+  sfPositionsSnapshotShot,
+  vbbUnbookingShot,
+  vbbSigninMobileShot,
   adminDashboardAllUsersShot,
   adminDashboardCreateUserShot,
   adminDashboardEditUserShot,
@@ -101,19 +114,6 @@ export const designShots = [
   recordsTableShot,
   recordsShot,
   registerShot,
-  scoreboardShot,
-  jokesterShot,
-  jokesterPopupShot,
-  vbbBookingShot,
-  neiFeedShot,
-  sfFundObjectivesShot,
-  photographyHomeShot,
-  neiLoginShot,
-  nbaInsiderHubShot,
-  sfPositionsHistoryShot,
-  sfPositionsSnapshotShot,
-  vbbUnbookingShot,
-  vbbSigninMobileShot,
   frenchToast1Shot,
   frenchToast2Shot
 ];
