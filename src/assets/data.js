@@ -431,6 +431,18 @@ export const languages = [
 /* List of my latest youtube videos with embed links - used on Home page */
 export const latestVidContent = [
   {
+    title: "Ep3 - How to Use Components in Figma",
+    url: "https://www.youtube.com/embed/McgMi2Pf4l4",
+  },
+  {
+    title: "Ep2 - How to Use Groups in Figma",
+    url: "https://www.youtube.com/embed/LjgIJtvU-nE",
+  },
+  {
+    title: "Ep1 - How to Use Frames in Figma",
+    url: "https://www.youtube.com/embed/oixLZtf-ct8",
+  },
+  {
     title: "Web Dev (JavaScript) Crash Course 2.0",
     url: "https://www.youtube.com/embed/UJC2Gyaxd_s",
   },
