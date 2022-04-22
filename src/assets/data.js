@@ -392,6 +392,11 @@ export const languages = [
     searchUrl: `${baseSearchUrl}vue`,
   },
   {
+    name: "Flutter",
+    className: "devicon-flutter-plain colored",
+    searchUrl: `${baseSearchUrl}&language=dart`,
+  },
+  {
     name: "HTML",
     className: "devicon-html5-plain-wordmark colored",
     searchUrl: `${baseSearchUrl}html`,
