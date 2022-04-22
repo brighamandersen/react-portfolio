@@ -6,14 +6,14 @@ import {
   IconButton,
   makeStyles,
 } from "@material-ui/core";
-import { languages } from "../assets/data";
-import resume from "../assets/resume.png";
+import { languages, RESUME_S3_URL } from "../assets/data";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
 const useLocalStyles = makeStyles(() => ({
-  resumeImg: {
+  resumePdf: {
+    height: "80vh",
     width: "100%",
-    boxShadow: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)",
+    border: 'none'
   },
   languagesWrapper: {
     "& > div": {
@@ -33,7 +33,7 @@ const Resume = () => {
     <main>
       <Container maxWidth="md">
         <PageTop pageTitle="My Resume" />
-        <img src={resume} alt="Resume" className={local.resumeImg} />
+        <iframe src={RESUME_S3_URL} title="Resume - Brigham Andersen" className={local.resumePdf} />
         <Box my={8}>
           <h2>My Top Languages</h2>
           <Grid container spacing={5} className={local.languagesWrapper}>
