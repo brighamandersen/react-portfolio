@@ -281,6 +281,14 @@ export const sites = [
     srcCode: null,
   },
   {
+    name: "Timekeeper",
+    url: "https://timekeeper.brighamband.com",
+    screenshot: null,
+    category: ["side", "beta"],
+    description: "A modern redesign of online-stopwatch.com.  Makes it easy to keep a countdown or stopwatch going in the background of your browser.",
+    srcCode: "https://github.com/brighamband/timekeeper"
+  },
+  {
     name: "No End Insight",
     url: "https://insight.brighamband.com",
     screenshot: null,
