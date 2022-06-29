@@ -444,6 +444,10 @@ export const languages = [
 /* List of my latest youtube videos with embed links - used on Home page */
 export const latestVidContent = [
   {
+    title: "Handshaker Bot - Automated Job Applying",
+    url: "https://www.youtube.com/embed/34GiNbJ4ECc",
+  },
+  {
     title: "Ep3 - How to Use Components in Figma",
     url: "https://www.youtube.com/embed/McgMi2Pf4l4",
   },
