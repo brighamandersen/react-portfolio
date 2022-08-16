@@ -453,7 +453,7 @@ export const languages = [
 /* List of my latest youtube videos with embed links - used on Home page */
 export const latestVidContent = [
   {
-    title: "Handshaker Bot - Automated Job Applying",
+    title: "Commandshake Bot - Automated Job Applying",
     url: "https://www.youtube.com/embed/34GiNbJ4ECc",
   },
   {
