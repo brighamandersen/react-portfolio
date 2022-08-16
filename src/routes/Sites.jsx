@@ -25,7 +25,7 @@ const Sites = () => {
   return (
     <main>
       <Container maxWidth="md">
-        <PageTop pageTitle="My Websites" />
+        <PageTop pageTitle="My Websites & Projects" />
         {sites.map((site) => (
           <Card key={site.url} className={local.card}>
             <h2>{site.name}</h2>

@@ -121,6 +121,14 @@ export const designShots = [
 /* List of the websites I've made */
 export const sites = [
   {
+    name: "Command Shake",
+    screenshot: null,
+    category: ["side"],
+    description:
+      "A script that automatically applies to jobs for me.  Web scrapes the BYU Handshake website when you search for any job and applies to all the jobs with quick apply.  Written in Python.",
+    srcCode: "https://github.com/brighamband/commandshake",
+  },
+  {
     name: "Pecos Solutions",
     url: "https://pecos-solutions.com",
     screenshot: null,
@@ -140,6 +148,7 @@ export const sites = [
   {
     name: "VBB Mentoring Portal",
     url: "https://vbb.brighamband.com",
+    screenshot: null,
     category: ["work", "side"],
     description:
       "International Mentoring Booking Site used by Nike and Oracle.  I did full stack development on this project, but focused primarily on front end.  This project has been unstable since I left, so in the cases that the Official Website (https://portal.villagebookbuilders.org) is down or people want to take a look at site features w/o making an account, I recreated the front end side of things on my domain as a side project.",
