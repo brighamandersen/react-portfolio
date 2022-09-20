@@ -35,9 +35,9 @@ const Home = () => {
               <i> wasting time and money</i>.
             </p>
             <p>
-            I can't stop thinking of how we can use technology to boost business productivity, so I've built a career for myself in software engineering and business. 
-            My passion and skills have helped numerous start-ups along with big name companies like Nike, Oracle, Chick-fil-A, and McDonald's. 
-            I consider this career to be my gift to the world.
+              I can't stop thinking of how we can use technology to boost business productivity, so I've built a career for myself in software engineering and business.
+              My passion and skills have helped numerous start-ups along with big name companies like Nike, Oracle, Chick-fil-A, and McDonald's.
+              I consider this career to be my gift to the world.
             </p>
             <p>Let's discuss how I can give my all to help you!</p>
           </Grid>

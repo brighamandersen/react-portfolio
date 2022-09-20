@@ -1,8 +1,8 @@
-import React from "react";
 import PropTypes from "prop-types";
 import { Box, Hidden, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import { COLORS } from "./global";
+import { Page } from "./assets/data";
 
 const useLocalStyles = makeStyles((theme) => ({
   iconWrapper: {
@@ -39,8 +39,13 @@ const useLocalStyles = makeStyles((theme) => ({
   },
 }));
 
-const Navbar = ({ pages }) => {
+interface Props {
+  pages: Page[];
+}
+
+const Navbar = (props: Props) => {
   const local = useLocalStyles();
+  const { pages } = props;
 
   return (
     <nav className={local.navbar}>

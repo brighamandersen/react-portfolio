@@ -47,7 +47,7 @@ import frenchToast1Shot from "../assets/designs/FrenchToastProcessPaper-1.png";
 import frenchToast2Shot from "../assets/designs/FrenchToastProcessPaper-2.png";
 import { ReactNode } from "react";
 
-interface Page {
+export interface Page {
   name: string;
   component: () => JSX.Element;
   path: string;

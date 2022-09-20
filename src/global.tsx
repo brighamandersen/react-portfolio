@@ -1,5 +1,4 @@
 /* This file contains global components that are reused across the site */
-import React from "react";
 import PropTypes from "prop-types";
 import { Box, makeStyles, Tooltip } from "@material-ui/core";
 import { createTheme } from "@material-ui/core/styles";
@@ -41,15 +40,19 @@ export const useGlobalStyles = makeStyles(() => ({
 
 const documentTitleTail = " - Brigham Andersen's Portfolio";
 
-export const PageTop = ({ pageTitle }) => {
+interface PageTopProps {
+  pageTitle: string;
+}
+
+export const PageTop = (props: PageTopProps) => {
   const global = useGlobalStyles();
 
   return (
     <>
       <Helmet>
-        <title>{`${pageTitle}${documentTitleTail}`}</title>
+        <title>{`${props.pageTitle}${documentTitleTail}`}</title>
       </Helmet>
-      <h1 className={global.pageHeader}>{pageTitle}</h1>
+      <h1 className={global.pageHeader}>{props.pageTitle}</h1>
     </>
   );
 };
@@ -58,16 +61,21 @@ PageTop.propTypes = {
   pageTitle: PropTypes.string.isRequired,
 };
 
-export const BigTooltip = ({ title, children }) => {
+interface BigTooltipProps {
+  title: string;
+  children: React.ReactElement<any, any>;
+}
+
+export const BigTooltip = (props: BigTooltipProps) => {
   const global = useGlobalStyles();
 
   return (
     <Tooltip
-      title={<p>{title}</p>}
+      title={<p>{props.title}</p>}
       classes={{ tooltip: global.longTooltip }}
       arrow
     >
-      {children}
+      {props.children}
     </Tooltip>
   );
 };
@@ -77,13 +85,18 @@ BigTooltip.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export const WebVideo = ({ title, url }) => (
+interface WebVideoProps {
+  title: string;
+  url: string;
+}
+
+export const WebVideo = (props: WebVideoProps) => (
   <Box my={5} height={500}>
     <iframe
       width="100%"
       height="100%"
-      title={title}
-      src={url}
+      title={props.title}
+      src={props.url}
       allowFullScreen
     />
   </Box>
