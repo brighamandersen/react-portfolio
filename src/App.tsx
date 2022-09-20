@@ -11,7 +11,7 @@ import { theme, useGlobalStyles } from "./global";
 import { pages } from "./assets/data";
 import cornerLogo from "./assets/corner-logo.png";
 
-const App = () => {
+function App() {
   const global = useGlobalStyles();
 
   return (
@@ -37,6 +37,6 @@ const App = () => {
       </Hidden>
     </ThemeProvider>
   );
-};
+}
 
 export default App;
