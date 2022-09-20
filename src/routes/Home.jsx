@@ -28,20 +28,18 @@ const Home = () => {
         <Grid container spacing={5} justifyContent="center" alignItems="center">
           <Grid item xs={12} md={8}>
             <p>
-              Hi, my name is <strong>Brigham Andersen</strong>. I'm a student at
-              Brigham Young University getting a Bachelor's of Science in
-              Computer Science: Software Engineering and minoring in Business.
+              Hi, I'm <strong>Brigham Andersen</strong> and <u>I'm addicted to giving my all</u>.
             </p>
             <p>
               I love solving the problem we hate most --
-              <i> wasting time and money</i>. This passion drives my career,
-              centered on using technology to boost business productivity.
+              <i> wasting time and money</i>.
             </p>
             <p>
-              I'm addicted to giving my all and am looking forward to combining
-              that passion with my skills in software engineering and business
-              to help you!
+            I can't stop thinking of how we can use technology to boost business productivity, so I've built a career for myself in software engineering and business. 
+            My passion and skills have helped numerous startups along with big name companies like Nike, Oracle, Chick-fil-A, and McDonald's. 
+            I consider this career to be my gift to the world.
             </p>
+            <p>Let's discuss how I can give my all to help you!</p>
           </Grid>
           <Grid item xs={8} md={4}>
             <img src={profile} alt="Me" className={local.profileImg} />
