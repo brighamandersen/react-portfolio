@@ -1,6 +1,6 @@
 /* This file contains global components that are reused across the site */
-import { Box, makeStyles, Tooltip } from "@mui/material";
-import { createTheme } from "@mui/material/styles";
+import { Box, makeStyles, Tooltip } from "@material-ui/core";
+import { createTheme } from "@material-ui/core/styles";
 import { Helmet } from "react-helmet";
 import { FC } from "react";
 

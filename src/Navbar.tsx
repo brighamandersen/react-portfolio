@@ -1,11 +1,10 @@
-import { Box, Hidden } from "@mui/material";
-import { makeStyles, Theme } from "@mui/material/styles";
+import { Box, Hidden, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import { COLORS } from "./global";
 import { Page } from "./assets/data";
 import { FC } from "react";
 
-const useLocalStyles: any = makeStyles((theme: Theme) => ({
+const useLocalStyles: any = makeStyles((theme) => ({
   iconWrapper: {
     display: "inherit",
     alignSelf: "center",
