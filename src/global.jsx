@@ -1,4 +1,4 @@
-/* This file contains global components that are reused across the site */
+/* This file contains global components that are re-used across the site */
 import React from "react";
 import PropTypes from "prop-types";
 import { Box, makeStyles, Tooltip } from "@material-ui/core";
@@ -9,6 +9,7 @@ export const theme = createTheme({
   palette: {
     primary: { main: "#215481" },
     secondary: { main: "#808080" },
+    white: "#fff",
   },
   typography: {
     fontFamily: "Rubik",
