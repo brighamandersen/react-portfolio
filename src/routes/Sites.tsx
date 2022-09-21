@@ -1,4 +1,3 @@
-import React from "react";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, IconButton, makeStyles } from "@material-ui/core";

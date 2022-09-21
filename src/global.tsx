@@ -1,5 +1,4 @@
 /* This file contains global components that are reused across the site */
-import React from "react";
 import PropTypes from "prop-types";
 import { Box, makeStyles, Tooltip } from "@material-ui/core";
 import { createTheme } from "@material-ui/core/styles";

@@ -1,4 +1,3 @@
-import React from "react";
 import { IconButton, Grid, Container } from "@material-ui/core";
 import { resources } from "../assets/data";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";

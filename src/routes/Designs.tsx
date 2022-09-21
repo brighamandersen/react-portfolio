@@ -1,4 +1,3 @@
-import React from "react";
 import { Grid, Container, makeStyles } from "@material-ui/core";
 import { PageTop } from "../global";
 import { designShots } from "../assets/data";
