@@ -1,8 +1,8 @@
 /* This file contains global components that are reused across the site */
-import PropTypes from "prop-types";
-import { Box, makeStyles, Tooltip } from "@material-ui/core";
-import { createTheme } from "@material-ui/core/styles";
+import { Box, makeStyles, Tooltip } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 import { Helmet } from "react-helmet";
+import { FC } from "react";
 
 export const theme = createTheme({
   palette: {
@@ -19,7 +19,7 @@ export const COLORS = {
   whiteGray: "#f7f7f7",
 };
 
-export const useGlobalStyles = makeStyles(() => ({
+export const useGlobalStyles: any = makeStyles(() => ({
   pageHeader: {
     fontSize: 40,
   },
@@ -57,32 +57,23 @@ export const PageTop = (props: PageTopProps) => {
   );
 };
 
-PageTop.propTypes = {
-  pageTitle: PropTypes.string.isRequired,
-};
-
 interface BigTooltipProps {
-  title: string;
-  children: React.ReactElement<any, any>;
+  title: string | React.ReactElement;
+  children: React.ReactElement;
 }
 
-export const BigTooltip = (props: BigTooltipProps) => {
+export const BigTooltip: FC<BigTooltipProps> = ({ title, children }) => {
   const global = useGlobalStyles();
 
   return (
     <Tooltip
-      title={<p>{props.title}</p>}
+      title={<p>{title}</p>}
       classes={{ tooltip: global.longTooltip }}
       arrow
     >
-      {props.children}
+      {children}
     </Tooltip>
   );
-};
-
-BigTooltip.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node.isRequired,
 };
 
 interface WebVideoProps {
@@ -90,19 +81,14 @@ interface WebVideoProps {
   url: string;
 }
 
-export const WebVideo = (props: WebVideoProps) => (
+export const WebVideo: FC<WebVideoProps> = ({ title, url }) => (
   <Box my={5} height={500}>
     <iframe
       width="100%"
       height="100%"
-      title={props.title}
-      src={props.url}
+      title={title}
+      src={url}
       allowFullScreen
     />
   </Box>
 );
-
-WebVideo.propTypes = {
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string.isRequired,
-};

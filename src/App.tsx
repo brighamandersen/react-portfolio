@@ -1,4 +1,3 @@
-import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,7 +5,8 @@ import {
   Redirect,
 } from "react-router-dom";
 import Navbar from "./Navbar";
-import { Hidden, ThemeProvider } from "@material-ui/core";
+import Hidden from '@mui/material/Hidden';
+import { ThemeProvider } from '@mui/styles';
 import { theme, useGlobalStyles } from "./global";
 import { pages } from "./assets/data";
 import cornerLogo from "./assets/corner-logo.png";

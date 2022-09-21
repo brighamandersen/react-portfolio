@@ -1,10 +1,11 @@
-import PropTypes from "prop-types";
-import { Box, Hidden, makeStyles } from "@material-ui/core";
+import { Box, Hidden } from "@mui/material";
+import { makeStyles, Theme } from "@mui/material/styles";
 import { NavLink } from "react-router-dom";
 import { COLORS } from "./global";
 import { Page } from "./assets/data";
+import { FC } from "react";
 
-const useLocalStyles = makeStyles((theme) => ({
+const useLocalStyles: any = makeStyles((theme: Theme) => ({
   iconWrapper: {
     display: "inherit",
     alignSelf: "center",
@@ -43,16 +44,14 @@ interface Props {
   pages: Page[];
 }
 
-const Navbar = (props: Props) => {
+const Navbar: FC<Props> = ({ pages }) => {
   const local = useLocalStyles();
-  const { pages } = props;
 
   return (
     <nav className={local.navbar}>
       {pages.map((page) => (
         <NavLink
           key={page.path}
-          activeClassName={local.active}
           exact={page.path === "/"}
           to={page.path}
         >
@@ -69,7 +68,3 @@ const Navbar = (props: Props) => {
 };
 
 export default Navbar;
-
-Navbar.propTypes = {
-  pages: PropTypes.arrayOf(PropTypes.object).isRequired,
-};

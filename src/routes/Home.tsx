@@ -1,17 +1,16 @@
-import React from "react";
 import {
   Box,
   Container,
   Grid,
   IconButton,
   makeStyles,
-} from "@material-ui/core";
+} from "@mui/material";
 import profile from "../assets/profile.jpg";
 import { BigTooltip, PageTop, WebVideo } from "../global";
-import YouTubeIcon from "@material-ui/icons/YouTube";
+import YouTubeIcon from "@mui/icons-material/YouTube";
 import { latestVidContent } from "../assets/data";
 
-const useLocalStyles = makeStyles(() => ({
+const useLocalStyles: any = makeStyles(() => ({
   profileImg: {
     width: "100%",
     borderRadius: "50%",

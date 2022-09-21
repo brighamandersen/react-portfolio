@@ -4,11 +4,11 @@ import {
   Grid,
   IconButton,
   makeStyles,
-} from "@material-ui/core";
+} from "@mui/material";
 import { languages, RESUME_S3_URL } from "../assets/data";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
-const useLocalStyles = makeStyles(() => ({
+const useLocalStyles: any = makeStyles(() => ({
   resumePdf: {
     height: "80vh",
     width: "100%",

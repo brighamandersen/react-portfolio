@@ -1,8 +1,8 @@
-import { Grid, Container, makeStyles } from "@material-ui/core";
+import { Grid, Container, makeStyles } from "@mui/material";
 import { PageTop } from "../global";
 import { designShots } from "../assets/data";
 
-const useLocalStyles = makeStyles(() => ({
+const useLocalStyles: any = makeStyles(() => ({
   screenshot: {
     width: "100%",
     boxShadow: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)",
