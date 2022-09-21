@@ -1,10 +1,12 @@
 /* This file contains global components that are reused across the site */
-import { Box, makeStyles, Tooltip } from "@material-ui/core";
-import { createTheme } from "@material-ui/core/styles";
+import { Box, Tooltip } from "@mui/material";
+import { makeStyles } from '@mui/styles';
+import { createTheme } from "@mui/material/styles";
 import { Helmet } from "react-helmet";
 import { FC } from "react";
+import { Theme } from "@mui/material";
 
-export const theme = createTheme({
+export const theme: Theme = createTheme({
   palette: {
     primary: { main: "#215481" },
     secondary: { main: "#808080" },

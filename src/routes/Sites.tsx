@@ -1,10 +1,12 @@
-import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import { Card, Container, IconButton, makeStyles } from "@material-ui/core";
+import LaunchSharpIcon from "@mui/icons-material/LaunchSharp";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import { Card, Container, IconButton } from "@mui/material";
+import { makeStyles } from '@mui/styles';
 import { sites } from "../assets/data";
 import { BigTooltip, COLORS, PageTop } from "../global";
+import { Theme } from "@mui/material";
 
-const useLocalStyles: any = makeStyles((theme) => ({
+const useLocalStyles: any = makeStyles((theme: Theme) => ({
   header: {
     color: COLORS.white,
   },

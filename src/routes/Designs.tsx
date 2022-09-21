@@ -1,4 +1,5 @@
-import { Grid, Container, makeStyles } from "@material-ui/core";
+import { Grid, Container } from "@mui/material";
+import { makeStyles } from '@mui/styles';
 import { PageTop } from "../global";
 import { designShots } from "../assets/data";
 

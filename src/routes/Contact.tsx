@@ -1,4 +1,4 @@
-import { IconButton, Grid, Container } from "@material-ui/core";
+import { IconButton, Grid, Container } from "@mui/material";
 import { resources } from "../assets/data";
 import { BigTooltip, PageTop, useGlobalStyles } from "../global";
 
