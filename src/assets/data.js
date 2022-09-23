@@ -491,9 +491,9 @@ export const latestVidContent = [
   },
 ];
 
-export const RESUME_S3_URL = "https://brig-bucket.s3.us-east-2.amazonaws.com/resume-brigham-andersen.pdf#view=fit";
+export const RESUME_S3_URL = "https://brig-bucket.s3.us-east-2.amazonaws.com/Resume - Brigham Andersen.pdf#view=fit";
 
 // Use the URL below instead if you want to disable the download bar
-// export const RESUME_S3_URL = "https://brig-bucket.s3.us-east-2.amazonaws.com/resume-brigham-andersen.pdf#view=fit&toolbar=0";
+// export const RESUME_S3_URL = "https://brig-bucket.s3.us-east-2.amazonaws.com/Resume - Brigham Andersen.pdf#view=fit&toolbar=0";
 // "view=fit" makes one page fit perfectly within the height of the iframe
 // "toolbar=0" removes the toolbar so they can't download the pdf as easily
