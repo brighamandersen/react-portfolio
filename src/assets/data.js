@@ -45,6 +45,8 @@ import recordsShot from "../assets/designs/records.png";
 import registerShot from "../assets/designs/register.png";
 import frenchToast1Shot from "../assets/designs/FrenchToastProcessPaper-1.png";
 import frenchToast2Shot from "../assets/designs/FrenchToastProcessPaper-2.png";
+import joltLabelsPortrait from "../assets/designs/Jolt Labels - Tablet Portrait.png";
+import joltLabelsLandscape from "../assets/designs/Jolt Labels - Tablet Landscape.png";
 
 
 /* List of pages on this portfolio website */
@@ -115,7 +117,9 @@ export const designShots = [
   recordsShot,
   registerShot,
   frenchToast1Shot,
-  frenchToast2Shot
+  frenchToast2Shot,
+  joltLabelsPortrait,
+  joltLabelsLandscape
 ];
 
 /* List of the websites I've made */
