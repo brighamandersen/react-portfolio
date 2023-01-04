@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Container,
@@ -6,20 +5,22 @@ import {
   IconButton,
   makeStyles,
 } from "@material-ui/core";
-import profile from "../assets/profile.jpg";
-import { BigTooltip, PageTop, WebVideo } from "../global";
+import profilePic from "../assets/profile.jpg";
 import YouTubeIcon from "@material-ui/icons/YouTube";
-import { latestVidContent } from "../assets/data";
+import { latestVidContent } from "../data";
+import PageTop from "../components/PageTop";
+import BigTooltip from "../components/BigTooltip";
+import WebVideo from "../components/WebVideo";
 
-const useLocalStyles = makeStyles(() => ({
+const useStyles = makeStyles(() => ({
   profileImg: {
     width: "100%",
     borderRadius: "50%",
   },
 }));
 
-const Home = () => {
-  const local = useLocalStyles();
+export function Home() {
+  const styles = useStyles();
 
   return (
     <main>
@@ -42,7 +43,7 @@ const Home = () => {
             <p>Let's discuss how I can give my all to help you!</p>
           </Grid>
           <Grid item xs={8} md={4}>
-            <img src={profile} alt="Me" className={local.profileImg} />
+            <img src={profilePic} alt="Me" className={styles.profileImg} />
           </Grid>
         </Grid>
         <Box my={8}>

@@ -1,11 +1,9 @@
-import React from "react";
-import { IconButton, Grid, Container } from "@material-ui/core";
-import { resources } from "../assets/data";
-import { BigTooltip, PageTop, useGlobalStyles } from "../global";
+import { IconButton, Grid, Container, makeStyles } from "@material-ui/core";
+import { resources } from "../data";
+import PageTop from "../components/PageTop";
+import BigTooltip from "../components/BigTooltip";
 
-const Contact = () => {
-  const global = useGlobalStyles();
-
+function Contact() {
   return (
     <main>
       <Container maxWidth="md">
@@ -18,7 +16,6 @@ const Contact = () => {
                   href={res.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className={global.noCorners}
                 >
                   {res.icon}
                 </IconButton>

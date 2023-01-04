@@ -1,9 +1,8 @@
-import React from "react";
 import { Grid, Container, makeStyles } from "@material-ui/core";
-import { PageTop } from "../global";
-import { designShots } from "../assets/data";
+import { designShots } from "../data";
+import PageTop from "../components/PageTop";
 
-const useLocalStyles = makeStyles(() => ({
+const useStyles = makeStyles(() => ({
   screenshot: {
     width: "100%",
     boxShadow: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)",
@@ -12,8 +11,8 @@ const useLocalStyles = makeStyles(() => ({
   },
 }));
 
-const Designs = () => {
-  const local = useLocalStyles();
+function Designs() {
+  const styles = useStyles();
 
   return (
     <main>
@@ -25,7 +24,7 @@ const Designs = () => {
               <img
                 src={shot}
                 alt="App Screenshot"
-                className={local.screenshot}
+                className={styles.screenshot}
               />
             </Grid>
           ))}

@@ -1,10 +1,14 @@
-import React from "react";
-import PropTypes from "prop-types";
 import { Box, Hidden, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
-import { COLORS } from "./global";
+import { Page } from "../data";
+import { COLORS } from "../styles/theme";
 
-const useLocalStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
+  navItemContainer: {
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
+  },
   iconWrapper: {
     display: "inherit",
     alignSelf: "center",
@@ -39,22 +43,26 @@ const useLocalStyles = makeStyles((theme) => ({
   },
 }));
 
-const Navbar = ({ pages }) => {
-  const local = useLocalStyles();
+interface Props {
+  pages: Page[]
+}
+
+const Navbar = (props: Props) => {
+  const { pages } = props;
+  const styles = useStyles();
 
   return (
-    <nav className={local.navbar}>
+    <nav className={styles.navbar}>
       {pages.map((page) => (
         <NavLink
           key={page.path}
-          activeClassName={local.active}
           exact={page.path === "/"}
           to={page.path}
         >
           <Box display="flex" justifyContent="space-evenly" alignItems="center">
-            <div className={local.iconWrapper}>{page.icon}</div>
+            <div className={styles.iconWrapper}>{page.icon}</div>
             <Hidden smDown>
-              <div className={local.textWrapper}>{page.name}</div>
+              <div className={styles.textWrapper}>{page.name}</div>
             </Hidden>
           </Box>
         </NavLink>
@@ -64,7 +72,3 @@ const Navbar = ({ pages }) => {
 };
 
 export default Navbar;
-
-Navbar.propTypes = {
-  pages: PropTypes.arrayOf(PropTypes.object).isRequired,
-};

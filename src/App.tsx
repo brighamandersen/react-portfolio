@@ -1,18 +1,27 @@
-import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
-import Navbar from "./Navbar";
-import { Hidden, ThemeProvider } from "@material-ui/core";
-import { theme, useGlobalStyles } from "./global";
-import { pages } from "./assets/data";
+import Navbar from "./components/Navbar";
+import { Hidden, makeStyles, ThemeProvider } from "@material-ui/core";
+import { pages } from "./data";
 import cornerLogo from "./assets/corner-logo.png";
+import { theme } from "./styles/theme";
 
-const App = () => {
-  const global = useGlobalStyles();
+const useStyles = makeStyles(() => ({
+  cornerLogo: {
+    position: "fixed",
+    bottom: 0,
+    right: 0,
+    width: 120,
+    height: 120,
+  },
+}));
+
+function App() {
+  const styles = useStyles();
 
   return (
     <ThemeProvider theme={theme}>
@@ -33,7 +42,7 @@ const App = () => {
         </Switch>
       </Router>
       <Hidden mdDown>
-        <img src={cornerLogo} alt="My Logo" className={global.cornerLogo} />
+        <img src={cornerLogo} alt="My Logo" className={styles.cornerLogo} />
       </Hidden>
     </ThemeProvider>
   );

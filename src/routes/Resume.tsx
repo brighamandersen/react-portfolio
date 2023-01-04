@@ -1,4 +1,3 @@
-import React from "react";
 import {
   Box,
   Container,
@@ -6,10 +5,11 @@ import {
   IconButton,
   makeStyles,
 } from "@material-ui/core";
-import { languages, RESUME_S3_URL } from "../assets/data";
-import { BigTooltip, PageTop, useGlobalStyles } from "../global";
+import { languages, RESUME_S3_URL } from "../data";
+import PageTop from "../components/PageTop";
+import BigTooltip from "../components/BigTooltip";
 
-const useLocalStyles = makeStyles(() => ({
+const useStyles = makeStyles(() => ({
   resumePdf: {
     height: "80vh",
     width: "100%",
@@ -23,20 +23,22 @@ const useLocalStyles = makeStyles(() => ({
       fontSize: 100,
     },
   },
+  noCorners: {
+    borderRadius: 0
+  }
 }));
 
-const Resume = () => {
-  const global = useGlobalStyles();
-  const local = useLocalStyles();
+function Resume() {
+  const styles = useStyles();
 
   return (
     <main>
       <Container maxWidth="md">
         <PageTop pageTitle="My Resume" />
-        <iframe src={RESUME_S3_URL} title="Resume - Brigham Andersen" className={local.resumePdf} />
+        <iframe src={RESUME_S3_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
         <Box my={8}>
           <h2>My Top Languages</h2>
-          <Grid container spacing={5} className={local.languagesWrapper}>
+          <Grid container spacing={5} className={styles.languagesWrapper}>
             {languages.map((lang) => (
               <Grid key={lang.name} item xs={6} sm={4}>
                 <BigTooltip
@@ -50,7 +52,7 @@ const Resume = () => {
                     href={lang.searchUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={global.noCorners}
+                    className={styles.noCorners}
                   >
                     <i className={lang.className} />
                   </IconButton>

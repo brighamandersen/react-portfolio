@@ -1,11 +1,12 @@
-import React from "react";
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, IconButton, makeStyles } from "@material-ui/core";
-import { sites } from "../assets/data";
-import { BigTooltip, COLORS, PageTop } from "../global";
+import { sites } from "../data";
+import PageTop from "../components/PageTop";
+import BigTooltip from "../components/BigTooltip";
+import { COLORS } from "../styles/theme";
 
-const useLocalStyles = makeStyles((theme) => ({
+const useStyles = makeStyles((theme) => ({
   header: {
     color: COLORS.white,
   },
@@ -19,23 +20,23 @@ const useLocalStyles = makeStyles((theme) => ({
   },
 }));
 
-const Sites = () => {
-  const local = useLocalStyles();
+function Sites() {
+  const styles = useStyles();
 
   return (
     <main>
       <Container maxWidth="md">
         <PageTop pageTitle="My Websites & Projects" />
         {sites.map((site) => (
-          <Card key={site.url} className={local.card}>
+          <Card key={site.name} className={styles.card}>
             <h2>{site.name}</h2>
             <p>{site.description}</p>
             {site.url && (
               <BigTooltip
                 title={
                   <>
-                    <h3 className={local.header}>Site:</h3>
-                    <code className={local.url}>{site.url}</code>
+                    <h3 className={styles.header}>Site:</h3>
+                    <code className={styles.url}>{site.url}</code>
                   </>
                 }
               >
@@ -52,8 +53,8 @@ const Sites = () => {
               <BigTooltip
                 title={
                   <>
-                    <h3 className={local.header}>Source Code:</h3>
-                    <code className={local.url}>{site.srcCode}</code>
+                    <h3 className={styles.header}>Source Code:</h3>
+                    <code className={styles.url}>{site.srcCode}</code>
                   </>
                 }
               >
