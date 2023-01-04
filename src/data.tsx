@@ -369,28 +369,22 @@ const fullSize = { width: "100%", height: "100%" };
 /* List of external resources for contacting / discovering more about me */
 export const resources = [
   {
-    name: "Github",
-    tooltip: "Check out my GitHub",
-    link: "https://github.com/brighamband/",
-    icon: <GitHubIcon style={fullSize} />,
-  },
-  {
     name: "LinkedIn",
-    tooltip: "Connect with me on LinkedIn",
-    link: "https://www.linkedin.com/in/brighamband",
     icon: <LinkedInIcon style={fullSize} />,
+    link: "https://www.linkedin.com/in/brighamband",
+    tooltipTitle: "Connect with me on LinkedIn",
   },
   {
     name: "Email",
-    tooltip: "Email brighamband@gmail.com",
-    link: "mailto:brighamband@gmail.com",
     icon: <MailOutlineIcon style={fullSize} />,
+    link: "mailto:brighamband@gmail.com",
+    tooltipTitle: "Email brighamband@gmail.com",
   },
   {
     name: "Phone",
-    tooltip: "Text / Call 385-499-8277",
-    link: "tel:3854998277",
     icon: <PhoneIcon style={fullSize} />,
+    link: "tel:3854998277",
+    tooltipTitle: "Text / Call 385-499-8277",
   },
 ];
 

@@ -2,12 +2,11 @@ import {
   Box,
   Container,
   Grid,
-  IconButton,
   makeStyles,
 } from "@material-ui/core";
 import { languages, RESUME_S3_URL } from "../data";
 import PageTop from "../components/PageTop";
-import BigTooltip from "../components/BigTooltip";
+import IconLink from "../components/IconLink";
 
 const useStyles = makeStyles(() => ({
   resumePdf: {
@@ -41,22 +40,15 @@ function Resume() {
           <Grid container spacing={5} className={styles.languagesWrapper}>
             {languages.map((lang) => (
               <Grid key={lang.name} item xs={6} sm={4}>
-                <BigTooltip
-                  title={
+                <IconLink
+                  icon={<i className={lang.className} />}
+                  link={lang.searchUrl}
+                  tooltipTitle={
                     lang.searchUrl
                       ? `Check out my ${lang.name} repos on GitHub`
                       : lang.name
                   }
-                >
-                  <IconButton
-                    href={lang.searchUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.noCorners}
-                  >
-                    <i className={lang.className} />
-                  </IconButton>
-                </BigTooltip>
+                />
               </Grid>
             ))}
           </Grid>

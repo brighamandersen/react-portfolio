@@ -2,15 +2,14 @@ import {
   Box,
   Container,
   Grid,
-  IconButton,
   makeStyles,
 } from "@material-ui/core";
 import profilePic from "../assets/profile.jpg";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import { latestVidContent } from "../data";
 import PageTop from "../components/PageTop";
-import BigTooltip from "../components/BigTooltip";
 import WebVideo from "../components/WebVideo";
+import IconLink from "../components/IconLink";
 
 const useStyles = makeStyles(() => ({
   profileImg: {
@@ -47,18 +46,16 @@ export function Home() {
           </Grid>
         </Grid>
         <Box my={8}>
-          <h2>
-            Latest Content{" "}
-            <BigTooltip title="Check out my YouTube channel">
-              <IconButton
-                href="https://www.youtube.com/channel/UC5h98VfEfhqHkSMlt4ejCeg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <YouTubeIcon />
-              </IconButton>
-            </BigTooltip>
-          </h2>
+          <Box display="flex" alignItems="center">
+            <h2>Latest Content</h2>
+            <Box ml={2}>
+              <IconLink 
+                icon={<YouTubeIcon />}
+                link="https://www.youtube.com/channel/UC5h98VfEfhqHkSMlt4ejCeg"
+                tooltipTitle="Check out my YouTube channel"
+              />
+            </Box>
+          </Box>
           {latestVidContent.map((vid) => (
             <WebVideo key={vid.url} title={vid.title} url={vid.url} />
           ))}

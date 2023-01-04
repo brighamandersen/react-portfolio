@@ -1,10 +1,10 @@
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
-import { Card, Container, IconButton, makeStyles } from "@material-ui/core";
+import { Card, Container, makeStyles } from "@material-ui/core";
 import { sites } from "../data";
 import PageTop from "../components/PageTop";
-import BigTooltip from "../components/BigTooltip";
 import { COLORS } from "../styles/theme";
+import IconLink from "../components/IconLink";
 
 const useStyles = makeStyles((theme) => ({
   header: {
@@ -26,46 +26,43 @@ function Sites() {
   return (
     <main>
       <Container maxWidth="md">
-        <PageTop pageTitle="My Websites & Projects" />
+        <PageTop 
+          pageTitle="My Websites & Projects" 
+          iconLink={
+            <IconLink
+              icon={<GitHubIcon />}
+              link={"https://github.com/brighamband"}
+              tooltipTitle={"Check out my GitHub"}
+            />
+          }
+        />
         {sites.map((site) => (
           <Card key={site.name} className={styles.card}>
             <h2>{site.name}</h2>
             <p>{site.description}</p>
             {site.url && (
-              <BigTooltip
-                title={
+              <IconLink
+                icon={<LaunchSharpIcon />}
+                link={site.url}
+                tooltipTitle={
                   <>
                     <h3 className={styles.header}>Site:</h3>
                     <code className={styles.url}>{site.url}</code>
                   </>
                 }
-              >
-                <IconButton
-                  href={site.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <LaunchSharpIcon />
-                </IconButton>
-              </BigTooltip>
+              />
             )}
             {site.srcCode && (
-              <BigTooltip
-                title={
+              <IconLink
+                icon={<GitHubIcon />}
+                link={site.srcCode}
+                tooltipTitle={
                   <>
                     <h3 className={styles.header}>Source Code:</h3>
                     <code className={styles.url}>{site.srcCode}</code>
                   </>
                 }
-              >
-                <IconButton
-                  href={site.srcCode}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GitHubIcon />
-                </IconButton>
-              </BigTooltip>
+              />
             )}
           </Card>
         ))}
