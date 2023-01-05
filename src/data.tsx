@@ -358,7 +358,7 @@ export const sites: Site[] = [
     name: "Portfolio (This Website)",
     url: "https://brighamband.com",
     srcCode: "https://github.com/brighamband/portfolio",
-    category: ["side", "work", "beta"],
+    category: ["side", "work"],
     description:
       "This website was made using React and styled using Material UI.  It was built with the purpose of helping prospective clients/employers get a feel for who I am and the work I do.",
   },
