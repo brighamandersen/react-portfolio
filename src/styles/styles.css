@@ -5,7 +5,7 @@
 }
 
 * {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 
   /*  Color scheme */
   --primary: #215481;
@@ -31,7 +31,7 @@
 }
 
 code {
-  font-family: "Consolas", "Courier New", Courier, monospace;
+  font-family: 'Consolas', 'Courier New', Courier, monospace;
 }
 
 body {
@@ -58,5 +58,5 @@ a {
 }
 
 main {
-  margin: 7rem 0;
+  margin: 6rem 0;
 }
