@@ -27,6 +27,9 @@ function App() {
       <Router>
         <Navbar pages={pages} />
         {pages.map(page => page.component)}
+        <Route path="*">
+          <Redirect to="/" />
+        </Route>
       </Router>
       <Hidden mdDown>
         <img src={cornerLogo} alt="My Logo" className={styles.cornerLogo} />
@@ -34,11 +37,5 @@ function App() {
     </ThemeProvider>
   )
 };
-      // <h1>test</h1>
-      // {/* {pages.map((page) => page.component)} */}
-      // <Home />
-      // <Hidden mdDown>
-      //   <img src={cornerLogo} alt="My Logo" className={styles.cornerLogo} />
-      // </Hidden>
 
 export default App;
