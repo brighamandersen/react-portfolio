@@ -26,7 +26,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <Navbar pages={pages} />
-        {pages.map(page => page.component)}
+        {pages.map(page => (
+          <page.component key={page.name} />
+        ))}
         <Route path="*">
           <Redirect to="/" />
         </Route>

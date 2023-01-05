@@ -1,8 +1,9 @@
 import { Box, Hidden, makeStyles } from "@material-ui/core";
-import { NavLink } from "react-router-dom";
-import { Page } from "../data";
+import { Page, pathToHash } from "../data";
 import { COLORS } from "../styles/theme";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
+import { useHistory, useLocation } from 'react-router-dom';
+import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
   navItemContainer: {
@@ -51,18 +52,16 @@ interface Props {
 const Navbar = (props: Props) => {
   const { pages } = props;
   const styles = useStyles();
+  const location = useLocation();
 
   return (
     <nav className={styles.navbar}>
       {pages.map((page) => (
-        <HashLink
-          key={page.path}
-          // exact={page.path === "/"}
+        <Link
+          key={page.hash}
           smooth
-          to={page.path}
-          // activeClassName="selected"
-          // activeStyle={{ backgroundolor: 'red' }}
-          // activeClassName="active"
+          to={page.hash || '#'} // Handle redirect back home (normally an empty string)
+          className={location.hash === page.hash ? 'active': ''}
         >
           <Box display="flex" justifyContent="space-evenly" alignItems="center">
             <div className={styles.iconWrapper}>{page.icon}</div>
@@ -70,7 +69,7 @@ const Navbar = (props: Props) => {
               <div className={styles.textWrapper}>{page.name}</div>
             </Hidden>
           </Box>
-        </HashLink>
+        </Link>
       ))}
     </nav>
   );

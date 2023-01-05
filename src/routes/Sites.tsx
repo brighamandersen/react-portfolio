@@ -24,15 +24,15 @@ function Sites() {
   const styles = useStyles();
 
   return (
-    <main id="sites">
+    <section id="sites">
       <Container maxWidth="md">
         <PageTop 
           pageTitle="My Websites & Projects" 
           iconLink={
             <IconLink
               icon={<GitHubIcon />}
-              link={"https://github.com/brighamband"}
-              tooltipTitle={"Check out my GitHub"}
+              link="https://github.com/brighamband"
+              tooltipTitle="Check out my GitHub"
             />
           }
         />
@@ -67,7 +67,7 @@ function Sites() {
           </Card>
         ))}
       </Container>
-    </main>
+    </section>
   );
 };
 
