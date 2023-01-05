@@ -4,7 +4,6 @@ import Contact from "./routes/Contact";
 import Resume from "./routes/Resume";
 import Sites from "./routes/Sites";
 import Designs from "./routes/Designs";
-import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
@@ -90,6 +89,7 @@ export const pages: Page[] = [
   },
 ];
 
+const GDRIVE_BASE_URL = 'https://drive.google.com/uc?export=view&id=';
 /* List of screenshots of designs I've made */
 export const designShots = [
   scoreboardShot,
@@ -388,63 +388,63 @@ export const resources = [
   },
 ];
 
-const baseSearchUrl = "https://github.com/brighamband?tab=repositories&q=";
+const GH_SEARCH_BASE_URL = "https://github.com/brighamband?tab=repositories&q=";
 /* My top languages - used on '/resume' */
 export const languages = [
   {
     name: "JavaScript",
     className: "devicon-javascript-plain colored",
-    searchUrl: `${baseSearchUrl}javascript`,
+    searchUrl: `${GH_SEARCH_BASE_URL}javascript`,
   },
   {
     name: "React",
     className: "devicon-react-original-wordmark colored",
-    searchUrl: `${baseSearchUrl}react`,
+    searchUrl: `${GH_SEARCH_BASE_URL}react`,
   },
   {
     name: "Vue",
     className: "devicon-vuejs-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}vue`,
+    searchUrl: `${GH_SEARCH_BASE_URL}vue`,
   },
   {
     name: "Flutter",
     className: "devicon-flutter-plain colored",
-    searchUrl: `${baseSearchUrl}&language=dart`,
+    searchUrl: `${GH_SEARCH_BASE_URL}&language=dart`,
   },
   {
     name: "HTML",
     className: "devicon-html5-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}html`,
+    searchUrl: `${GH_SEARCH_BASE_URL}html`,
   },
   {
     name: "CSS",
     className: "devicon-css3-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}css`,
+    searchUrl: `${GH_SEARCH_BASE_URL}css`,
   },
   {
     name: "Python",
     className: "devicon-python-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}python`,
+    searchUrl: `${GH_SEARCH_BASE_URL}python`,
   },
   {
     name: "Java",
     className: "devicon-java-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}java`,
+    searchUrl: `${GH_SEARCH_BASE_URL}java`,
   },
   {
     name: "Android",
     className: "devicon-android-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}android`,
+    searchUrl: `${GH_SEARCH_BASE_URL}android`,
   },
   {
     name: "C++",
     className: "devicon-cplusplus-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}c-plus-plus`,
+    searchUrl: `${GH_SEARCH_BASE_URL}c-plus-plus`,
   },
   {
     name: "C",
     className: "devicon-c-plain-wordmark colored",
-    searchUrl: `${baseSearchUrl}&language=c`,
+    searchUrl: `${GH_SEARCH_BASE_URL}&language=c`,
   },
 ];
 
@@ -480,10 +480,7 @@ export const latestVidContent = [
   },
 ];
 
-export const RESUME_S3_URL = "https://brig-bucket.s3.us-east-2.amazonaws.com/Resume - Brigham Andersen.pdf#view=fit";
-
-// Use the URL below instead if you want to disable the download bar
-
-// export const RESUME_S3_URL = "https://brig-bucket.s3.us-east-2.amazonaws.com/Resume - Brigham Andersen.pdf#view=fit&toolbar=0";
+const RESUME_GDRIVE_ID = "1mS0MkDu1NzWzgNQKYNY3-bClSzIREIvI"
+export const RESUME_GDRIVE_URL = `${GDRIVE_BASE_URL}${RESUME_GDRIVE_ID}#view=fit`;
 // "view=fit" makes one page fit perfectly within the height of the iframe
-// "toolbar=0" removes the toolbar so they can't download the pdf as easily
+// "&toolbar=0" removes the toolbar so they can't download the pdf as easily (no download bar)
