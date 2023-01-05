@@ -4,7 +4,7 @@ import {
   Grid,
   makeStyles,
 } from "@material-ui/core";
-import { languages, RESUME_S3_URL } from "../data";
+import { languages, RESUME_GDRIVE_URL } from "../data";
 import PageTop from "../components/PageTop";
 import IconLink from "../components/IconLink";
 
@@ -31,10 +31,10 @@ function Resume() {
   const styles = useStyles();
 
   return (
-    <main>
+    <main id="resume">
       <Container maxWidth="md">
         <PageTop pageTitle="My Resume" />
-        <iframe src={RESUME_S3_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
+        <iframe src={RESUME_GDRIVE_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
         <Box my={8}>
           <h2>My Top Languages</h2>
           <Grid container spacing={5} className={styles.languagesWrapper}>

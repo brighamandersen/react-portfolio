@@ -2,6 +2,7 @@ import { Box, Hidden, makeStyles } from "@material-ui/core";
 import { NavLink } from "react-router-dom";
 import { Page } from "../data";
 import { COLORS } from "../styles/theme";
+import { HashLink } from 'react-router-hash-link';
 
 const useStyles = makeStyles((theme) => ({
   navItemContainer: {
@@ -54,10 +55,15 @@ const Navbar = (props: Props) => {
   return (
     <nav className={styles.navbar}>
       {pages.map((page) => (
-        <NavLink
+        <HashLink
           key={page.path}
-          exact={page.path === "/"}
+          // exact={page.path === "/"}
+          // smooth
+          scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
           to={page.path}
+          // activeClassName="selected"
+          // activeStyle={{ backgroundolor: 'red' }}
+          activeClassName="active"
         >
           <Box display="flex" justifyContent="space-evenly" alignItems="center">
             <div className={styles.iconWrapper}>{page.icon}</div>
@@ -65,7 +71,7 @@ const Navbar = (props: Props) => {
               <div className={styles.textWrapper}>{page.name}</div>
             </Hidden>
           </Box>
-        </NavLink>
+        </HashLink>
       ))}
     </nav>
   );

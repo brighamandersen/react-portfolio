@@ -5,7 +5,7 @@ import IconLink from "../components/IconLink";
 
 function Contact() {
   return (
-    <main>
+    <main id="contact">
       <Container maxWidth="md">
         <PageTop pageTitle="Contact Me" />
         <Grid container spacing={3}>

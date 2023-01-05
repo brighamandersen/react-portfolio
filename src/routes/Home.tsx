@@ -22,7 +22,7 @@ export function Home() {
   const styles = useStyles();
 
   return (
-    <main>
+    <main id="home">
       <Container maxWidth="md">
         <PageTop pageTitle="Welcome!" />
         <Grid container spacing={5} justifyContent="center" alignItems="center">
