@@ -58,12 +58,11 @@ const Navbar = (props: Props) => {
         <HashLink
           key={page.path}
           // exact={page.path === "/"}
-          // smooth
-          scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          smooth
           to={page.path}
           // activeClassName="selected"
           // activeStyle={{ backgroundolor: 'red' }}
-          activeClassName="active"
+          // activeClassName="active"
         >
           <Box display="flex" justifyContent="space-evenly" alignItems="center">
             <div className={styles.iconWrapper}>{page.icon}</div>
