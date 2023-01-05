@@ -9,8 +9,6 @@ import { Hidden, makeStyles, ThemeProvider } from "@material-ui/core";
 import { pages } from "./data";
 import cornerLogo from "./assets/corner-logo.png";
 import { theme } from "./styles/theme";
-import Home from "./routes/Home";
-import Designs from "./routes/Designs";
 
 const useStyles = makeStyles(() => ({
   cornerLogo: {
