@@ -50,41 +50,46 @@ import joltLabelsLandscape from "./assets/designs/Jolt Labels - Tablet Landscape
 
 export interface Page {
   name: string;
-  component: ReactElement;
-  path: string;
+  component: () => ReactElement;
+  hash: string;
   icon?: ReactElement;
+}
+
+export function pathToHash(path: string) {
+  console.log('hash', path.slice(2))
+  return path.slice(2)
 }
 
 /* List of pages on this portfolio website */
 export const pages: Page[] = [
   {
     name: "Home",
-    component: <Home />,
-    path: "/#home",
+    component: Home,
+    hash: "",
     icon: <HomeIcon />,
   },
   {
     name: "Designs",
-    component: <Designs />,
-    path: "/#designs",
+    component: Designs,
+    hash: "#designs",
     icon: <PhotoLibraryIcon />,
   },
   {
     name: "Sites",
-    component: <Sites />,
-    path: "/#sites",
+    component: Sites,
+    hash: "#sites",
     icon: <DesktopMacIcon />,
   },
   {
     name: "Resume",
-    component: <Resume />,
-    path: "/#resume",
+    component: Resume,
+    hash: "#resume",
     icon: <DescriptionIcon />,
   },
   {
     name: "Contact",
-    component: <Contact />,
-    path: "/#contact",
+    component: Contact,
+    hash: "#contact",
     icon: <AccountBoxIcon />,
   },
 ];

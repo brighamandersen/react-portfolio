@@ -21,9 +21,9 @@ function PageTop(props: Props) {
 
   return (
     <>
-      <Helmet>
+      {/* <Helmet>
         <title>{`${pageTitle}${DOC_TITLE_TAIL}`}</title>
-      </Helmet>
+      </Helmet> */}
       <Box display="flex" alignItems="center">
         <h1 className={styles.pageHeader}>{pageTitle}</h1>
         {iconLink && (

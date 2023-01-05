@@ -31,7 +31,7 @@ function Resume() {
   const styles = useStyles();
 
   return (
-    <main id="resume">
+    <section id="resume">
       <Container maxWidth="md">
         <PageTop pageTitle="My Resume" />
         <iframe src={RESUME_GDRIVE_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
@@ -55,7 +55,7 @@ function Resume() {
           </Grid>
         </Box>
       </Container>
-    </main>
+    </section>
   );
 };
 

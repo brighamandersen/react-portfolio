@@ -15,7 +15,7 @@ function Designs() {
   const styles = useStyles();
 
   return (
-    <main id="designs">
+    <section id="designs">
       <Container maxWidth="md">
         <PageTop pageTitle="My Designs" />
         <Grid container spacing={5}>
@@ -33,7 +33,7 @@ function Designs() {
           ))}
         </Grid>
       </Container>
-    </main>
+    </section>
   );
 };
 
