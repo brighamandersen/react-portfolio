@@ -48,6 +48,7 @@ function Resume() {
                       ? `Check out my ${lang.name} repos on GitHub`
                       : lang.name
                   }
+                  square
                 />
               </Grid>
             ))}

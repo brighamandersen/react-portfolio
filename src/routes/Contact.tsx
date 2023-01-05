@@ -15,6 +15,7 @@ function Contact() {
                 icon={res.icon}
                 link={res.link}
                 tooltipTitle={res.tooltipTitle}
+                square
               />
             </Grid>
           ))}

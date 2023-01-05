@@ -5,16 +5,20 @@ const useStyles = makeStyles(() => ({
   longTooltip: {
     maxWidth: "none",
   },
+  noCorners: {
+    borderRadius: 0,
+  }
 }));
 
 interface Props {
   link: string;
   icon: ReactElement;
   tooltipTitle?: string | ReactElement;
+  square?: boolean;
 }
 
 function IconLink(props: Props) {
-  const { icon, link, tooltipTitle } = props;
+  const { icon, link, tooltipTitle, square = false } = props;
   const styles = useStyles();
 
   const IconBtn = (
@@ -22,6 +26,7 @@ function IconLink(props: Props) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
+      className={square ? styles.noCorners : ''}
     >
       {icon}
     </IconButton>
