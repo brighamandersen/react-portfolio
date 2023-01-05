@@ -10,7 +10,7 @@ import IconLink from "../components/IconLink";
 
 const useStyles = makeStyles(() => ({
   resumePdf: {
-    height: "80vh",
+    height: "75vh",
     width: "100%",
     border: 'none'
   },
