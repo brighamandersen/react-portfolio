@@ -1,9 +1,6 @@
 import { Box, Hidden, makeStyles } from "@material-ui/core";
-import { Page, pathToHash } from "../data";
+import { Section } from "../data";
 import { COLORS } from "../styles/theme";
-import { HashLink as Link } from 'react-router-hash-link';
-import { useHistory, useLocation } from 'react-router-dom';
-import { useEffect } from "react";
 
 const useStyles = makeStyles((theme) => ({
   navItemContainer: {
@@ -46,30 +43,29 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 interface Props {
-  pages: Page[]
+  sections: Section[];
+  activeSectionId: string;
 }
 
 const Navbar = (props: Props) => {
-  const { pages } = props;
+  const { sections, activeSectionId } = props;
   const styles = useStyles();
-  const location = useLocation();
 
   return (
     <nav className={styles.navbar}>
-      {pages.map((page) => (
-        <Link
-          key={page.hash}
-          smooth
-          to={page.hash || '#'} // Handle redirect back home (normally an empty string)
-          className={location.hash === page.hash ? 'active': ''}
+      {sections.map((section) => (
+        <a
+          key={section.id}
+          href={`#${section.id}`}
+          className={activeSectionId === section.id ? 'active': ''}
         >
-          <Box display="flex" justifyContent="space-evenly" alignItems="center">
-            <div className={styles.iconWrapper}>{page.icon}</div>
+           <Box display="flex" justifyContent="space-evenly" alignItems="center">
+            <div className={styles.iconWrapper}>{section.icon}</div>
             <Hidden smDown>
-              <div className={styles.textWrapper}>{page.name}</div>
+              <div className={styles.textWrapper}>{section.name}</div>
             </Hidden>
           </Box>
-        </Link>
+        </a>
       ))}
     </nav>
   );

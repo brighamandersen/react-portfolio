@@ -48,48 +48,43 @@ import frenchToast2Shot from "./assets/designs/FrenchToastProcessPaper-2.png";
 import joltLabelsPortrait from "./assets/designs/Jolt Labels - Tablet Portrait.png";
 import joltLabelsLandscape from "./assets/designs/Jolt Labels - Tablet Landscape.png";
 
-export interface Page {
+export interface Section {
+  id: string;
   name: string;
   component: () => ReactElement;
-  hash: string;
   icon?: ReactElement;
 }
 
-export function pathToHash(path: string) {
-  console.log('hash', path.slice(2))
-  return path.slice(2)
-}
-
-/* List of pages on this portfolio website */
-export const pages: Page[] = [
+/* List of sections of this portfolio website */
+export const sections: Section[] = [
   {
+    id: "home",
     name: "Home",
     component: Home,
-    hash: "",
     icon: <HomeIcon />,
   },
   {
+    id: "designs",
     name: "Designs",
     component: Designs,
-    hash: "#designs",
     icon: <PhotoLibraryIcon />,
   },
   {
+    id: "sites",
     name: "Sites",
     component: Sites,
-    hash: "#sites",
     icon: <DesktopMacIcon />,
   },
   {
+    id: "resume",
     name: "Resume",
     component: Resume,
-    hash: "#resume",
     icon: <DescriptionIcon />,
   },
   {
+    id: "contact",
     name: "Contact",
     component: Contact,
-    hash: "#contact",
     icon: <AccountBoxIcon />,
   },
 ];

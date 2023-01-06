@@ -2,7 +2,7 @@ import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, makeStyles } from "@material-ui/core";
 import { sites } from "../data";
-import PageTop from "../components/PageTop";
+import SectionTop from "../components/SectionTop";
 import { COLORS } from "../styles/theme";
 import IconLink from "../components/IconLink";
 
@@ -26,8 +26,8 @@ function Sites() {
   return (
     <section id="sites">
       <Container maxWidth="md">
-        <PageTop 
-          pageTitle="My Websites & Projects" 
+        <SectionTop 
+          title="My Websites & Projects" 
           iconLink={
             <IconLink
               icon={<GitHubIcon />}

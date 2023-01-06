@@ -1,13 +1,13 @@
 import { Grid, Container } from "@material-ui/core";
 import { resources } from "../data";
-import PageTop from "../components/PageTop";
+import SectionTop from "../components/SectionTop";
 import IconLink from "../components/IconLink";
 
 function Contact() {
   return (
     <section id="contact">
       <Container maxWidth="md">
-        <PageTop pageTitle="Contact Me" />
+        <SectionTop title="Contact Me" />
         <Grid container spacing={3}>
           {resources.map((res) => (
             <Grid key={res.name} item xs={6} md={4}>

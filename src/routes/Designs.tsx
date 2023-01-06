@@ -1,6 +1,6 @@
 import { Grid, Container, makeStyles } from "@material-ui/core";
 import { designShots } from "../data";
-import PageTop from "../components/PageTop";
+import SectionTop from "../components/SectionTop";
 
 const useStyles = makeStyles(() => ({
   screenshot: {
@@ -17,7 +17,7 @@ function Designs() {
   return (
     <section id="designs">
       <Container maxWidth="md">
-        <PageTop pageTitle="My Designs" />
+        <SectionTop title="My Designs" />
         <Grid container spacing={5}>
           {designShots.map((shot) => (
             <Grid key={shot} item xs={12} sm={6} md={4}>
