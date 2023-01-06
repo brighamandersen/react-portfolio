@@ -48,43 +48,43 @@ import frenchToast2Shot from "./assets/designs/FrenchToastProcessPaper-2.png";
 import joltLabelsPortrait from "./assets/designs/Jolt Labels - Tablet Portrait.png";
 import joltLabelsLandscape from "./assets/designs/Jolt Labels - Tablet Landscape.png";
 
-export interface Page {
+export interface Section {
+  id: string;
   name: string;
   component: () => ReactElement;
-  path: string;
   icon?: ReactElement;
 }
 
-/* List of pages on this portfolio website */
-export const pages: Page[] = [
+/* List of sections of this portfolio website */
+export const sections: Section[] = [
   {
+    id: "home",
     name: "Home",
     component: Home,
-    path: "/",
     icon: <HomeIcon />,
   },
   {
+    id: "designs",
     name: "Designs",
     component: Designs,
-    path: "/designs",
     icon: <PhotoLibraryIcon />,
   },
   {
+    id: "sites",
     name: "Sites",
     component: Sites,
-    path: "/sites",
     icon: <DesktopMacIcon />,
   },
   {
+    id: "resume",
     name: "Resume",
     component: Resume,
-    path: "/resume",
     icon: <DescriptionIcon />,
   },
   {
+    id: "contact",
     name: "Contact",
     component: Contact,
-    path: "/contact",
     icon: <AccountBoxIcon />,
   },
 ];
@@ -457,14 +457,6 @@ export const latestVidContent = [
   {
     title: "Ep3 - How to Use Components in Figma",
     url: "https://www.youtube.com/embed/McgMi2Pf4l4",
-  },
-  {
-    title: "Ep2 - How to Use Groups in Figma",
-    url: "https://www.youtube.com/embed/LjgIJtvU-nE",
-  },
-  {
-    title: "Ep1 - How to Use Frames in Figma",
-    url: "https://www.youtube.com/embed/oixLZtf-ct8",
   },
   {
     title: "Web Dev (JavaScript) Crash Course 2.0",

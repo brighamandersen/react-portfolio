@@ -7,7 +7,7 @@ import {
 import profilePic from "../assets/profile.jpg";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import { latestVidContent } from "../data";
-import PageTop from "../components/PageTop";
+import SectionTop from "../components/SectionTop";
 import WebVideo from "../components/WebVideo";
 import IconLink from "../components/IconLink";
 
@@ -22,9 +22,9 @@ export function Home() {
   const styles = useStyles();
 
   return (
-    <main>
+    <section id="home">
       <Container maxWidth="md">
-        <PageTop pageTitle="Welcome!" />
+        <SectionTop title="Welcome!" />
         <Grid container spacing={5} justifyContent="center" alignItems="center">
           <Grid item xs={12} md={8}>
             <p>
@@ -61,7 +61,7 @@ export function Home() {
           ))}
         </Box>
       </Container>
-    </main>
+    </section>
   );
 };
 

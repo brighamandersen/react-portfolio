@@ -5,7 +5,7 @@ import {
   makeStyles,
 } from "@material-ui/core";
 import { languages, RESUME_GDRIVE_URL } from "../data";
-import PageTop from "../components/PageTop";
+import SectionTop from "../components/SectionTop";
 import IconLink from "../components/IconLink";
 
 const useStyles = makeStyles(() => ({
@@ -31,9 +31,9 @@ function Resume() {
   const styles = useStyles();
 
   return (
-    <main>
+    <section id="resume">
       <Container maxWidth="md">
-        <PageTop pageTitle="My Resume" />
+        <SectionTop title="My Resume" />
         <iframe src={RESUME_GDRIVE_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
         <Box my={8}>
           <h2>My Top Languages</h2>
@@ -55,7 +55,7 @@ function Resume() {
           </Grid>
         </Box>
       </Container>
-    </main>
+    </section>
   );
 };
 
