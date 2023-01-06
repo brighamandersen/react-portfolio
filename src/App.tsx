@@ -53,9 +53,11 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <Navbar sections={sections} activeSectionId={activeSectionId} />
-      {sections.map(section => (
-        <section.component key={section.name} />
-      ))}
+      <main>
+        {sections.map(section => (
+          <section.component key={section.name} />
+        ))}
+      </main>
       <Hidden mdDown>
         <img src={cornerLogo} alt="My Logo" className={styles.cornerLogo} />
       </Hidden>
