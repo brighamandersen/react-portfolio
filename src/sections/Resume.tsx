@@ -7,6 +7,7 @@ import {
 import { languages, RESUME_GDRIVE_URL } from "../data";
 import SectionTop from "../components/SectionTop";
 import IconLink from "../components/IconLink";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 
 const useStyles = makeStyles(() => ({
   resumePdf: {
@@ -33,7 +34,16 @@ function Resume() {
   return (
     <section id="resume">
       <Container maxWidth="md">
-        <SectionTop title="My Resume" />
+        <SectionTop 
+          title="My Resume"
+          iconLink={
+            <IconLink
+              icon={<LinkedInIcon />}
+              link="https://www.linkedin.com/in/brighamband/details/experience/"
+              tooltipTitle="See all job experience on LinkedIn"
+            />
+          }
+        />
         <iframe src={RESUME_GDRIVE_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
         <Box my={8}>
           <h2>My Top Languages</h2>
