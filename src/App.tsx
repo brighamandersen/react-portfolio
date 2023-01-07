@@ -59,7 +59,12 @@ function App() {
         ))}
       </main>
       <Hidden mdDown>
-        <img src={cornerLogo} alt="My Logo" className={styles.cornerLogo} />
+        <img
+          src={cornerLogo} 
+          alt="BA Logo" 
+          className={styles.cornerLogo} 
+          loading="lazy"
+        />
       </Hidden>
     </ThemeProvider>
   )
