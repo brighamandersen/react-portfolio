@@ -1,12 +1,22 @@
-import { Grid, Container, makeStyles } from "@material-ui/core";
+import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import { Card, Container, makeStyles } from "@material-ui/core";
 import { projects } from "../data";
 import SectionTop from "../components/SectionTop";
-import { getGDriveUrl } from "../utils/helpers";
+import { COLORS } from "../styles/theme";
+import IconLink from "../components/IconLink";
 
-const useStyles = makeStyles(() => ({
-  shot: {
-    width: "100%",
-    boxShadow: "0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)"
+const useStyles = makeStyles((theme) => ({
+  header: {
+    color: COLORS.white,
+  },
+  url: {
+    color: COLORS.white,
+    padding: theme.spacing(2),
+  },
+  card: {
+    padding: theme.spacing(4),
+    margin: theme.spacing(4),
   },
 }));
 
@@ -14,27 +24,50 @@ function Projects() {
   const styles = useStyles();
 
   return (
-    <main id="projects">
+    <section id="projects">
       <Container maxWidth="md">
-        <SectionTop title="My Projects" />
-        <Grid container spacing={5}>
-          {projects.map((proj) => (
-            <div key={proj.id}>
-              <h2>{proj.name}</h2>
-              {proj.shots.map((shotId) => (
-                <Grid item xs={12} sm={6} md={4}>
-                  <img
-                    src={getGDriveUrl(shotId)}
-                    alt={`${shotId} Screenshot`}
-                    className={styles.shot}
-                  />
-                </Grid>
-              ))}
-            </div>
-          ))}
-        </Grid>
+        <SectionTop 
+          title="My Projects" 
+          iconLink={
+            <IconLink
+              icon={<GitHubIcon />}
+              link="https://github.com/brighamband"
+              tooltipTitle="Check out my GitHub"
+            />
+          }
+        />
+        {projects.map((proj) => (
+          <Card key={proj.id} className={styles.card}>
+            <h2>{proj.name}</h2>
+            <p>{proj.description}</p>
+            {proj.url && (
+              <IconLink
+                icon={<LaunchSharpIcon />}
+                link={proj.url}
+                tooltipTitle={
+                  <>
+                    <h3 className={styles.header}>Site:</h3>
+                    <code className={styles.url}>{proj.url}</code>
+                  </>
+                }
+              />
+            )}
+            {proj.srcCode && (
+              <IconLink
+                icon={<GitHubIcon />}
+                link={proj.srcCode}
+                tooltipTitle={
+                  <>
+                    <h3 className={styles.header}>Source Code:</h3>
+                    <code className={styles.url}>{proj.srcCode}</code>
+                  </>
+                }
+              />
+            )}
+          </Card>
+        ))}
       </Container>
-    </main>
+    </section>
   );
 };
 

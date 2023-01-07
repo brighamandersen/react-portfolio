@@ -2,10 +2,9 @@ import { ReactElement } from "react";
 import Home from "./sections/Home";
 import Contact from "./sections/Contact";
 import Resume from "./sections/Resume";
-import Sites from "./sections/Sites";
+import Projects from "./sections/Projects";
 import Designs from "./sections/Designs";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
-import PermMediaIcon from '@material-ui/icons/PermMedia';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import HomeIcon from "@material-ui/icons/Home";
@@ -13,7 +12,10 @@ import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
-import Projects from "./sections/Projects";
+import { SvgIconTypeMap } from "@material-ui/core";
+import { OverridableComponent } from "@material-ui/core/OverridableComponent";
+
+
 
 export const GDRIVE_BASE_URL = "https://drive.google.com/uc?export=view&id=";
 
@@ -24,31 +26,13 @@ export interface Section {
   icon?: ReactElement;
 }
 
-/* List of sections of this portfolio website */
+/* Sections of this portfolio website */
 export const sections: Section[] = [
   {
     id: "home",
     name: "Home",
     component: Home,
     icon: <HomeIcon />,
-  },
-  // {
-  //   id: "projects",
-  //   name: "Projects",
-  //   component: Projects,
-  //   icon: <PermMediaIcon />,
-  // },
-  {
-    id: "designs",
-    name: "Designs",
-    component: Designs,
-    icon: <PhotoLibraryIcon />,
-  },
-  {
-    id: "sites",
-    name: "Sites",
-    component: Sites,
-    icon: <DesktopMacIcon />,
   },
   {
     id: "resume",
@@ -57,12 +41,124 @@ export const sections: Section[] = [
     icon: <DescriptionIcon />,
   },
   {
+    id: "projects",
+    name: "Projects",
+    component: Projects,
+    icon: <DesktopMacIcon />,
+  },
+  {
+    id: "designs",
+    name: "Designs",
+    component: Designs,
+    icon: <PhotoLibraryIcon />,
+  },
+  {
     id: "contact",
     name: "Contact",
     component: Contact,
     icon: <AccountBoxIcon />,
   },
 ];
+
+
+
+// Home ***********************************************************************************************
+
+/* List of my latest youtube videos with embed links - used on Home section */
+export const latestVidContent = [
+  {
+    title: "Commandshake Bot - Automated Job Applying",
+    url: "https://www.youtube.com/embed/34GiNbJ4ECc",
+  },
+  {
+    title: "Ep3 - How to Use Components in Figma",
+    url: "https://www.youtube.com/embed/McgMi2Pf4l4",
+  },
+  {
+    title: "Web Dev (JavaScript) Crash Course 2.0",
+    url: "https://www.youtube.com/embed/UJC2Gyaxd_s",
+  },
+  {
+    title: "Web Dev (HTML/CSS) Crash Course 1.0",
+    url: "https://www.youtube.com/embed/vGIRW00pB9w",
+  },
+  {
+    title: "Web Dev Snapshot",
+    url: "https://www.youtube.com/embed/jSeLgZsF5_U",
+  },
+];
+
+
+
+// Resume *********************************************************************************************
+
+const RESUME_GDRIVE_ID = "1mS0MkDu1NzWzgNQKYNY3-bClSzIREIvI"
+export const RESUME_GDRIVE_URL = `${GDRIVE_BASE_URL}${RESUME_GDRIVE_ID}#view=fit`;
+// "view=fit" makes one page fit perfectly within the height of the iframe
+// "&toolbar=0" removes the toolbar so they can't download the pdf as easily (no download bar)
+
+const GH_SEARCH_BASE_URL = "https://github.com/brighamband?tab=repositories&q=";
+/* My top languages - used on '/#resume' */
+export const languages = [
+  {
+    name: "JavaScript",
+    className: "devicon-javascript-plain colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}javascript`,
+  },
+  {
+    name: "React",
+    className: "devicon-react-original-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}react`,
+  },
+  {
+    name: "Vue",
+    className: "devicon-vuejs-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}vue`,
+  },
+  {
+    name: "Flutter",
+    className: "devicon-flutter-plain colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}&language=dart`,
+  },
+  {
+    name: "HTML",
+    className: "devicon-html5-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}html`,
+  },
+  {
+    name: "CSS",
+    className: "devicon-css3-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}css`,
+  },
+  {
+    name: "Python",
+    className: "devicon-python-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}python`,
+  },
+  {
+    name: "Java",
+    className: "devicon-java-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}java`,
+  },
+  {
+    name: "Android",
+    className: "devicon-android-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}android`,
+  },
+  {
+    name: "C++",
+    className: "devicon-cplusplus-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}c-plus-plus`,
+  },
+  {
+    name: "C",
+    className: "devicon-c-plain-wordmark colored",
+    searchUrl: `${GH_SEARCH_BASE_URL}&language=c`,
+  },
+];
+
+
+// Projects & Designs *********************************************************************************
 
 interface Project {
   id: string; // Name of repo / gdrive folder and files
@@ -144,7 +240,7 @@ export const projects: Project[] = [
   {
     id: "hack-overflow",
     name: "Hack Overflow",
-    url: "https://www.figma.com/proto/qPAMPE3Wsbo7UDWQLNkJnh/HackOverflow?node-id=152%3A329&scaling=contain&page-id=65%3A66&starting-point-node-id=152%3A329",
+    url: "https://www.figma.com/proto/qPAMPE3Wsbo7UDWQLNkJnh/HackOverflow?node-id=152%3A329",
     srcCode: null,
     tags: ["school"],
     description: "For CS 356 UI/UX Design class at BYU, my group of 3 had to make a website prototype using Figma to solve a pain point. We noticed that coding resources are mostly geared towards experienced developers, so we made Hack Overflow, which simplifies resources like Stack Overflow and W3 Schools into an all-in-one resource.",
@@ -159,7 +255,7 @@ export const projects: Project[] = [
   {
     id: "instructme",
     name: "Instruct.Me",
-    url: "https://www.figma.com/proto/XVkI6hQ41JHBHilssqJq1V/Instruct.me-OCI?node-id=1250%3A11188&scaling=min-zoom&page-id=283%3A1143&starting-point-node-id=1250%3A11188&show-proto-sidebar=1",
+    url: "https://www.figma.com/proto/XVkI6hQ41JHBHilssqJq1V/Instruct.me-OCI?node-id=1250%3A11188",
     srcCode: null,
     tags: ["school", "side"],
     description: "For an on-campus internship at BYU's Business School, I helped out the Instruct.Me startup with designing their app from the ground up. We used Figma to build high-fidelity interactive prototypes.",
@@ -172,7 +268,7 @@ export const projects: Project[] = [
   {
     id: "irecognize",
     name: "iRecognize",
-    url: "https://www.figma.com/proto/dLqZF2Wl8mUQlJtrL1eLfV/iRecognize?node-id=26%3A13&scaling=scale-down&page-id=24%3A3&starting-point-node-id=26%3A13",
+    url: "https://www.figma.com/proto/dLqZF2Wl8mUQlJtrL1eLfV/iRecognize?node-id=26%3A13",
     srcCode: null,
     tags: ["school", "side"],
     description: "For BYU's CS 356 UI/UX Design class project, my group of 3 made a mobile app throughout the second half of the semester. We found that it's hard to remember people's names, and sometimes important details about where you two met or other relevant info about them. We made a Figma prototype and then a Flutter app that demos how you could use your GPS to locate those around you and be able to put names to faces.",
@@ -223,7 +319,7 @@ export const projects: Project[] = [
   {
     id: "melting-pot",
     name: "Melting Pot",
-    url: "https://www.figma.com/proto/OpqKlkSOyQ4QgO900BjQyb/Melting-Pot?node-id=3%3A53&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=3%3A53",
+    url: "https://www.figma.com/proto/OpqKlkSOyQ4QgO900BjQyb/Melting-Pot?node-id=3%3A53",
     srcCode: null,
     tags: ["school"],
     description: "For my final project for BYU CS 356 UI/UX Design class, we had to make an app that fills a need for the Coloured People of South Africa. After doing extensive research, I found that the those people struggle to find their identify due to their mixed heritage. I made a Figma prototype of how an app could scan their face using facial recognition and then help them identify which facial features correspond with their ancestral tribes.",
@@ -525,123 +621,37 @@ export const projects: Project[] = [
   }
 ]
 
-export const allShots = projects.flatMap(project => project.shots).filter(project => project !== null);
+export const allShots = projects.flatMap(proj => proj.shots).filter(proj => proj !== null);
+
+
+
+// Contact ********************************************************************************************
 
 interface ContactMethod {
   name: string;
-  icon: ReactElement;
+  icon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
   link: string;
   tooltipTitle?: string | ReactElement;
 }
 
-const fullSize = { width: "100%", height: "100%" };
 /* List of external resources for contacting me */
 export const contactMethods: ContactMethod[] = [
   {
     name: "LinkedIn",
-    icon: <LinkedInIcon style={fullSize} />,
+    icon: LinkedInIcon,
     link: "https://www.linkedin.com/in/brighamband",
     tooltipTitle: "Connect with me on LinkedIn",
   },
   {
     name: "Email",
-    icon: <MailOutlineIcon style={fullSize} />,
+    icon: MailOutlineIcon,
     link: "mailto:brighamband@gmail.com",
     tooltipTitle: "Email brighamband@gmail.com",
   },
   {
     name: "Phone",
-    icon: <PhoneIcon style={fullSize} />,
+    icon: PhoneIcon,
     link: "tel:3854998277",
     tooltipTitle: "Text / Call 385-499-8277",
   },
 ];
-
-const GH_SEARCH_BASE_URL = "https://github.com/brighamband?tab=repositories&q=";
-/* My top languages - used on '/#resume' */
-export const languages = [
-  {
-    name: "JavaScript",
-    className: "devicon-javascript-plain colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}javascript`,
-  },
-  {
-    name: "React",
-    className: "devicon-react-original-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}react`,
-  },
-  {
-    name: "Vue",
-    className: "devicon-vuejs-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}vue`,
-  },
-  {
-    name: "Flutter",
-    className: "devicon-flutter-plain colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}&language=dart`,
-  },
-  {
-    name: "HTML",
-    className: "devicon-html5-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}html`,
-  },
-  {
-    name: "CSS",
-    className: "devicon-css3-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}css`,
-  },
-  {
-    name: "Python",
-    className: "devicon-python-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}python`,
-  },
-  {
-    name: "Java",
-    className: "devicon-java-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}java`,
-  },
-  {
-    name: "Android",
-    className: "devicon-android-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}android`,
-  },
-  {
-    name: "C++",
-    className: "devicon-cplusplus-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}c-plus-plus`,
-  },
-  {
-    name: "C",
-    className: "devicon-c-plain-wordmark colored",
-    searchUrl: `${GH_SEARCH_BASE_URL}&language=c`,
-  },
-];
-
-/* List of my latest youtube videos with embed links - used on Home section */
-export const latestVidContent = [
-  {
-    title: "Commandshake Bot - Automated Job Applying",
-    url: "https://www.youtube.com/embed/34GiNbJ4ECc",
-  },
-  {
-    title: "Ep3 - How to Use Components in Figma",
-    url: "https://www.youtube.com/embed/McgMi2Pf4l4",
-  },
-  {
-    title: "Web Dev (JavaScript) Crash Course 2.0",
-    url: "https://www.youtube.com/embed/UJC2Gyaxd_s",
-  },
-  {
-    title: "Web Dev (HTML/CSS) Crash Course 1.0",
-    url: "https://www.youtube.com/embed/vGIRW00pB9w",
-  },
-  {
-    title: "Web Dev Snapshot",
-    url: "https://www.youtube.com/embed/jSeLgZsF5_U",
-  },
-];
-
-const RESUME_GDRIVE_ID = "1mS0MkDu1NzWzgNQKYNY3-bClSzIREIvI"
-export const RESUME_GDRIVE_URL = `${GDRIVE_BASE_URL}${RESUME_GDRIVE_ID}#view=fit`;
-// "view=fit" makes one page fit perfectly within the height of the iframe
-// "&toolbar=0" removes the toolbar so they can't download the pdf as easily (no download bar)
