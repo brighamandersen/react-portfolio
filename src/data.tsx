@@ -1,9 +1,9 @@
 import { ReactElement } from "react";
-import Home from "./routes/Home";
-import Contact from "./routes/Contact";
-import Resume from "./routes/Resume";
-import Sites from "./routes/Sites";
-import Designs from "./routes/Designs";
+import Home from "./sections/Home";
+import Contact from "./sections/Contact";
+import Resume from "./sections/Resume";
+import Sites from "./sections/Sites";
+import Designs from "./sections/Designs";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";

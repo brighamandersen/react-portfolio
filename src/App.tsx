@@ -10,11 +10,11 @@ import { sections } from "./data";
 import cornerLogo from "./assets/corner-logo.png";
 import { theme } from "./styles/theme";
 import { useEffect, useState } from "react";
-import Home from "./routes/Home";
-import Designs from "./routes/Designs";
-import Sites from "./routes/Sites";
-import Resume from "./routes/Resume";
-import Contact from "./routes/Contact";
+import Home from "./sections/Home";
+import Designs from "./sections/Designs";
+import Sites from "./sections/Sites";
+import Resume from "./sections/Resume";
+import Contact from "./sections/Contact";
 
 const useStyles = makeStyles(() => ({
   cornerLogo: {
