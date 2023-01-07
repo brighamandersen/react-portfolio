@@ -1,20 +1,9 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import { Hidden, makeStyles, ThemeProvider } from "@material-ui/core";
 import { sections } from "./data";
 import cornerLogo from "./assets/corner-logo.png";
 import { theme } from "./styles/theme";
 import { useEffect, useState } from "react";
-import Home from "./sections/Home";
-import Designs from "./sections/Designs";
-import Sites from "./sections/Sites";
-import Resume from "./sections/Resume";
-import Contact from "./sections/Contact";
 
 const useStyles = makeStyles(() => ({
   cornerLogo: {
