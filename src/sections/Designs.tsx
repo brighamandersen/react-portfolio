@@ -20,7 +20,7 @@ function Designs() {
           {allShots.map((shot) => (
             <Grid key={shot} item xs={12} sm={6} md={4}>
               <img
-                src={shot!}
+                src={shot!} // Not null
                 alt={`${shot} Screenshot`}
                 className={styles.shot}
                 loading='lazy'
