@@ -1,5 +1,5 @@
 import { Grid, Container } from "@material-ui/core";
-import { resources } from "../data";
+import { contactMethods } from "../data";
 import SectionTop from "../components/SectionTop";
 import IconLink from "../components/IconLink";
 
@@ -9,12 +9,12 @@ function Contact() {
       <Container maxWidth="md">
         <SectionTop title="Contact Me" />
         <Grid container spacing={3}>
-          {resources.map((res) => (
-            <Grid key={res.name} item xs={6} md={4}>
+          {contactMethods.map((method) => (
+            <Grid key={method.name} item xs={6} md={4}>
               <IconLink
-                icon={res.icon}
-                link={res.link}
-                tooltipTitle={res.tooltipTitle}
+                icon={method.icon}
+                link={method.link}
+                tooltipTitle={method.tooltipTitle}
                 square
               />
             </Grid>

@@ -366,8 +366,15 @@ export const sites: Site[] = [
 
 const fullSize = { width: "100%", height: "100%" };
 
-/* List of external resources for contacting / discovering more about me */
-export const resources = [
+interface ContactMethod {
+  name: string;
+  icon: ReactElement;
+  link: string;
+  tooltipTitle?: string | ReactElement;
+}
+
+/* List of external resources for contacting me */
+export const contactMethods: ContactMethod[] = [
   {
     name: "LinkedIn",
     icon: <LinkedInIcon style={fullSize} />,
@@ -389,7 +396,7 @@ export const resources = [
 ];
 
 const GH_SEARCH_BASE_URL = "https://github.com/brighamband?tab=repositories&q=";
-/* My top languages - used on '/resume' */
+/* My top languages - used on '/#resume' */
 export const languages = [
   {
     name: "JavaScript",
