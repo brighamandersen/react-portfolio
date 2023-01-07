@@ -16,6 +16,129 @@ import { SvgIconTypeMap } from "@material-ui/core";
 import { OverridableComponent } from "@material-ui/core/OverridableComponent";
 
 
+import fortySevenFund1 from "./assets/designs/47fund1.webp";
+import fortySevenFund2 from "./assets/designs/47fund2.webp";
+import fortySevenFund3 from "./assets/designs/47fund3.webp";
+import fortySevenFund4 from "./assets/designs/47fund4.webp";
+import fortySevenFund5 from "./assets/designs/47fund5.webp";
+import fortySevenFund6 from "./assets/designs/47fund6.webp";
+import fortySevenFund7 from "./assets/designs/47fund7.webp";
+import frenchToast1 from "./assets/designs/french-toast1.webp";
+import frenchToast2 from "./assets/designs/french-toast2.webp";
+import hackOverflow1 from "./assets/designs/hack-overflow1.webp";
+import hackOverflow2 from "./assets/designs/hack-overflow2.webp";
+import hackOverflow3 from "./assets/designs/hack-overflow3.webp";
+import hackOverflow4 from "./assets/designs/hack-overflow4.webp";
+import hackOverflow5 from "./assets/designs/hack-overflow5.webp";
+import instructme1 from "./assets/designs/instructme1.webp";
+import instructme2 from "./assets/designs/instructme2.webp";
+import instructme3 from "./assets/designs/instructme3.webp";
+import irecognize1 from "./assets/designs/irecognize1.webp";
+import irecognize2 from "./assets/designs/irecognize2.webp";
+import irecognize3 from "./assets/designs/irecognize3.webp";
+import irecognize4 from "./assets/designs/irecognize4.webp";
+import irecognize5 from "./assets/designs/irecognize5.webp";
+import jokester1 from "./assets/designs/jokester1.webp";
+import jokester2 from "./assets/designs/jokester2.webp";
+import jolt1 from "./assets/designs/jolt1.webp";
+import meltingPot1 from "./assets/designs/melting-pot1.webp";
+import meltingPot2 from "./assets/designs/melting-pot2.webp";
+import nbaInsiderHub1 from "./assets/designs/nba-insider-hub1.webp";
+import nbaInsiderHub2 from "./assets/designs/nba-insider-hub2.webp";
+import noEndInsight1 from "./assets/designs/no-end-insight1.webp";
+import noEndInsight2 from "./assets/designs/no-end-insight2.webp";
+import noEndInsight3 from "./assets/designs/no-end-insight3.webp";
+import noEndInsight4 from "./assets/designs/no-end-insight4.webp";
+import noEndInsight5 from "./assets/designs/no-end-insight5.webp";
+import pecos1 from "./assets/designs/pecos1.webp";
+import pecos2 from "./assets/designs/pecos2.webp";
+import pecos3 from "./assets/designs/pecos3.webp";
+import pecos4 from "./assets/designs/pecos4.webp";
+import pecos5 from "./assets/designs/pecos5.webp";
+import pecos6 from "./assets/designs/pecos6.webp";
+import pecos7 from "./assets/designs/pecos7.webp";
+import photography1 from "./assets/designs/photography1.webp";
+import photography2 from "./assets/designs/photography2.webp";
+import photography3 from "./assets/designs/photography3.webp";
+import piano1 from "./assets/designs/piano1.webp";
+import scoreboard1 from "./assets/designs/scoreboard1.webp";
+import scoreboard2 from "./assets/designs/scoreboard2.webp";
+import silverFund1 from "./assets/designs/silver-fund1.webp";
+import silverFund3 from "./assets/designs/silver-fund3.webp";
+import silverFund4 from "./assets/designs/silver-fund4.webp";
+import silverFund2 from "./assets/designs/silver-fund2.webp";
+import snake1 from "./assets/designs/snake1.webp";
+import tictactoe1 from "./assets/designs/tictactoe1.webp";
+import tweeter1 from "./assets/designs/tweeter1.webp";
+import tweeter2 from "./assets/designs/tweeter2.webp";
+import vbbPortal1 from "./assets/designs/vbb-portal1.webp";
+import vbbPortal2 from "./assets/designs/vbb-portal2.webp";
+import vbbPortal3 from "./assets/designs/vbb-portal3.webp";
+import weatherRainOrShine1 from "./assets/designs/weather-rain-or-shine1.webp";
+
+
+export const designShots = [
+  fortySevenFund1,
+  fortySevenFund2,
+  fortySevenFund3,
+  fortySevenFund4,
+  fortySevenFund5,
+  fortySevenFund6,
+  fortySevenFund7,
+  frenchToast1,
+  frenchToast2,
+  hackOverflow1,
+  hackOverflow2,
+  hackOverflow3,
+  hackOverflow4,
+  hackOverflow5,
+  instructme1,
+  instructme2,
+  instructme3,
+  irecognize1,
+  irecognize2,
+  irecognize3,
+  irecognize4,
+  irecognize5,
+  jokester1,
+  jokester2,
+  jolt1,
+  meltingPot1,
+  meltingPot2,
+  nbaInsiderHub1,
+  nbaInsiderHub2,
+  noEndInsight1,
+  noEndInsight2,
+  noEndInsight3,
+  noEndInsight4,
+  noEndInsight5,
+  pecos1,
+  pecos2,
+  pecos3,
+  pecos4,
+  pecos5,
+  pecos6,
+  pecos7,
+  photography1,
+  photography2,
+  photography3,
+  piano1,
+  scoreboard1,
+  scoreboard2,
+  silverFund1,
+  silverFund3,
+  silverFund4,
+  silverFund2,
+  snake1,
+  tictactoe1,
+  tweeter1,
+  tweeter2,
+  vbbPortal1,
+  vbbPortal2,
+  vbbPortal3,
+  weatherRainOrShine1,
+]
+
 
 export const GDRIVE_BASE_URL = "https://drive.google.com/uc?export=view&id=";
 
@@ -494,7 +617,7 @@ export const projects: Project[] = [
   {
       id: "silver-fund",
       name: "Silver Fund Visitor Site",
-      url: "https://silverfund.byu.edu",
+      url: "https://silverFund.byu.edu",
       srcCode: null,
       tags: [
           "work"

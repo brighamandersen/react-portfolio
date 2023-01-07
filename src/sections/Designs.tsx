@@ -1,5 +1,5 @@
 import { Grid, Container, makeStyles } from "@material-ui/core";
-import { allShots } from "../data";
+import { allShots, designShots } from "../data";
 import SectionTop from "../components/SectionTop";
 import { getGDriveUrl } from "../utils/helpers";
 
@@ -18,10 +18,10 @@ function Designs() {
       <Container maxWidth="md">
         <SectionTop title="My Designs" />
         <Grid container spacing={5}>
-          {allShots.map((shot) => (
+          {designShots.map((shot) => (
             <Grid key={shot} item xs={12} sm={6} md={4}>
               <img
-                src={getGDriveUrl(shot)}
+                src={shot}
                 alt={`${shot} Screenshot`}
                 className={styles.shot}
                 loading="lazy"
