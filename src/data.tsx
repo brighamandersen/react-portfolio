@@ -5,6 +5,7 @@ import Resume from "./sections/Resume";
 import Sites from "./sections/Sites";
 import Designs from "./sections/Designs";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import PermMediaIcon from '@material-ui/icons/PermMedia';
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
 import PhoneIcon from "@material-ui/icons/Phone";
 import HomeIcon from "@material-ui/icons/Home";
@@ -12,41 +13,9 @@ import PhotoLibraryIcon from "@material-ui/icons/PhotoLibrary";
 import DesktopMacIcon from "@material-ui/icons/DesktopMac";
 import DescriptionIcon from "@material-ui/icons/Description";
 import AccountBoxIcon from "@material-ui/icons/AccountBox";
-import scoreboardShot from "./assets/designs/scoreboard.png";
-import jokesterShot from "./assets/designs/jokester.png";
-import jokesterPopupShot from "./assets/designs/jokester-popup.png";
-import vbbBookingShot from "./assets/designs/BookingDesktop.png";
-import neiFeedShot from "./assets/designs/feed-desktop.jpeg";
-import sfFundObjectivesShot from "./assets/designs/FundObjectives1.4.png";
-import photographyHomeShot from "./assets/designs/home-desktop.jpeg";
-import neiLoginShot from "./assets/designs/nei-login-desktop.jpeg";
-import nbaInsiderHubShot from "./assets/designs/nba-ih-desktop.jpeg";
-import sfPositionsHistoryShot from "./assets/designs/PositionsHistoryPercent.png";
-import sfPositionsSnapshotShot from "./assets/designs/PositionsSnapshot$.png";
-import vbbUnbookingShot from "./assets/designs/UnbookingDesktop.png";
-import vbbSigninMobileShot from "./assets/designs/VBBSigninMobile.png";
-import adminDashboardAllUsersShot from "./assets/designs/admin-dashboard-all-users.jpeg";
-import adminDashboardCreateUserShot from "./assets/designs/admin-dashboard-create-user.jpeg";
-import adminDashboardEditUserShot from "./assets/designs/admin-dashboard-edit-user.jpeg";
-import adminDashboardFilterUsersShot from "./assets/designs/admin-dashboard-filter-users.jpeg";
-import advancedSearchShot from "./assets/designs/AdvancedSearch.png";
-import clerkDashboardShot from "./assets/designs/clerk-dashboard.jpeg";
-import contactShot from "./assets/designs/contact.jpeg";
-import vbbDashboardShot from "./assets/designs/DashboardDesktopWithSessions.png";
-import documentManagementShot from "./assets/designs/document-management.jpeg";
-import sfHomeShot from "./assets/designs/Home1.5-HistorySlider.png";
-import landingShot from "./assets/designs/landing.jpeg";
-import pecosLoginShot from "./assets/designs/pecos-login-desktop.jpeg";
-import notFoundShot from "./assets/designs/not-found.png";
-import sfHistoryShot from "./assets/designs/OurHistory1.4.png";
-import quickSearchShot from "./assets/designs/QuickSearch.png";
-import recordsTableShot from "./assets/designs/records-table.png";
-import recordsShot from "./assets/designs/records.png";
-import registerShot from "./assets/designs/register.png";
-import frenchToast1Shot from "./assets/designs/FrenchToastProcessPaper-1.png";
-import frenchToast2Shot from "./assets/designs/FrenchToastProcessPaper-2.png";
-import joltLabelsPortrait from "./assets/designs/Jolt Labels - Tablet Portrait.png";
-import joltLabelsLandscape from "./assets/designs/Jolt Labels - Tablet Landscape.png";
+import Projects from "./sections/Projects";
+
+export const GDRIVE_BASE_URL = 'https://drive.google.com/uc?export=view&id=';
 
 export interface Section {
   id: string;
@@ -63,6 +32,12 @@ export const sections: Section[] = [
     component: Home,
     icon: <HomeIcon />,
   },
+  // {
+  //   id: "projects",
+  //   name: "Projects",
+  //   component: Projects,
+  //   icon: <PermMediaIcon />,
+  // },
   {
     id: "designs",
     name: "Designs",
@@ -89,45 +64,238 @@ export const sections: Section[] = [
   },
 ];
 
-const GDRIVE_BASE_URL = 'https://drive.google.com/uc?export=view&id=';
-/* List of screenshots of designs I've made */
-export const designShots = [
-  scoreboardShot,
-  jokesterShot,
-  jokesterPopupShot,
-  vbbBookingShot,
-  neiFeedShot,
-  sfFundObjectivesShot,
-  photographyHomeShot,
-  neiLoginShot,
-  nbaInsiderHubShot,
-  sfPositionsHistoryShot,
-  sfPositionsSnapshotShot,
-  vbbUnbookingShot,
-  vbbSigninMobileShot,
-  adminDashboardAllUsersShot,
-  adminDashboardCreateUserShot,
-  adminDashboardEditUserShot,
-  adminDashboardFilterUsersShot,
-  advancedSearchShot,
-  clerkDashboardShot,
-  contactShot,
-  vbbDashboardShot,
-  documentManagementShot,
-  sfHomeShot,
-  landingShot,
-  pecosLoginShot,
-  notFoundShot,
-  sfHistoryShot,
-  quickSearchShot,
-  recordsTableShot,
-  recordsShot,
-  registerShot,
-  frenchToast1Shot,
-  frenchToast2Shot,
-  joltLabelsPortrait,
-  joltLabelsLandscape
-];
+// See folder where all the shots are stored at https://drive.google.com/drive/u/0/folders/1BxRgdhP44eLnhc9qHu5jnQMMjO7xTycD
+// IDs below are the names of the repos and/or folders within GDrive where shots are stored.
+// Make sure shots are square and .jpg (use lunapic)
+interface Project {
+  id: string;
+  name: string;
+  shots: string[];
+}
+
+export const projects: Project[] = [
+  {
+    id: "scoreboard",
+    name: "Scoreboard",
+    shots: [
+      "1mdThtpI3CgnG_lThtMgD7IMqa8-00bwN",
+      "1QBjixMatPrpRoh-7EPuM3EgZsBRPgi-B"
+    ]
+  },
+  {
+    id: "weather-rain-or-shine",
+    name: "Weather Rain or Shine",
+    shots: [
+      "12QuzefsZsalrKgO6tqHT2wPk2MvCsrIa"
+    ]
+  },
+  {
+    id: "vbb-portal",
+    name: "VBB Portal",
+    shots: [
+      "1PDDxatkJ8DzlmeU4XZpmx62-SMu9EN7C",
+      "1GC9T77SHbnBEd9nt0YbyZnqbLs2tnFpH",
+      "1uWnUIo9ek-LDrTsr-XVheqQBfoWYZLzu",
+    ]
+  },
+  {
+    id: "no-end-insight",
+    name: "No End Insight",
+    shots: [
+      "1s6tmVvXH4G6r0rKSokrNlcMWOWFtSmnA",
+      "1Cv8YJi7QCQgJlbMFcvlmCiUaAi1B8FRo",
+      "1b4l943DIPBZ2bwxyRGmUumVEe9G9O8T8",
+      "1JXesz7KJmnX6b10KT3PVfzzDxXkQulw7",
+      "1bC9J0fw-941vySVyB-UBRxIfjVuWfhIk",
+    ]
+  },
+  {
+    id: "jokester",
+    name: "Jokester",
+    shots: [
+      "10XALKJ0b2fcUIGw0zQAOqeHdWBUTRBeW",
+      "1LoK5yempCvTTj-0p6B6jRoLt_bOc95rH"
+    ]
+  },
+  {
+    id: "nba-insider-hub",
+    name: "NBA Insider Hub",
+    shots: [
+      "1NPF4qO_3M62CTJsfl1Oy2cnlG6e8emI7",
+      "1wWywLcMmqeKWytKrNDJV7DXDkWtG_dBm"
+    ]
+  },
+  {
+    id: "photography",
+    name: "Photography",
+    shots: [
+      "1pD792_OuSrGUsi56viqsBDd8iy-t7r1E",
+      "1YDy-ZZQX5pf1U9z4Nvf_2iTfeGiJHa3H",
+      "1ccFv-l_XiibaosZutb4L2FCG_66CFnti",
+    ]
+  },
+  {
+    id: "silver-fund",
+    name: "Silver Fund",
+    shots: [
+      "18NswXD6eIRE82A8tE-oiL-xh4BaTK3od",
+      "1FfWptIuq5pY_2U1PxYLcQOzCf48pCQbc",
+      "1yFeaGoj2zfBWK6_jsOVT0tEzh_uha5y2",
+      "1lpqp9UkLEsDw2MdP1FCS7-i0XVK4vjX4",
+    ]
+  },
+  {
+    id: "french-toast",
+    name: "French Toast Instructions",
+    shots: [
+      "1Aktraxt-h1hgIaPfaQjzmkRFSNHy3I_2",
+      "1qLSLnf7jkQH2Fgre-ZHguiXrWSFHGCDw"
+    ]
+  },
+  {
+    id: "melting-pot",
+    name: "Melting Pot",
+    shots: [
+      "1FrEpbBTCNT3B-rLCuaqvLQUkckk1US38",
+      "1izPI242cFzpTO78sl_B2lBdnSwCykCcx",
+    ]
+  },
+  {
+    id: "windsor",
+    name: "Windsor Stake Resource Finder",
+    shots: [
+      "1L5O1LeHf2ebAKNjDkiUsY27fz7FPSKwb",
+      "1lHKR1FdPwgmvdX7VjlI2etjXR_A_ySTi",
+    ]
+  },
+  {
+    id: "irecognize",
+    name: "iRecognize",
+    shots: [
+      "1PBGEpqcwc2e9zt3rs8mosRmEbDAknp1-",
+      "1WF9rIPR2Gz1tq_6v7yS_psxwOHbOhnvB",
+      "15enpKv8WUAk59ubUWzwN45AAa2-xAU59",
+      "1kijMjmBon5mzH2TdJdY7C1vwhemFiept",
+      "1xJHRT-AdLeJkFWpGq9BxUJd09i1BTJ2q",
+    ]
+  },
+  {
+    id: "47fund",
+    name: "Silver Fund Web App",
+    shots: [
+      "1N_L1TmviCyeXrjFAYvt0IiZVd9ktTDmi",
+      "1SukV3DEh5m4q3ClbbKV6OCXLyBd_gNuu",
+      "17NnAVb-ivpvooTH4PiTDJ4Hohp8WxqTK",
+      "1qD7Q-3jzw9qadRe7dd7HB7XZs6nIUefU",
+      "1EzG56uA6WYixaz55Q_og3z34fNi_fK39",
+      "11sdhmIYMKwTMZWUiLdm9QcAXmf-cDhvw",
+      "1GrlIyOHnGgX57XhFbzXriROZbYGRrPwq",
+    ]
+  },
+  {
+    id: "jolt",
+    name: "Jolt",
+    shots: [
+      "1Z2GSGLxfHuRUg8RLBUl7safI7jiLSzmw",
+    ]
+  },
+  {
+    id: "pecos",
+    name: "Pecos",
+    shots: [
+      "105s34RcgmIs1U2x7V3ZYbZimjg7zTM4j",
+      "10F92CyWYUPTdChprtFojLAvJFktMxTzX",
+      "10k1lcC0eu5qb4k9GHryYF27bvy1SnY24",
+      "1XFvc1wnTRBa26IsDFEWMcFkewrcQomOi",
+      "1mlohwIIWVOM3lamMwEkr7V1hPfumVIoW",
+      "1Y20aI2L1EHLN5_gsVv5HDU6HNOofwsKo",
+      "1X7jBovH19Y1ZKurIzG_HLY7nbrZteWnl",
+    ]
+  },
+  {
+    id: "tweeter",
+    name: "Tweeter",
+    shots: [
+      "1PkToOOeNZLfLOfblnkq5AynCt5aADHmU",
+      "1_3RjtdkkqY-G0uPDJXXaYi-qaOvnQdEF"
+    ]
+  },
+  {
+    id: "piano",
+    name: "Piano",
+    shots: [
+      "1Q1BmYyRJki59u-P9HMFKcGvuSHfXperI",
+    ]
+  },
+  {
+    id: "snake",
+    name: "Snake",
+    shots: [
+      "1bOT6qSmgu4m4eEXt9xW50IRryzhNXz1u",
+    ]
+  },
+  {
+    id: "tictactoe",
+    name: "Tic Tac Toe",
+    shots: [
+      "1HaRz4JpAJ6LndbMtWgkNMrn8lW7WhMh0",
+    ]
+  },
+  {
+    id: "instructme",
+    name: "Instruct.Me",
+    shots: [
+      "1SKPtyYAb7mtM31EfYoLDfD9qcArChTqM",
+      "1AKlqTiEICjXrP_BSYMrPyu21Qum0GFlM",
+      "11rRWGf3URPW3NCR9z4qO2oTywaD1nxNw"
+    ]
+  },
+  {
+    id: "hack-overflow",
+    name: "Hack Overflow",
+    shots: [
+      "1LjeGt3TF9cGpNKgXoQx-YOR8XhkTEaNu",
+      "15NeRXYhX9Y3PED8dgJRm_1olpbfmDwAp",
+      "1-qFPFAxy0duDTrCxxYRKATsQgysEMrex",
+      "1HxXhLYPy80dL2RPQgMg11ojUV6B147E-",
+      "1qeCACh5qWuMc5n3bzAnwpgdeWLY477wf",
+    ]
+  },
+  // {
+  //   id: "",
+  //   name: "",
+  //   shots: [
+  //     "",
+  //     ""
+  //   ]
+  // },
+  // {
+  //   id: "",
+  //   name: "",
+  //   shots: [
+  //     "",
+  //     ""
+  //   ]
+  // },
+  // {
+  //   id: "",
+  //   name: "",
+  //   shots: [
+  //     "",
+  //     ""
+  //   ]
+  // },
+  // {
+  //   id: "",
+  //   name: "",
+  //   shots: [
+  //     "",
+  //     ""
+  //   ]
+  // },
+]
+
+export const allShots = projects.flatMap(project => project.shots);
 
 interface Site {
   name: string;
@@ -364,8 +532,6 @@ export const sites: Site[] = [
   },
 ];
 
-const fullSize = { width: "100%", height: "100%" };
-
 interface ContactMethod {
   name: string;
   icon: ReactElement;
@@ -373,6 +539,7 @@ interface ContactMethod {
   tooltipTitle?: string | ReactElement;
 }
 
+const fullSize = { width: "100%", height: "100%" };
 /* List of external resources for contacting me */
 export const contactMethods: ContactMethod[] = [
   {
@@ -455,7 +622,7 @@ export const languages = [
   },
 ];
 
-/* List of my latest youtube videos with embed links - used on Home page */
+/* List of my latest youtube videos with embed links - used on Home section */
 export const latestVidContent = [
   {
     title: "Commandshake Bot - Automated Job Applying",
