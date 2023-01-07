@@ -220,7 +220,7 @@ interface Project {
   srcCode: string | null;
   tags: string[];
   description: string;
-  shots: string[] | null; // Make sure shots are square (use lunapic), .webp (use cwebp), and dimensions of 800x800. They're being hosted from https://drive.google.com/drive/u/0/folders/1BxRgdhP44eLnhc9qHu5jnQMMjO7xTycD
+  shots: string[] | null; // Make sure shots are square (use lunapic), .webp (use cwebp), and dimensions of 800x800
 }
 
 /* List of the projects I've done (websites, apps, designs, scripts) */
