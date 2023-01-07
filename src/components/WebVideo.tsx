@@ -24,6 +24,7 @@ function WebVideo(props: Props) {
       src={url}
       allowFullScreen
       className={styles.noBorder}
+      loading="lazy"
     />
   </Box>
   )
