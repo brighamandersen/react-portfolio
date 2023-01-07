@@ -1,7 +1,7 @@
 import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import { Card, Container, makeStyles } from "@material-ui/core";
-import { sites } from "../data";
+import { projects } from "../data";
 import SectionTop from "../components/SectionTop";
 import { COLORS } from "../styles/theme";
 import IconLink from "../components/IconLink";
@@ -36,7 +36,7 @@ function Sites() {
             />
           }
         />
-        {sites.map((site) => (
+        {projects.map((site) => (
           <Card key={site.name} className={styles.card}>
             <h2>{site.name}</h2>
             <p>{site.description}</p>
