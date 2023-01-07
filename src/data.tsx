@@ -161,14 +161,6 @@ export const projects: Project[] = [
     ]
   },
   {
-    id: "windsor",
-    name: "Windsor Stake Resource Finder",
-    shots: [
-      "1L5O1LeHf2ebAKNjDkiUsY27fz7FPSKwb",
-      "1lHKR1FdPwgmvdX7VjlI2etjXR_A_ySTi",
-    ]
-  },
-  {
     id: "irecognize",
     name: "iRecognize",
     shots: [
