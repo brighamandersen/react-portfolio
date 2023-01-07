@@ -23,7 +23,6 @@ function Designs() {
                 src={shot!} // Not null
                 alt={`${shot} Screenshot`}
                 className={styles.shot}
-                loading='lazy'
               />
             </Grid>
           ))}
