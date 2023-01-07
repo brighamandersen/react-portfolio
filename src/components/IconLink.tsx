@@ -3,10 +3,10 @@ import { ReactElement } from 'react';
 
 const useStyles = makeStyles(() => ({
   longTooltip: {
-    maxWidth: "none",
+    maxWidth: 'none'
   },
   noCorners: {
-    borderRadius: 0,
+    borderRadius: 0
   }
 }));
 
@@ -24,8 +24,8 @@ function IconLink(props: Props) {
   const IconBtn = (
     <IconButton
       href={link}
-      target="_blank"
-      rel="noopener noreferrer"
+      target='_blank'
+      rel='noopener noreferrer'
       className={square ? styles.noCorners : ''}
     >
       {icon}

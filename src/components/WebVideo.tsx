@@ -2,8 +2,8 @@ import { Box, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles(() => ({
   noBorder: {
-    border: "none",
-  },
+    border: 'none'
+  }
 }));
 
 interface Props {
@@ -17,16 +17,16 @@ function WebVideo(props: Props) {
 
   return (
     <Box my={5} height={500}>
-    <iframe
-      width="100%"
-      height="100%"
-      title={title}
-      src={url}
-      allowFullScreen
-      className={styles.noBorder}
-    />
-  </Box>
-  )
+      <iframe
+        width='100%'
+        height='100%'
+        title={title}
+        src={url}
+        allowFullScreen
+        className={styles.noBorder}
+      />
+    </Box>
+  );
 }
 
-export default WebVideo
+export default WebVideo;

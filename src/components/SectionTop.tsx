@@ -3,8 +3,8 @@ import { ReactElement } from 'react';
 
 const useStyles = makeStyles(() => ({
   sectionHeader: {
-    fontSize: 40,
-  },
+    fontSize: 40
+  }
 }));
 
 interface Props {
@@ -17,13 +17,9 @@ function SectionTop(props: Props) {
   const styles = useStyles();
 
   return (
-    <Box display="flex" alignItems="center">
+    <Box display='flex' alignItems='center'>
       <h1 className={styles.sectionHeader}>{title}</h1>
-      {iconLink && (
-        <Box ml={2}>
-          {iconLink}
-        </Box>
-      )}
+      {iconLink && <Box ml={2}>{iconLink}</Box>}
     </Box>
   );
 }

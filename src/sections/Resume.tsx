@@ -1,27 +1,22 @@
-import {
-  Box,
-  Container,
-  Grid,
-  makeStyles,
-} from "@material-ui/core";
-import { languages, RESUME_GDRIVE_URL } from "../data";
-import SectionTop from "../components/SectionTop";
-import IconLink from "../components/IconLink";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { Box, Container, Grid, makeStyles } from '@material-ui/core';
+import { languages, RESUME_GDRIVE_URL } from '../data';
+import SectionTop from '../components/SectionTop';
+import IconLink from '../components/IconLink';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const useStyles = makeStyles(() => ({
   resumePdf: {
-    height: "75vh",
-    width: "100%",
+    height: '75vh',
+    width: '100%',
     border: 'none'
   },
   languagesWrapper: {
-    "& > div": {
-      textAlign: "center",
+    '& > div': {
+      textAlign: 'center'
     },
-    "& i": {
-      fontSize: 100,
-    },
+    '& i': {
+      fontSize: 100
+    }
   },
   noCorners: {
     borderRadius: 0
@@ -32,19 +27,23 @@ function Resume() {
   const styles = useStyles();
 
   return (
-    <section id="resume">
-      <Container maxWidth="md">
-        <SectionTop 
-          title="My Resume"
+    <section id='resume'>
+      <Container maxWidth='md'>
+        <SectionTop
+          title='My Resume'
           iconLink={
             <IconLink
               icon={<LinkedInIcon />}
-              link="https://www.linkedin.com/in/brighamband/details/experience/"
-              tooltipTitle="See all job experience on LinkedIn"
+              link='https://www.linkedin.com/in/brighamband/details/experience/'
+              tooltipTitle='See all job experience on LinkedIn'
             />
           }
         />
-        <iframe src={RESUME_GDRIVE_URL} title="Resume - Brigham Andersen" className={styles.resumePdf} />
+        <iframe
+          src={RESUME_GDRIVE_URL}
+          title='Resume - Brigham Andersen'
+          className={styles.resumePdf}
+        />
         <Box my={8}>
           <h2>My Top Languages</h2>
           <Grid container spacing={5} className={styles.languagesWrapper}>
@@ -67,6 +66,6 @@ function Resume() {
       </Container>
     </section>
   );
-};
+}
 
 export default Resume;

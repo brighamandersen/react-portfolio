@@ -1,22 +1,22 @@
-import { Grid, Container, makeStyles } from "@material-ui/core";
-import { contactMethods } from "../data";
-import SectionTop from "../components/SectionTop";
-import IconLink from "../components/IconLink";
+import { Grid, Container, makeStyles } from '@material-ui/core';
+import { contactMethods } from '../data';
+import SectionTop from '../components/SectionTop';
+import IconLink from '../components/IconLink';
 
 const useStyles = makeStyles(() => ({
   fullSize: {
-    width: "100%",
-    height: "100%",
-  },
+    width: '100%',
+    height: '100%'
+  }
 }));
 
 function Contact() {
   const styles = useStyles();
 
   return (
-    <section id="contact">
-      <Container maxWidth="md">
-        <SectionTop title="Contact Me" />
+    <section id='contact'>
+      <Container maxWidth='md'>
+        <SectionTop title='Contact Me' />
         <Grid container spacing={3}>
           {contactMethods.map((method) => (
             <Grid key={method.name} item xs={6} md={4}>
@@ -32,6 +32,6 @@ function Contact() {
       </Container>
     </section>
   );
-};
+}
 
 export default Contact;

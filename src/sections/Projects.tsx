@@ -1,38 +1,38 @@
-import LaunchSharpIcon from "@material-ui/icons/LaunchSharp";
-import GitHubIcon from "@material-ui/icons/GitHub";
-import { Card, Container, makeStyles } from "@material-ui/core";
-import { projects } from "../data";
-import SectionTop from "../components/SectionTop";
-import { COLORS } from "../styles/theme";
-import IconLink from "../components/IconLink";
+import LaunchSharpIcon from '@material-ui/icons/LaunchSharp';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import { Card, Container, makeStyles } from '@material-ui/core';
+import { projects } from '../data';
+import SectionTop from '../components/SectionTop';
+import { COLORS } from '../styles/theme';
+import IconLink from '../components/IconLink';
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    color: COLORS.white,
+    color: COLORS.white
   },
   url: {
     color: COLORS.white,
-    padding: theme.spacing(2),
+    padding: theme.spacing(2)
   },
   card: {
     padding: theme.spacing(4),
-    margin: theme.spacing(4),
-  },
+    margin: theme.spacing(4)
+  }
 }));
 
 function Projects() {
   const styles = useStyles();
 
   return (
-    <section id="projects">
-      <Container maxWidth="md">
-        <SectionTop 
-          title="My Projects" 
+    <section id='projects'>
+      <Container maxWidth='md'>
+        <SectionTop
+          title='My Projects'
           iconLink={
             <IconLink
               icon={<GitHubIcon />}
-              link="https://github.com/brighamband"
-              tooltipTitle="Check out my GitHub"
+              link='https://github.com/brighamband'
+              tooltipTitle='Check out my GitHub'
             />
           }
         />
@@ -69,6 +69,6 @@ function Projects() {
       </Container>
     </section>
   );
-};
+}
 
 export default Projects;

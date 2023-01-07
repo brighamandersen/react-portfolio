@@ -1,45 +1,45 @@
-import { Box, Hidden, makeStyles } from "@material-ui/core";
-import { Section } from "../data";
-import { COLORS } from "../styles/theme";
+import { Box, Hidden, makeStyles } from '@material-ui/core';
+import { Section } from '../data';
+import { COLORS } from '../styles/theme';
 
 const useStyles = makeStyles((theme) => ({
   navItemContainer: {
     display: 'flex',
     justifyContent: 'space-evenly',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   iconWrapper: {
-    display: "inherit",
-    alignSelf: "center",
+    display: 'inherit',
+    alignSelf: 'center'
   },
   textWrapper: {
-    paddingLeft: theme.spacing(1),
+    paddingLeft: theme.spacing(1)
   },
   navbar: {
     background: theme.palette.primary.main,
-    position: "fixed",
+    position: 'fixed',
     top: 0,
-    width: "100%",
+    width: '100%',
     zIndex: 1,
 
-    "& > a": {
-      display: "inline-block",
+    '& > a': {
+      display: 'inline-block',
       padding: theme.spacing(2),
       color: COLORS.whiteGray,
-      textDecoration: "none",
+      textDecoration: 'none',
       letterSpacing: 1,
 
-      "&.active": {
+      '&.active': {
         background: COLORS.whiteGray,
         color: theme.palette.primary.main,
-        fontWeight: "bold",
+        fontWeight: 'bold'
       },
 
-      "&:not(.active):hover": {
-        background: theme.palette.primary.light,
-      },
-    },
-  },
+      '&:not(.active):hover': {
+        background: theme.palette.primary.light
+      }
+    }
+  }
 }));
 
 interface Props {
@@ -57,9 +57,9 @@ const Navbar = (props: Props) => {
         <a
           key={section.id}
           href={`#${section.id}`}
-          className={activeSectionId === section.id ? 'active': ''}
+          className={activeSectionId === section.id ? 'active' : ''}
         >
-           <Box display="flex" justifyContent="space-evenly" alignItems="center">
+          <Box display='flex' justifyContent='space-evenly' alignItems='center'>
             <div className={styles.iconWrapper}>{section.icon}</div>
             <Hidden smDown>
               <div className={styles.textWrapper}>{section.name}</div>
