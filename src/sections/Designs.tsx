@@ -18,11 +18,11 @@ function Designs() {
       <Container maxWidth="md">
         <SectionTop title="My Designs" />
         <Grid container spacing={5}>
-          {allShots.map((shotId) => (
-            <Grid key={shotId} item xs={12} sm={6} md={4}>
+          {allShots.map((shot) => (
+            <Grid key={shot} item xs={12} sm={6} md={4}>
               <img
-                src={getGDriveUrl(shotId)}
-                alt={`${shotId} Screenshot`}
+                src={getGDriveUrl(shot)}
+                alt={`${shot} Screenshot`}
                 className={styles.shot}
                 loading="lazy"
               />
