@@ -31,8 +31,8 @@ function Projects() {
           iconLink={
             <IconLink
               icon={<GitHubIcon />}
-              link='https://github.com/brighamband'
-              tooltipTitle='Check out my GitHub'
+              link='https://github.com/brighamband?tab=repositories'
+              tooltipTitle='Check out all my GitHub repos'
             />
           }
         />
