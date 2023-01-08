@@ -4,7 +4,7 @@ import SectionTop from '../components/SectionTop';
 
 const useStyles = makeStyles(() => ({
   shot: {
-    width: '100%',
+    // width: '100%',
     maxHeight: 300,
     boxShadow: '0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)'
   }

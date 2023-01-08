@@ -13,6 +13,9 @@ const useStyles = makeStyles((theme) => ({
   url: {
     color: COLORS.white,
     padding: theme.spacing(2)
+  },
+  shot: {
+    maxHeight: 250
   }
 }));
 
@@ -33,33 +36,53 @@ function Projects() {
           }
         />
         {projects.map((proj) => (
-          <Box component={Card} key={proj.id} p={4} my={4}>
-            <h2>{proj.name}</h2>
-            <p>{proj.description}</p>
-            {proj.url && (
-              <IconLink
-                icon={<LaunchSharpIcon />}
-                link={proj.url}
-                tooltipTitle={
-                  <>
-                    <h3 className={styles.header}>Site:</h3>
-                    <code className={styles.url}>{proj.url}</code>
-                  </>
-                }
-              />
-            )}
-            {proj.srcCode && (
-              <IconLink
-                icon={<GitHubIcon />}
-                link={proj.srcCode}
-                tooltipTitle={
-                  <>
-                    <h3 className={styles.header}>Source Code:</h3>
-                    <code className={styles.url}>{proj.srcCode}</code>
-                  </>
-                }
-              />
-            )}
+          <Box
+            component={Card}
+            key={proj.id}
+            p={4}
+            my={4}
+            display='flex'
+            flexDirection='row'
+            justifyContent='space-between'
+            alignItems='center'
+          >
+            <Box flexGrow={1}>
+              <h2>{proj.name}</h2>
+              <p>{proj.description}</p>
+              {proj.url && (
+                <IconLink
+                  icon={<LaunchSharpIcon />}
+                  link={proj.url}
+                  tooltipTitle={
+                    <>
+                      <h3 className={styles.header}>Site:</h3>
+                      <code className={styles.url}>{proj.url}</code>
+                    </>
+                  }
+                />
+              )}
+              {proj.srcCode && (
+                <IconLink
+                  icon={<GitHubIcon />}
+                  link={proj.srcCode}
+                  tooltipTitle={
+                    <>
+                      <h3 className={styles.header}>Source Code:</h3>
+                      <code className={styles.url}>{proj.srcCode}</code>
+                    </>
+                  }
+                />
+              )}
+            </Box>
+            {proj.shots ? (
+              <Box flex={1} pl={4}>
+                <img
+                  src={proj.shots[0]}
+                  alt={`${proj.name} Screenshot`}
+                  className={styles.shot}
+                />
+              </Box>
+            ) : null}
           </Box>
         ))}
       </Container>
