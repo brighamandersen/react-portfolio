@@ -213,7 +213,7 @@ export const languages = [
 
 // Projects & Designs *********************************************************************************
 
-interface Project {
+export interface Project {
   id: string; // Name of repo / photo files
   name: string;
   url: string | null;
