@@ -1,4 +1,4 @@
-import { Box, Card, makeStyles } from '@material-ui/core';
+import { Box, Card, Hidden, makeStyles } from '@material-ui/core';
 import LaunchSharpIcon from '@material-ui/icons/LaunchSharp';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Project } from '../data';
@@ -66,15 +66,17 @@ function ProjectCard(props: Props) {
           />
         )}
       </Box>
-      {shots ? (
-        <Box flex={1} pl={4}>
-          <img
-            src={shots[0]}
-            alt={`${name} Screenshot`}
-            className={styles.shot}
-          />
-        </Box>
-      ) : null}
+      <Hidden smDown>
+        {shots ? (
+          <Box flex={1} pl={4}>
+            <img
+              src={shots[0]}
+              alt={`${name} Screenshot`}
+              className={styles.shot}
+            />
+          </Box>
+        ) : null}
+      </Hidden>
     </Box>
   );
 }
