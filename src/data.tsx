@@ -22,6 +22,7 @@ import fortySevenFund4 from './assets/shots/47fund4.webp';
 import fortySevenFund5 from './assets/shots/47fund5.webp';
 import fortySevenFund6 from './assets/shots/47fund6.webp';
 import fortySevenFund7 from './assets/shots/47fund7.webp';
+import adobe1 from './assets/shots/adobe1.webp';
 import frenchToast1 from './assets/shots/french-toast1.webp';
 import frenchToast2 from './assets/shots/french-toast2.webp';
 import hackOverflow1 from './assets/shots/hack-overflow1.webp';
@@ -40,6 +41,8 @@ import irecognize5 from './assets/shots/irecognize5.webp';
 import jokester1 from './assets/shots/jokester1.webp';
 import jokester2 from './assets/shots/jokester2.webp';
 import jolt1 from './assets/shots/jolt1.webp';
+import jolt2 from './assets/shots/jolt2.webp';
+import jolt3 from './assets/shots/jolt3.webp';
 import meltingPot1 from './assets/shots/melting-pot1.webp';
 import meltingPot2 from './assets/shots/melting-pot2.webp';
 import nbaInsiderHub1 from './assets/shots/nba-insider-hub1.webp';
@@ -232,7 +235,7 @@ export const projects: Project[] = [
     srcCode: 'https://github.com/brighamband/47fund',
     tags: ['work', 'side'],
     description:
-      "Silver Fund Web App - A Stocks/Trades Performance Tracker/Predictor Site.  I created this while working as a Software Engineer for Silver Fund (BYU's MBA Finance Program) during the second half of 2020.  After I left the project broke, so I recreated the front end side of things on my domain as a side project.",
+      "Silver Fund Web App - A Stocks/Trades Performance Tracker/Predictor Site.  I created this while working as a Software Engineer for Silver Fund (BYU's MBA Finance Program) during the second half of 2020.  After I left the project broke, so I recreated the front-end side of things on my domain as a side project.",
     shots: [
       fortySevenFund1,
       fortySevenFund2,
@@ -242,6 +245,16 @@ export const projects: Project[] = [
       fortySevenFund6,
       fortySevenFund7
     ]
+  },
+  {
+    id: 'adobe',
+    name: 'Adobe',
+    url: 'https://experience.adobe.com/#/@aauniversity/so:adobea8cf/analytics',
+    srcCode: null,
+    tags: ['school'],
+    description:
+      "For my Senior Capstone at BYU I'm on a team with 4 other developers working for Adobe. We specifically work on Adobe Analytics. Corporations like Walmart and Best Buy use it, but managers doing basic analytics aren't the most technical, so we've been tasked with enhancing their React front-end by revamping the workflow for building out visualizations like line and bar charts.",
+    shots: [adobe1]
   },
   {
     id: 'comics',
@@ -347,7 +360,7 @@ export const projects: Project[] = [
     tags: ['work'],
     description:
       "Enhancing a React Native application that's optimized both for tablet and mobile. This app helps fast food companies like Chick-fil-A and McDonald's with timeclocking, food safety, printing labels, and more.",
-    shots: [jolt1]
+    shots: [jolt1, jolt2, jolt3]
   },
   {
     id: 'k9-directory',
@@ -582,7 +595,7 @@ export const projects: Project[] = [
     srcCode: 'https://github.com/brighamband/vbb-portal',
     tags: ['work', 'side'],
     description:
-      'International Mentoring Booking Site used by Nike and Oracle.  I did full-stack development on this project, but focused primarily on front end.  This project has been unstable since I left, so in the cases that the Official Website (https://portal.villagebookbuilders.org) is down or people want to take a look at site features w/o making an account, I recreated the front end side of things on my domain as a side project.',
+      'International Mentoring Booking Site used by Nike and Oracle.  I did full-stack development on this project, but focused primarily on front-end.  This project has been unstable since I left, so in the cases that the Official Website (https://portal.villagebookbuilders.org) is down or people want to take a look at site features w/o making an account, I recreated the front-end side of things on my domain as a side project.',
     shots: [vbbPortal1, vbbPortal2, vbbPortal3]
   },
   {

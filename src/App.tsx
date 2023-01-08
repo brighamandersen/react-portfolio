@@ -44,7 +44,7 @@ function App() {
       <Navbar sections={sections} activeSectionId={activeSectionId} />
       <main>
         {sections.map((section) => (
-          <section.component key={section.name} />
+          <section.component key={section.id} />
         ))}
       </main>
       <Hidden mdDown>

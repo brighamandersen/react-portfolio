@@ -79,7 +79,7 @@ function ProjectCard(props: Props) {
           <Hidden smDown>
             <Box display='flex' justifyContent='flex-start'>
               {tags.map((tag) => (
-                <Box pr={1}>
+                <Box key={tag} pr={1}>
                   <Chip label={tag} disabled />
                 </Box>
               ))}

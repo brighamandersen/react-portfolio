@@ -20,7 +20,7 @@ function Projects() {
           }
         />
         {projects.map((proj) => (
-          <ProjectCard project={proj} />
+          <ProjectCard key={proj.id} project={proj} />
         ))}
       </Container>
     </section>
