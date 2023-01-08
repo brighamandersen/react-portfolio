@@ -5,6 +5,7 @@ import SectionTop from '../components/SectionTop';
 const useStyles = makeStyles(() => ({
   shot: {
     width: '100%',
+    maxHeight: 300,
     boxShadow: '0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)'
   }
 }));
@@ -16,9 +17,9 @@ function Designs() {
     <section id='designs'>
       <Container maxWidth='md'>
         <SectionTop title='My Designs' />
-        <Grid container spacing={5}>
+        <Grid container spacing={3}>
           {allShots.map((shot) => (
-            <Grid key={shot} item xs={12} sm={6} md={4}>
+            <Grid key={shot} item xs={6} md={4}>
               <img
                 src={shot!} // Not null
                 alt={`${shot} Screenshot`}

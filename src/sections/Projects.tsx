@@ -1,6 +1,6 @@
 import LaunchSharpIcon from '@material-ui/icons/LaunchSharp';
 import GitHubIcon from '@material-ui/icons/GitHub';
-import { Card, Container, makeStyles } from '@material-ui/core';
+import { Box, Card, Container, makeStyles } from '@material-ui/core';
 import { projects } from '../data';
 import SectionTop from '../components/SectionTop';
 import { COLORS } from '../styles/theme';
@@ -13,10 +13,6 @@ const useStyles = makeStyles((theme) => ({
   url: {
     color: COLORS.white,
     padding: theme.spacing(2)
-  },
-  card: {
-    padding: theme.spacing(4),
-    margin: theme.spacing(4)
   }
 }));
 
@@ -37,7 +33,7 @@ function Projects() {
           }
         />
         {projects.map((proj) => (
-          <Card key={proj.id} className={styles.card}>
+          <Box component={Card} key={proj.id} p={4} my={4}>
             <h2>{proj.name}</h2>
             <p>{proj.description}</p>
             {proj.url && (
@@ -64,7 +60,7 @@ function Projects() {
                 }
               />
             )}
-          </Card>
+          </Box>
         ))}
       </Container>
     </section>

@@ -3,11 +3,6 @@ import { Section } from '../data';
 import { COLORS } from '../styles/theme';
 
 const useStyles = makeStyles((theme) => ({
-  navItemContainer: {
-    display: 'flex',
-    justifyContent: 'space-evenly',
-    alignItems: 'center'
-  },
   iconWrapper: {
     display: 'inherit',
     alignSelf: 'center'

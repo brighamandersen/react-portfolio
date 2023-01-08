@@ -48,7 +48,7 @@ function Resume() {
           <h2>My Top Languages</h2>
           <Grid container spacing={5} className={styles.languagesWrapper}>
             {languages.map((lang) => (
-              <Grid key={lang.name} item xs={6} sm={4}>
+              <Grid key={lang.name} item xs={6} sm={4} md={3}>
                 <IconLink
                   icon={<i className={lang.className} />}
                   link={lang.searchUrl}
