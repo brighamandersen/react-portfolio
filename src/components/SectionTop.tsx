@@ -19,7 +19,7 @@ function SectionTop(props: Props) {
   return (
     <Box display='flex' alignItems='center'>
       <h1 className={styles.sectionHeader}>{title}</h1>
-      {iconLink && <Box ml={2}>{iconLink}</Box>}
+      {iconLink ? <Box ml={2}>{iconLink}</Box> : null}
     </Box>
   );
 }

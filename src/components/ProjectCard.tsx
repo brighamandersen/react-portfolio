@@ -1,4 +1,4 @@
-import { Box, Card, Hidden, makeStyles } from '@material-ui/core';
+import { Box, Card, Chip, Hidden, makeStyles } from '@material-ui/core';
 import LaunchSharpIcon from '@material-ui/icons/LaunchSharp';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Project } from '../data';
@@ -38,33 +38,54 @@ function ProjectCard(props: Props) {
       justifyContent='space-between'
       alignItems='center'
     >
-      <Box flexGrow={1}>
-        <h2>{name}</h2>
+      <Box>
+        {url ? (
+          <a href={url} target='_blank' rel='noopener noreferrer'>
+            <h2>{name}</h2>
+          </a>
+        ) : (
+          <h2>{name}</h2>
+        )}
         <p>{description}</p>
-        {url && (
-          <IconLink
-            icon={<LaunchSharpIcon />}
-            link={url}
-            tooltipTitle={
-              <>
-                <h3 className={styles.header}>Site:</h3>
-                <code className={styles.url}>{url}</code>
-              </>
-            }
-          />
-        )}
-        {srcCode && (
-          <IconLink
-            icon={<GitHubIcon />}
-            link={srcCode}
-            tooltipTitle={
-              <>
-                <h3 className={styles.header}>Source Code:</h3>
-                <code className={styles.url}>{srcCode}</code>
-              </>
-            }
-          />
-        )}
+        <Box display='flex' justifyContent='flex-start' alignItems='center'>
+          {url || srcCode ? (
+            <Box display='flex' justifyContent='flex-start' pr={4}>
+              {url ? (
+                <IconLink
+                  icon={<LaunchSharpIcon />}
+                  link={url}
+                  tooltipTitle={
+                    <>
+                      <h3 className={styles.header}>Site:</h3>
+                      <code className={styles.url}>{url}</code>
+                    </>
+                  }
+                />
+              ) : null}
+              {srcCode ? (
+                <IconLink
+                  icon={<GitHubIcon />}
+                  link={srcCode}
+                  tooltipTitle={
+                    <>
+                      <h3 className={styles.header}>Source Code:</h3>
+                      <code className={styles.url}>{srcCode}</code>
+                    </>
+                  }
+                />
+              ) : null}
+            </Box>
+          ) : null}
+          <Hidden smDown>
+            <Box display='flex' justifyContent='flex-start'>
+              {tags.map((tag) => (
+                <Box pr={1}>
+                  <Chip label={tag} disabled />
+                </Box>
+              ))}
+            </Box>
+          </Hidden>
+        </Box>
       </Box>
       <Hidden smDown>
         {shots ? (
