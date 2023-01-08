@@ -1,5 +1,5 @@
 import { Box, Container, Grid, makeStyles } from '@material-ui/core';
-import profilePic from '../assets/profile.jpg';
+import profilePic from '../assets/profile-pic.webp';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { latestVidContent } from '../data';
 import SectionTop from '../components/SectionTop';

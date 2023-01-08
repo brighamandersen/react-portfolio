@@ -264,6 +264,16 @@ export const projects: Project[] = [
     shots: null
   },
   {
+    id: 'cs312',
+    name: 'CS 312: Algorithm Design & Analysis',
+    url: 'https://drive.google.com/drive/folders/1hh1g--509usL5PTTYOSSbyXLA7AHcdG_',
+    srcCode: 'https://github.com/brighamband/cs312',
+    tags: ['school'],
+    description:
+      'In this class at BYU, we went over several general approaches to algorithm design, including Divide and Conquer, Graph-based, Greedy, Dynamic Programming, Linear Programming, and Intelligent Search. We tackled projects which solved the famous traveling salesman problem, basic cryptography, primality testing, convex hulls, gene sequencing, and networking routing. See the link for project write-ups.',
+    shots: null
+  },
+  {
     id: 'french-toast',
     name: 'French Toast Instructions',
     url: `${GDRIVE_BASE_URL}1aqc_iRydWXCfmb7T8ZIC3_c2Dyx4cNM3`,
