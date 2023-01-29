@@ -175,7 +175,7 @@ export const languages = [
   {
     name: 'Flutter',
     className: 'devicon-flutter-plain colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}&language=dart`
+    searchUrl: `${GH_SEARCH_BASE_URL}flutter`
   },
   {
     name: 'HTML',
