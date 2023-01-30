@@ -5,8 +5,11 @@ const useStyles = makeStyles(() => ({
   longTooltip: {
     maxWidth: 'none'
   },
+  noUnderline: {
+    textDecoration: 'none'
+  },
   noCorners: {
-    borderRadius: 0
+    borderRadius: 0,
   }
 }));
 
@@ -26,7 +29,8 @@ function IconLink(props: Props) {
       href={link}
       target='_blank'
       rel='noopener noreferrer'
-      className={square ? styles.noCorners : ''}
+      className={`${styles.noUnderline} ${square ? styles.noCorners : ''}`}
+      style={{ textDecoration: 'none'}}
     >
       {icon}
     </IconButton>

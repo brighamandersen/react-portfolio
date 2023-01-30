@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
       textAlign: 'center'
     },
     '& i': {
-      fontSize: 100
+      fontSize: 100,
     }
   },
   noCorners: {
