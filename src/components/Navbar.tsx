@@ -52,6 +52,7 @@ const Navbar = (props: Props) => {
         <a
           key={section.id}
           href={`#${section.id}`}
+          aria-label={section.name}
           className={activeSectionId === section.id ? 'active' : ''}
         >
           <Box display='flex' justifyContent='space-evenly' alignItems='center'>
