@@ -27,6 +27,7 @@ function IconLink(props: Props) {
   const IconBtn = (
     <IconButton
       href={link}
+      aria-label={link}
       target='_blank'
       rel='noopener noreferrer'
       className={`${styles.noUnderline} ${square ? styles.noCorners : ''}`}
