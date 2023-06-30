@@ -383,16 +383,6 @@ export const projects: Project[] = [
     shots: [meltingPot1, meltingPot2]
   },
   {
-    id: 'mui-todo',
-    name: 'Material Todo',
-    url: 'https://mui-todo.brighamband.com',
-    srcCode: 'https://github.com/brighamband/mui-todo',
-    tags: ['side', 'work', 'beta'],
-    description:
-      'For a job interview I made this basic todo list showing my skills in Material UI and React.  This was back when I was less experienced and I was on a time crunch so it still needs advanced functionality (needs to add todos, remove them, and save them for future reference.',
-    shots: null
-  },
-  {
     id: 'museum',
     name: 'Museum of Ordinary Objects',
     url: null,
