@@ -20,8 +20,28 @@ function App() {
   const [activeSectionId, setActiveSectionId] = useState(sections[0].id);
 
   useEffect(() => {
+    // Check if the page was loaded directly with a URL
+    const loadedWithUrl = window.performance.getEntriesByType('navigation')[0].type === 'navigate';
+
+    // Disable smooth scrolling initially if loaded with a URL
+    if (loadedWithUrl) {
+      document.documentElement.style.scrollBehavior = 'auto';
+    }
+
+    // Enable smooth scrolling when the user interacts with the page
+    const enableSmoothScrolling = () => {
+      document.documentElement.style.scrollBehavior = 'smooth';
+      document.removeEventListener('wheel', enableSmoothScrolling);
+      document.removeEventListener('touchstart', enableSmoothScrolling);
+    };
+
+    // Listen for user interactions to enable smooth scrolling
+    document.addEventListener('wheel', enableSmoothScrolling);
+    document.addEventListener('touchstart', enableSmoothScrolling);
     window.addEventListener('scroll', handleScroll);
     return () => {
+      document.addEventListener('wheel', enableSmoothScrolling);
+      document.addEventListener('touchstart', enableSmoothScrolling);
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);

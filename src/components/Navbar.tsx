@@ -1,3 +1,4 @@
+import React from 'react';
 import { Box, Hidden, makeStyles } from '@material-ui/core';
 import { Section } from '../data';
 import { COLORS } from '../styles/theme';
