@@ -231,7 +231,7 @@ export const projects: Project[] = [
   {
     id: '47fund',
     name: 'Silver Fund Web App',
-    url: 'https://47fund.brighamband.com',
+    url: 'https://47fund.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/47fund',
     tags: ['work', 'side'],
     description:
@@ -259,7 +259,7 @@ export const projects: Project[] = [
   {
     id: 'comics',
     name: 'Comics Browser',
-    url: 'https://comics.brighamband.com',
+    url: 'https://comics.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/comics',
     tags: ['school'],
     description:
@@ -299,7 +299,7 @@ export const projects: Project[] = [
   {
     id: 'groceries',
     name: 'Mother Earth Groceries',
-    url: 'https://groceries.brighamband.com',
+    url: 'https://groceries.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/groceries',
     tags: ['school'],
     description:
@@ -345,7 +345,7 @@ export const projects: Project[] = [
   {
     id: 'jokester',
     name: 'Jokester',
-    url: 'https://jokester.brighamband.com',
+    url: 'https://jokester.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/jokester',
     tags: ['side'],
     description:
@@ -365,7 +365,7 @@ export const projects: Project[] = [
   {
     id: 'k9-directory',
     name: 'K9 Directory',
-    url: 'https://k9.brighamband.com',
+    url: 'https://k9.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/k9-directory',
     tags: ['side'],
     description:
@@ -395,7 +395,7 @@ export const projects: Project[] = [
   {
     id: 'nba-insider-hub',
     name: 'NBA Insider Hub',
-    url: 'https://nba.brighamband.com',
+    url: 'https://nba.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/nba-insider-hub',
     tags: ['school'],
     description:
@@ -405,7 +405,7 @@ export const projects: Project[] = [
   {
     id: 'no-end-insight',
     name: 'No End Insight',
-    url: 'https://insight.brighamband.com',
+    url: 'https://insight.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/no-end-insight',
     tags: ['school', 'side', 'beta'],
     description:
@@ -421,7 +421,7 @@ export const projects: Project[] = [
   {
     id: 'ontheline',
     name: 'On The Line',
-    url: 'https://ontheline.brighamband.com',
+    url: 'https://ontheline.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/on-the-line',
     tags: ['side'],
     description:
@@ -451,7 +451,7 @@ export const projects: Project[] = [
   {
     id: 'photography',
     name: 'Photography',
-    url: 'https://photography.brighamband.com',
+    url: 'https://photography.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/photography',
     tags: ['school'],
     description:
@@ -461,7 +461,7 @@ export const projects: Project[] = [
   {
     id: 'piano',
     name: 'Piano',
-    url: 'https://piano.brighamband.com',
+    url: 'https://piano.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/piano',
     tags: ['side'],
     description:
@@ -471,7 +471,7 @@ export const projects: Project[] = [
   {
     id: 'ponderizer',
     name: 'Ponderizer',
-    url: 'https://ponderizer.brighamband.com',
+    url: 'https://ponderizer.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/ponderizer',
     tags: ['school'],
     description:
@@ -481,7 +481,7 @@ export const projects: Project[] = [
   {
     id: 'portfolio',
     name: 'Portfolio (This Website)',
-    url: 'https://brighamband.com',
+    url: 'https://brighamandersen.com',
     srcCode: 'https://github.com/brighamband/portfolio',
     tags: ['side', 'work'],
     description:
@@ -491,7 +491,7 @@ export const projects: Project[] = [
   {
     id: 'scoreboard',
     name: 'Scoreboard',
-    url: 'https://scoreboard.brighamband.com',
+    url: 'https://scoreboard.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/scoreboard',
     tags: ['side'],
     description:
@@ -511,7 +511,7 @@ export const projects: Project[] = [
   {
     id: 'simple-calculator',
     name: 'Simple Calculator',
-    url: 'https://calculator.brighamband.com',
+    url: 'https://calculator.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/simple-calculator',
     tags: ['side'],
     description:
@@ -521,7 +521,7 @@ export const projects: Project[] = [
   {
     id: 'simple-counter',
     name: 'Simple Counter',
-    url: 'https://counter.brighamband.com',
+    url: 'https://counter.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/simple-counter',
     tags: ['side'],
     description:
@@ -531,7 +531,7 @@ export const projects: Project[] = [
   {
     id: 'snake',
     name: 'Snake',
-    url: 'https://snake.brighamband.com',
+    url: 'https://snake.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/snake',
     tags: ['side'],
     description:
@@ -541,7 +541,7 @@ export const projects: Project[] = [
   {
     id: 'svelter',
     name: 'Svelter',
-    url: 'https://svelter.brighamband.com',
+    url: 'https://svelter.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/svelter',
     tags: ['side'],
     description:
@@ -551,7 +551,7 @@ export const projects: Project[] = [
   {
     id: 'tictactoe',
     name: 'Tic Tac Toe',
-    url: 'https://tictactoe.brighamband.com',
+    url: 'https://tictactoe.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/tictactoe',
     tags: ['side'],
     description:
@@ -561,7 +561,7 @@ export const projects: Project[] = [
   {
     id: 'timekeeper',
     name: 'Timekeeper',
-    url: 'https://timekeeper.brighamband.com',
+    url: 'https://timekeeper.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/timekeeper',
     tags: ['side', 'beta'],
     description:
@@ -581,7 +581,7 @@ export const projects: Project[] = [
   {
     id: 'vbb-portal',
     name: 'VBB Mentoring Portal',
-    url: 'https://vbb.brighamband.com',
+    url: 'https://vbb.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/vbb-portal',
     tags: ['work', 'side'],
     description:
@@ -591,7 +591,7 @@ export const projects: Project[] = [
   {
     id: 'weather-rain-or-shine',
     name: 'Weather Rain or Shine',
-    url: 'https://weather.brighamband.com',
+    url: 'https://weather.brighamandersen.com',
     srcCode: 'https://github.com/brighamband/weather-rain-or-shine',
     tags: ['school'],
     description:
