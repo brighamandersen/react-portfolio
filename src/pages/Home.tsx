@@ -56,7 +56,7 @@ export function Home() {
             </Box>
           </Box>
           {latestVidContent.map((vid) => (
-            <WebVideo key={vid.url} title={vid.title} url={vid.url} />
+            <WebVideo key={vid.url} url={vid.url} />
           ))}
         </Box>
       </Container>

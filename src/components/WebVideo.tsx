@@ -1,31 +1,16 @@
-import { Box, makeStyles } from '@material-ui/core';
-
-const useStyles = makeStyles(() => ({
-  noBorder: {
-    border: 'none'
-  }
-}));
+import { Box } from '@material-ui/core';
+import ReactPlayer from 'react-player';
 
 interface Props {
-  title: string;
   url: string;
 }
 
 function WebVideo(props: Props) {
-  const { title, url } = props;
-  const styles = useStyles();
+  const { url } = props;
 
   return (
     <Box my={5} height={500}>
-      <iframe
-        allowFullScreen
-        className={styles.noBorder}
-        height='100%'
-        loading='lazy'
-        src={url}
-        title={title}
-        width='100%'
-      />
+      <ReactPlayer url={url} height='100%' width='100%' controls />
     </Box>
   );
 }

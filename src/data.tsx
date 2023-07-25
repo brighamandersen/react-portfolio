@@ -126,24 +126,19 @@ export const pages: Page[] = [
 /* List of my latest youtube videos with embed links - used on Home page */
 export const latestVidContent = [
   {
-    title: 'Commandshake Bot - Automated Job Applying',
-    url: 'https://www.youtube.com/embed/34GiNbJ4ECc'
+    url: 'https://www.youtube.com/embed/34GiNbJ4ECc' // Commandshake Bot - Automated Job Applying
   },
   {
-    title: 'Ep3 - How to Use Components in Figma',
-    url: 'https://www.youtube.com/embed/McgMi2Pf4l4'
+    url: 'https://www.youtube.com/embed/McgMi2Pf4l4' // Ep3 - How to Use Components in Figma
   },
   {
-    title: 'Web Dev (JavaScript) Crash Course 2.0',
-    url: 'https://www.youtube.com/embed/UJC2Gyaxd_s'
+    url: 'https://www.youtube.com/embed/UJC2Gyaxd_s' // Web Dev (JavaScript) Crash Course 2.0
   },
   {
-    title: 'Web Dev (HTML/CSS) Crash Course 1.0',
-    url: 'https://www.youtube.com/embed/vGIRW00pB9w'
+    url: 'https://www.youtube.com/embed/vGIRW00pB9w' // Web Dev (HTML/CSS) Crash Course 1.0
   },
   {
-    title: 'Web Dev Snapshot',
-    url: 'https://www.youtube.com/embed/jSeLgZsF5_U'
+    url: 'https://www.youtube.com/embed/jSeLgZsF5_U' // Web Dev Snapshot
   }
 ];
 
