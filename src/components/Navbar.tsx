@@ -1,6 +1,6 @@
-import React from 'react';
 import { Box, Hidden, makeStyles } from '@material-ui/core';
-import { Section } from '../data';
+import { NavLink } from 'react-router-dom';
+import { Page } from '../data';
 import { COLORS } from '../styles/theme';
 
 const useStyles = makeStyles((theme) => ({
@@ -39,30 +39,24 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 interface Props {
-  sections: Section[];
-  activeSectionId: string;
+  pages: Page[];
 }
 
 const Navbar = (props: Props) => {
-  const { sections, activeSectionId } = props;
+  const { pages } = props;
   const styles = useStyles();
 
   return (
     <nav className={styles.navbar}>
-      {sections.map((section) => (
-        <a
-          key={section.id}
-          href={`#${section.id}`}
-          aria-label={section.name}
-          className={activeSectionId === section.id ? 'active' : ''}
-        >
+      {pages.map((page) => (
+        <NavLink key={page.path} exact={page.path === '/'} to={page.path}>
           <Box display='flex' justifyContent='space-evenly' alignItems='center'>
-            <div className={styles.iconWrapper}>{section.icon}</div>
+            <div className={styles.iconWrapper}>{page.icon}</div>
             <Hidden smDown>
-              <div className={styles.textWrapper}>{section.name}</div>
+              <div className={styles.textWrapper}>{page.name}</div>
             </Hidden>
           </Box>
-        </a>
+        </NavLink>
       ))}
     </nav>
   );

@@ -1,6 +1,6 @@
 import { Box, Container, Grid, makeStyles } from '@material-ui/core';
 import { languages, RESUME_GDRIVE_URL } from '../data';
-import SectionTop from '../components/SectionTop';
+import PageTop from '../components/PageTop';
 import IconLink from '../components/IconLink';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
@@ -15,7 +15,7 @@ const useStyles = makeStyles(() => ({
       textAlign: 'center'
     },
     '& i': {
-      fontSize: 100,
+      fontSize: 100
     }
   },
   noCorners: {
@@ -29,12 +29,12 @@ function Resume() {
   return (
     <section id='resume'>
       <Container maxWidth='md'>
-        <SectionTop
+        <PageTop
           title='My Resume'
           iconLink={
             <IconLink
               icon={<LinkedInIcon />}
-              link='https://www.linkedin.com/in/brighamband/details/experience/'
+              link='https://www.linkedin.com/in/brighamandersen/details/experience/'
               tooltipTitle='See all job experience on LinkedIn'
             />
           }

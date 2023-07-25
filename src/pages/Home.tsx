@@ -2,7 +2,7 @@ import { Box, Container, Grid, makeStyles } from '@material-ui/core';
 import profilePic from '../assets/profile-pic.webp';
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import { latestVidContent } from '../data';
-import SectionTop from '../components/SectionTop';
+import PageTop from '../components/PageTop';
 import WebVideo from '../components/WebVideo';
 import IconLink from '../components/IconLink';
 
@@ -19,7 +19,7 @@ export function Home() {
   return (
     <section id='home'>
       <Container maxWidth='md'>
-        <SectionTop title='Welcome!' />
+        <PageTop title='Welcome!' />
         <Grid container spacing={5} justifyContent='center' alignItems='center'>
           <Grid item xs={12} md={8}>
             <p>

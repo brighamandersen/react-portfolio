@@ -1,7 +1,7 @@
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Container } from '@material-ui/core';
 import { projects } from '../data';
-import SectionTop from '../components/SectionTop';
+import PageTop from '../components/PageTop';
 import IconLink from '../components/IconLink';
 import ProjectCard from '../components/ProjectCard';
 
@@ -9,12 +9,12 @@ function Projects() {
   return (
     <section id='projects'>
       <Container maxWidth='md'>
-        <SectionTop
+        <PageTop
           title='My Projects'
           iconLink={
             <IconLink
               icon={<GitHubIcon />}
-              link='https://github.com/brighamband?tab=repositories'
+              link='https://github.com/brighamandersen?tab=repositories'
               tooltipTitle='Check out all my GitHub repos'
             />
           }

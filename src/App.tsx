@@ -1,9 +1,14 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import { Hidden, makeStyles, ThemeProvider } from '@material-ui/core';
-import { sections } from './data';
+import { pages } from './data';
 import cornerLogo from './assets/corner-logo.png';
 import { theme } from './styles/theme';
-import { useEffect, useState } from 'react';
 
 const useStyles = makeStyles(() => ({
   cornerLogo: {
@@ -17,36 +22,27 @@ const useStyles = makeStyles(() => ({
 
 function App() {
   const styles = useStyles();
-  const [activeSectionId, setActiveSectionId] = useState(sections[0].id);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
-
-  function handleScroll() {
-    const sections = document.querySelectorAll('section');
-    let currentSectionId = '';
-    sections.forEach((section) => {
-      const sectionTop = section.offsetTop;
-      // Become active section once there's 100px or less before the section top hits the top of the page
-      if (window.pageYOffset >= sectionTop - 100) {
-        currentSectionId = section.getAttribute('id') as string;
-      }
-    });
-    setActiveSectionId(currentSectionId);
-  }
 
   return (
     <ThemeProvider theme={theme}>
-      <Navbar sections={sections} activeSectionId={activeSectionId} />
-      <main>
-        {sections.map((section) => (
-          <section.component key={section.id} />
-        ))}
-      </main>
+      <Router>
+        <Navbar pages={pages} />
+        <main>
+          <Switch>
+            {pages.map((page) => (
+              <Route
+                key={page.name}
+                exact={page.path === '/'}
+                path={page.path}
+                component={page.component}
+              />
+            ))}
+            <Route path='*'>
+              <Redirect to='/' />
+            </Route>
+          </Switch>
+        </main>
+      </Router>
       <Hidden mdDown>
         <img
           src={cornerLogo}

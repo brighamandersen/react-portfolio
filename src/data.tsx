@@ -1,9 +1,9 @@
 import { ReactElement } from 'react';
-import Home from './sections/Home';
-import Contact from './sections/Contact';
-import Resume from './sections/Resume';
-import Projects from './sections/Projects';
-import Designs from './sections/Designs';
+import Home from './pages/Home';
+import Contact from './pages/Contact';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
+import Designs from './pages/Designs';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
 import PhoneIcon from '@material-ui/icons/Phone';
@@ -80,50 +80,50 @@ import weatherRainOrShine1 from './assets/shots/weather-rain-or-shine1.webp';
 
 export const GDRIVE_BASE_URL = 'https://drive.google.com/uc?export=view&id=';
 
-export interface Section {
-  id: string;
-  name: string;
+export interface Page {
   component: () => ReactElement;
-  icon?: ReactElement;
+  icon: ReactElement;
+  name: string;
+  path: string;
 }
 
-/* Sections of this portfolio website */
-export const sections: Section[] = [
+/* pages of this portfolio website */
+export const pages: Page[] = [
   {
-    id: 'home',
-    name: 'Home',
     component: Home,
-    icon: <HomeIcon />
+    icon: <HomeIcon />,
+    name: 'Home',
+    path: '/'
   },
   {
-    id: 'resume',
-    name: 'Resume',
     component: Resume,
-    icon: <DescriptionIcon />
+    icon: <DescriptionIcon />,
+    name: 'Resume',
+    path: '/resume'
   },
   {
-    id: 'projects',
-    name: 'Projects',
     component: Projects,
-    icon: <DesktopMacIcon />
+    icon: <DesktopMacIcon />,
+    name: 'Projects',
+    path: '/projects'
   },
   {
-    id: 'designs',
-    name: 'Designs',
     component: Designs,
-    icon: <PhotoLibraryIcon />
+    icon: <PhotoLibraryIcon />,
+    name: 'Designs',
+    path: '/designs'
   },
   {
-    id: 'contact',
-    name: 'Contact',
     component: Contact,
-    icon: <AccountBoxIcon />
+    icon: <AccountBoxIcon />,
+    name: 'Contact',
+    path: '/contact'
   }
 ];
 
 // Home ***********************************************************************************************
 
-/* List of my latest youtube videos with embed links - used on Home section */
+/* List of my latest youtube videos with embed links - used on Home page */
 export const latestVidContent = [
   {
     title: 'Commandshake Bot - Automated Job Applying',

@@ -1,6 +1,6 @@
 import { Grid, Container, makeStyles } from '@material-ui/core';
 import { contactMethods } from '../data';
-import SectionTop from '../components/SectionTop';
+import PageTop from '../components/PageTop';
 import IconLink from '../components/IconLink';
 
 const useStyles = makeStyles(() => ({
@@ -16,7 +16,7 @@ function Contact() {
   return (
     <section id='contact'>
       <Container maxWidth='md'>
-        <SectionTop title='Contact Me' />
+        <PageTop title='Contact Me' />
         <Grid container spacing={3}>
           {contactMethods.map((method) => (
             <Grid key={method.name} item xs={6} md={4}>
