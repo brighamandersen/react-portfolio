@@ -16,7 +16,7 @@ function Contact() {
   return (
     <section id='contact'>
       <Container maxWidth='md'>
-        <PageTop title='Contact Me' />
+        <PageTop pageTitle='Contact Me' />
         <Grid container spacing={3}>
           {contactMethods.map((method) => (
             <Grid key={method.name} item xs={6} md={4}>

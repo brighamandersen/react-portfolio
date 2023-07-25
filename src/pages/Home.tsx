@@ -19,7 +19,7 @@ export function Home() {
   return (
     <section id='home'>
       <Container maxWidth='md'>
-        <PageTop title='Welcome!' />
+        <PageTop pageTitle='Welcome!' />
         <Grid container spacing={5} justifyContent='center' alignItems='center'>
           <Grid item xs={12} md={8}>
             <p>

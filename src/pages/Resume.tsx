@@ -30,7 +30,7 @@ function Resume() {
     <section id='resume'>
       <Container maxWidth='md'>
         <PageTop
-          title='My Resume'
+          pageTitle='My Resume'
           iconLink={
             <IconLink
               icon={<LinkedInIcon />}

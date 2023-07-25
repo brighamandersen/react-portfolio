@@ -16,7 +16,7 @@ function Designs() {
   return (
     <section id='designs'>
       <Container maxWidth='md'>
-        <PageTop title='My Designs' />
+        <PageTop pageTitle='My Designs' />
         <Grid container spacing={3}>
           {allShots.map((shot) => (
             <Grid key={shot} item xs={6} md={4}>

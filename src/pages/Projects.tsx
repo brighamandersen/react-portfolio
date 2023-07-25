@@ -10,7 +10,7 @@ function Projects() {
     <section id='projects'>
       <Container maxWidth='md'>
         <PageTop
-          title='My Projects'
+          pageTitle='My Projects'
           iconLink={
             <IconLink
               icon={<GitHubIcon />}

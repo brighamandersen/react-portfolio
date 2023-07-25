@@ -1,5 +1,6 @@
-import { Box, makeStyles } from '@material-ui/core';
 import { ReactElement } from 'react';
+import { Box, makeStyles } from '@material-ui/core';
+import { Helmet } from 'react-helmet';
 
 const useStyles = makeStyles(() => ({
   pageHeader: {
@@ -8,19 +9,26 @@ const useStyles = makeStyles(() => ({
 }));
 
 interface Props {
-  title: string;
+  pageTitle: string;
   iconLink?: ReactElement;
 }
 
+const DOC_TITLE_START = "Brigham Andersen's Portfolio - ";
+
 function PageTop(props: Props) {
-  const { title, iconLink } = props;
+  const { pageTitle, iconLink } = props;
   const styles = useStyles();
 
   return (
-    <Box display='flex' alignItems='center'>
-      <h1 className={styles.pageHeader}>{title}</h1>
-      {iconLink ? <Box ml={2}>{iconLink}</Box> : null}
-    </Box>
+    <>
+      <Helmet>
+        <title>{`${DOC_TITLE_START}${pageTitle}`}</title>
+      </Helmet>
+      <Box display='flex' alignItems='center'>
+        <h1 className={styles.pageHeader}>{pageTitle}</h1>
+        {iconLink && <Box ml={2}>{iconLink}</Box>}
+      </Box>
+    </>
   );
 }
 
