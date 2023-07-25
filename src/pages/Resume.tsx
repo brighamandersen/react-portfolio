@@ -1,5 +1,5 @@
 import { Box, Container, Grid, makeStyles } from '@material-ui/core';
-import { languages, RESUME_GDRIVE_URL } from '../data';
+import { languages } from '../data';
 import PageTop from '../components/PageTop';
 import IconLink from '../components/IconLink';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -26,6 +26,9 @@ const useStyles = makeStyles(() => ({
 function Resume() {
   const styles = useStyles();
 
+  // "view=fit" makes one page fit perfectly within the height of the iframe
+  const RESUME_PDF_PATH = '/src/assets/Resume - Brigham Andersen.pdf#view=fit';
+
   return (
     <section id='resume'>
       <Container maxWidth='md'>
@@ -40,7 +43,7 @@ function Resume() {
           }
         />
         <iframe
-          src={RESUME_GDRIVE_URL}
+          src={RESUME_PDF_PATH}
           loading='lazy'
           title='Resume - Brigham Andersen'
           className={styles.resumePdf}
