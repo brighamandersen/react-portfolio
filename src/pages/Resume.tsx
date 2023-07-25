@@ -41,6 +41,7 @@ function Resume() {
         />
         <iframe
           src={RESUME_GDRIVE_URL}
+          loading='lazy'
           title='Resume - Brigham Andersen'
           className={styles.resumePdf}
         />

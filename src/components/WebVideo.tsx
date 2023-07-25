@@ -18,12 +18,13 @@ function WebVideo(props: Props) {
   return (
     <Box my={5} height={500}>
       <iframe
-        width='100%'
-        height='100%'
-        title={title}
-        src={url}
         allowFullScreen
         className={styles.noBorder}
+        height='100%'
+        loading='lazy'
+        src={url}
+        title={title}
+        width='100%'
       />
     </Box>
   );
