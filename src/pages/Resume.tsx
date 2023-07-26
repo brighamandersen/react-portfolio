@@ -1,5 +1,6 @@
 import { Box, Container, Grid, makeStyles } from '@material-ui/core';
 import { languages } from '../data';
+import resumePdf from '../assets/Resume - Brigham Andersen.pdf';
 import PageTop from '../components/PageTop';
 import IconLink from '../components/IconLink';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -23,7 +24,6 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
-import resumePdf from '../assets/Resume - Brigham Andersen.pdf';
 function Resume() {
   const styles = useStyles();
 
