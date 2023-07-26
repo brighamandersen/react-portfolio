@@ -143,13 +143,6 @@ export const latestVidContent = [
   }
 ];
 
-// Resume *********************************************************************************************
-
-const RESUME_GDRIVE_ID = '1mS0MkDu1NzWzgNQKYNY3-bClSzIREIvI';
-export const RESUME_GDRIVE_URL = `${GDRIVE_BASE_URL}${RESUME_GDRIVE_ID}#view=fit`;
-// "view=fit" makes one page fit perfectly within the height of the iframe
-// "&toolbar=0" removes the toolbar so they can't download the pdf as easily (no download bar)
-
 const GH_SEARCH_BASE_URL =
   'https://github.com/brighamandersen?tab=repositories&q=';
 /* My top languages - used on '/#resume' */

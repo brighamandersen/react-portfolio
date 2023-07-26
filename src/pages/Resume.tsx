@@ -23,11 +23,11 @@ const useStyles = makeStyles(() => ({
   }
 }));
 
+import resumePdf from '../assets/Resume - Brigham Andersen.pdf';
 function Resume() {
   const styles = useStyles();
 
-  // "view=fit" makes one page fit perfectly within the height of the iframe
-  const RESUME_PDF_PATH = '/src/assets/Resume - Brigham Andersen.pdf#view=fit';
+  const resumePdfWithViewFit = `${resumePdf}#view=fit`;
 
   return (
     <section id='resume'>
@@ -43,7 +43,7 @@ function Resume() {
           }
         />
         <iframe
-          src={RESUME_PDF_PATH}
+          src={resumePdfWithViewFit}
           loading='lazy'
           title='Resume - Brigham Andersen'
           className={styles.resumePdf}
