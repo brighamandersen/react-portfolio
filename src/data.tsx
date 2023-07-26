@@ -529,10 +529,10 @@ export const projects: Project[] = [
     shots: [snake1]
   },
   {
-    id: 'svelter',
-    name: 'Svelter',
-    url: 'https://svelter.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/svelter',
+    id: 'svelte',
+    name: 'Svelte',
+    url: 'https://svelte.brighamandersen.com',
+    srcCode: 'https://github.com/brighamandersen/svelte',
     tags: ['side'],
     description:
       'A simple website I made using Svelte Kit which showcases basic features of Svelte.',
