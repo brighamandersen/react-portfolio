@@ -249,7 +249,7 @@ export const projects: Project[] = [
   {
     id: 'comics',
     name: 'Comics Browser',
-    url: 'https://comics.brighamandersen.com',
+    url: null,
     srcCode: 'https://github.com/brighamandersen/comics',
     tags: ['school'],
     description:
