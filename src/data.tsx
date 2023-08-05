@@ -363,6 +363,16 @@ export const projects: Project[] = [
     shots: null
   },
   {
+    id: 'less-is-more',
+    name: 'Less is More',
+    url: 'https://less-is-more.brighamandersen.com',
+    srcCode: 'https://github.com/brighamandersen/less-is-more',
+    tags: ['side'],
+    description:
+      'I plan to start making money off my websites. Aside from ad revenue and subscription plans, I realize that being able to accept payments from a user is an essential skill to have. To practice this I leveraged Stripe API to make a simple prototype of how I could charge for my services.',
+    shots: null
+  },
+  {
     id: 'melting-pot',
     name: 'Melting Pot',
     url: 'https://www.figma.com/proto/OpqKlkSOyQ4QgO900BjQyb/Melting-Pot?node-id=3%3A53',
