@@ -407,9 +407,9 @@ export const projects: Project[] = [
     name: 'No End Insight',
     url: 'https://insight.brighamandersen.com',
     srcCode: 'https://github.com/brighamandersen/no-end-insight',
-    tags: ['school', 'side', 'beta'],
+    tags: ['school', 'side'],
     description:
-      "An online social media platform for sharing uplifting insights!  Still under development, only the front-end (HTML and Bootstrap CSS) was completed for school.  Now I'm working on hooking it up to a back-end for fun!",
+      "An online social media platform for sharing uplifting insights!  Only the front-end (HTML and Bootstrap CSS) was completed for school, and I've since hooked it up with a back-end with live data as a fun side project!",
     shots: [
       noEndInsight1,
       noEndInsight2,
