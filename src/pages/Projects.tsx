@@ -14,7 +14,7 @@ function Projects() {
           iconLink={
             <IconLink
               icon={<GitHubIcon />}
-              link='https://github.com/brighamandersen?tab=repositories'
+              link='https://github.com/brighambandersen?tab=repositories'
               tooltipTitle='Check out all my GitHub repos'
             />
           }

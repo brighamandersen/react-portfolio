@@ -144,7 +144,7 @@ export const latestVidContent = [
 ];
 
 const GH_SEARCH_BASE_URL =
-  'https://github.com/brighamandersen?tab=repositories&q=';
+  'https://github.com/brighambandersen?tab=repositories&q=';
 /* My top languages - used on '/#resume' */
 export const languages = [
   {
@@ -221,8 +221,8 @@ export const projects: Project[] = [
   {
     id: '47fund',
     name: 'Silver Fund Web App',
-    url: 'https://47fund.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/47fund',
+    url: 'https://47fund.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/47fund',
     tags: ['work', 'side'],
     description:
       "Silver Fund Web App - A Stocks/Trades Performance Tracker/Predictor Site.  I created this while working as a Software Engineer for Silver Fund (BYU's MBA Finance Program) during the second half of 2020.  After I left the project broke, so I recreated the front-end side of things on my domain as a side project.",
@@ -250,7 +250,7 @@ export const projects: Project[] = [
     id: 'comics',
     name: 'Comics Browser',
     url: null,
-    srcCode: 'https://github.com/brighamandersen/comics',
+    srcCode: 'https://github.com/brighambandersen/comics',
     tags: ['school'],
     description:
       'Online comics browser.  Look through comics, then leave ratings and comments.  Made possible with an API for comic data, then created with VueJS.',
@@ -260,7 +260,7 @@ export const projects: Project[] = [
     id: 'commandshake',
     name: 'Command Shake',
     url: 'https://youtu.be/34GiNbJ4ECc',
-    srcCode: 'https://github.com/brighamandersen/commandshake',
+    srcCode: 'https://github.com/brighambandersen/commandshake',
     tags: ['side'],
     description:
       'A script that automatically applies to jobs for me.  Web scrapes the BYU Handshake website when you search for any job and applies to all the jobs with quick apply.  Written in Python using Selenium.',
@@ -270,7 +270,7 @@ export const projects: Project[] = [
     id: 'cs312',
     name: 'CS 312: Algorithm Design & Analysis',
     url: 'https://drive.google.com/drive/folders/1kGcvIeh_SWjwiF1s5DWzY8AZ15t3tBfY?usp=sharing',
-    srcCode: 'https://github.com/brighamandersen/cs312',
+    srcCode: 'https://github.com/brighambandersen/cs312',
     tags: ['school'],
     description:
       'In this class at BYU, we went over several general approaches to algorithm design, including Divide and Conquer, Graph-based, Greedy, Dynamic Programming, Linear Programming, and Intelligent Search. We tackled projects which solved the famous traveling salesman problem, basic cryptography, primality testing, convex hulls, gene sequencing, and networking routing. See the link for project write-ups.',
@@ -289,8 +289,8 @@ export const projects: Project[] = [
   {
     id: 'groceries',
     name: 'Mother Earth Groceries',
-    url: 'https://groceries.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/groceries',
+    url: 'https://groceries.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/groceries',
     tags: ['school'],
     description:
       'Sick of going in-person to the store just to see their selection?  This site showcases a grocery store and their unique product offering, allowing users to search for specific items, then add desired ones to their cart.  Made using VueJS.',
@@ -326,7 +326,7 @@ export const projects: Project[] = [
     id: 'irecognize',
     name: 'iRecognize',
     url: 'https://www.figma.com/file/dLqZF2Wl8mUQlJtrL1eLfV/iRecognize?type=design&node-id=232-1840&mode=design&t=GtAdoHG3K21OSHVA-0',
-    srcCode: 'https://github.com/brighamandersen/irecognize-flutter',
+    srcCode: 'https://github.com/brighambandersen/irecognize-flutter',
     tags: ['school', 'side'],
     description:
       "For BYU's CS 356 UI/UX Design class project, my group of 3 made a mobile app throughout the second half of the semester. We found that it's hard to remember people's names, and sometimes important details about where you two met or other relevant info about them. We made a Figma prototype and then a Flutter app that demos how you could use your GPS to locate those around you and be able to put names to faces.",
@@ -335,8 +335,8 @@ export const projects: Project[] = [
   {
     id: 'jokester',
     name: 'Jokester',
-    url: 'https://jokester.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/jokester',
+    url: 'https://jokester.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/jokester',
     tags: ['side'],
     description:
       "A website which displays random coding and dad jokes, then allows you to save your favorites so you can view them later.  Uses Vanilla JavaScript, HTML, and Bulma CSS (decided I'd try a different CS framework on this one).",
@@ -355,8 +355,8 @@ export const projects: Project[] = [
   {
     id: 'k9-directory',
     name: 'K9 Directory',
-    url: 'https://k9.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/k9-directory',
+    url: 'https://k9.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/k9-directory',
     tags: ['side'],
     description:
       "Consider yourself a dog-lover?  Here's a simple React app made in CodeSandbox which interfaces with an API to show random dog pictures based on the breed you select.",
@@ -365,8 +365,8 @@ export const projects: Project[] = [
   {
     id: 'less-is-more',
     name: 'Less is More',
-    url: 'https://less-is-more.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/less-is-more',
+    url: 'https://less-is-more.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/less-is-more',
     tags: ['side'],
     description:
       'I plan to start making money off my websites. Aside from ad revenue and subscription plans, I realize that being able to accept payments from a user is an essential skill to have. To practice this I leveraged Stripe API to make a simple prototype of how I could charge for my services.',
@@ -386,7 +386,7 @@ export const projects: Project[] = [
     id: 'museum',
     name: 'Museum of Ordinary Objects',
     url: null,
-    srcCode: 'https://github.com/brighamandersen/museum',
+    srcCode: 'https://github.com/brighambandersen/museum',
     tags: ['school'],
     description:
       'Random picture uploader/viewer that introduced me to MongoDB.  Now deprecated since previous hosting subscription expired.',
@@ -395,8 +395,8 @@ export const projects: Project[] = [
   {
     id: 'nba-insider-hub',
     name: 'NBA Insider Hub',
-    url: 'https://nba.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/nba-insider-hub',
+    url: 'https://nba.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/nba-insider-hub',
     tags: ['school'],
     description:
       '4 words: Basketball Player Search Index.  Front-end client which connects the balldontlie API, allowing users to see a table of NBA Teams, then search by player name to see latest player stats. Uses Vanilla JavaScript, HTML, and Bootstrap CSS.',
@@ -405,8 +405,8 @@ export const projects: Project[] = [
   {
     id: 'no-end-insight',
     name: 'No End Insight',
-    url: 'https://insight.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/no-end-insight',
+    url: 'https://insight.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/no-end-insight',
     tags: ['school', 'side'],
     description:
       "An online social media platform for sharing uplifting insights!  Only the front-end (HTML and Bootstrap CSS) was completed for school, and I've since hooked it up with a back-end with live data as a fun side project!",
@@ -421,8 +421,8 @@ export const projects: Project[] = [
   {
     id: 'ontheline',
     name: 'On The Line',
-    url: 'https://ontheline.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/on-the-line',
+    url: 'https://ontheline.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/on-the-line',
     tags: ['side'],
     description:
       'A scorekeeper game built specifically around the basketball mini game "9 On the Line". I made this in React after getting frustrated of keeping track of game scores on my own.',
@@ -442,7 +442,7 @@ export const projects: Project[] = [
     id: 'photobomb',
     name: 'Photo Bomb',
     url: null,
-    srcCode: 'https://github.com/brighamandersen/photobomb',
+    srcCode: 'https://github.com/brighambandersen/photobomb',
     tags: ['school'],
     description:
       'Photos uploader, sharer, and viewer.  Now deprecated since previous hosting subscription expired.',
@@ -451,8 +451,8 @@ export const projects: Project[] = [
   {
     id: 'photography',
     name: 'Photography',
-    url: 'https://photography.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/photography',
+    url: 'https://photography.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/photography',
     tags: ['school'],
     description:
       "Have an exciting event coming up and want to make sure you capture those memories?  Here's an photographer informational site where you look into hiring a photographer.  Created using HTML and Bootstrap CSS.",
@@ -461,8 +461,8 @@ export const projects: Project[] = [
   {
     id: 'piano',
     name: 'Piano',
-    url: 'https://piano.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/piano',
+    url: 'https://piano.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/piano',
     tags: ['side'],
     description:
       "On the go but dying to pound some horse teeth?  Here's this online mini piano (1 octave) created using Vanilla JavaScript, HTML, and Standard CSS.",
@@ -471,8 +471,8 @@ export const projects: Project[] = [
   {
     id: 'ponderizer',
     name: 'Ponderizer',
-    url: 'https://ponderizer.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/ponderizer',
+    url: 'https://ponderizer.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/ponderizer',
     tags: ['school'],
     description:
       'Full-stack scripture memorization app - make an account, then save and ponderize your favorite scripture verses! Created with VueJS, Node, Express, and MongoDB.  No longer hooked up to the back-end, but feel free to check out the source code!',
@@ -481,8 +481,8 @@ export const projects: Project[] = [
   {
     id: 'portfolio',
     name: 'Portfolio (This Website)',
-    url: 'https://brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/portfolio',
+    url: 'https://brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/portfolio',
     tags: ['side', 'work'],
     description:
       "This website was made using React and styled using Material UI.  It was built with the purpose of helping prospective clients/employers get a feel for who I am and the work I do. Though the site looks pretty simple, I've added a lot of optimizations so that images load quickly and there's no lag across the experience.",
@@ -491,8 +491,8 @@ export const projects: Project[] = [
   {
     id: 'scoreboard',
     name: 'Scoreboard',
-    url: 'https://scoreboard.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/scoreboard',
+    url: 'https://scoreboard.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/scoreboard',
     tags: ['side'],
     description:
       "Birthday present for my dad (he loves sports and stats, so he naturally loves scorekeeping).  I've made many sites in React, but this was my first website made using Material UI for styling.",
@@ -511,8 +511,8 @@ export const projects: Project[] = [
   {
     id: 'simple-calculator',
     name: 'Simple Calculator',
-    url: 'https://calculator.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/simple-calculator',
+    url: 'https://calculator.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/simple-calculator',
     tags: ['side'],
     description:
       'Simple reactive calculator that takes to inputs and returns the result on the fly after performing basic arithmetic ( + - * / ).  Made with React.',
@@ -521,8 +521,8 @@ export const projects: Project[] = [
   {
     id: 'simple-counter',
     name: 'Simple Counter',
-    url: 'https://counter.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/simple-counter',
+    url: 'https://counter.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/simple-counter',
     tags: ['side'],
     description:
       'Ever run out of fingers while counting?  Use this app to keep tally! Simple Counter was one of my first React apps back when I was first learning about React Hooks.',
@@ -531,8 +531,8 @@ export const projects: Project[] = [
   {
     id: 'snake',
     name: 'Snake',
-    url: 'https://snake.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/snake',
+    url: 'https://snake.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/snake',
     tags: ['side'],
     description:
       'A blast from the past, this retro snake game will give you some serious nostalgia.  Made using Vanilla JavaScript, HTML, and Standard CSS.',
@@ -541,8 +541,8 @@ export const projects: Project[] = [
   {
     id: 'svelte',
     name: 'Svelte',
-    url: 'https://svelte.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/svelte',
+    url: 'https://svelte.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/svelte',
     tags: ['side'],
     description:
       'A simple website I made using Svelte Kit which showcases basic features of Svelte.',
@@ -551,8 +551,8 @@ export const projects: Project[] = [
   {
     id: 'tictactoe',
     name: 'Tic Tac Toe',
-    url: 'https://tictactoe.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/tictactoe',
+    url: 'https://tictactoe.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/tictactoe',
     tags: ['side'],
     description:
       "Don't have a pen and paper but one play some good 'ole Tic Tac Toe?  Here you go!  This website was made using Vanilla JavaScript, HTML, and Standard CSS.",
@@ -561,8 +561,8 @@ export const projects: Project[] = [
   {
     id: 'timekeeper',
     name: 'Timekeeper',
-    url: 'https://timekeeper.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/timekeeper',
+    url: 'https://timekeeper.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/timekeeper',
     tags: ['side', 'beta'],
     description:
       'A modern redesign of online-stopwatch.com.  Makes it easy to keep a countdown or stopwatch going in the background of your browser.',
@@ -572,7 +572,7 @@ export const projects: Project[] = [
     id: 'tweeter',
     name: 'Tweeter',
     url: null,
-    srcCode: 'https://github.com/brighamandersen/cs340',
+    srcCode: 'https://github.com/brighambandersen/cs340',
     tags: ['school'],
     description:
       "For BYU's CS 340 Software Design Patterns class, we made a Twitter Clone using Android on the front-end then Java and AWS (EC2, S3, API Gateway, Lambdas, SQS, DynamoDB) on the back-end. We learned how to not only make a working full-stack app, but how to design it so you can reuse code and follow best practice.",
@@ -581,8 +581,8 @@ export const projects: Project[] = [
   {
     id: 'vbb-portal',
     name: 'VBB Mentoring Portal',
-    url: 'https://vbb.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/vbb-portal',
+    url: 'https://vbb.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/vbb-portal',
     tags: ['work', 'side'],
     description:
       'International Mentoring Booking Site used by Nike and Oracle.  I did full-stack development on this project, but focused primarily on front-end.  This project has been unstable since I left, so in the cases that the Official Website (https://portal.villagebookbuilders.org) is down or people want to take a look at site features w/o making an account, I recreated the front-end side of things on my domain as a side project.',
@@ -591,8 +591,8 @@ export const projects: Project[] = [
   {
     id: 'weather-rain-or-shine',
     name: 'Weather Rain or Shine',
-    url: 'https://weather.brighamandersen.com',
-    srcCode: 'https://github.com/brighamandersen/weather-rain-or-shine',
+    url: 'https://weather.brighambandersen.com',
+    srcCode: 'https://github.com/brighambandersen/weather-rain-or-shine',
     tags: ['school'],
     description:
       'A weather app that lets you search by city, then interacts with an API to display current weather conditions, 5-day, and 3-hour forecasts.  Uses Vanilla JavaScript, HTML, and Bootstrap CSS.',
@@ -618,14 +618,14 @@ export const contactMethods: ContactMethod[] = [
   {
     name: 'LinkedIn',
     icon: LinkedInIcon,
-    link: 'https://www.linkedin.com/in/brighamandersen',
+    link: 'https://www.linkedin.com/in/brighambandersen',
     tooltipTitle: 'Connect with me on LinkedIn'
   },
   {
     name: 'Email',
     icon: MailOutlineIcon,
-    link: 'mailto:brighamband@gmail.com',
-    tooltipTitle: 'Email brighamband@gmail.com'
+    link: 'mailto:brighambandersen@gmail.com',
+    tooltipTitle: 'Email brighambandersen@gmail.com'
   },
   {
     name: 'Phone',
