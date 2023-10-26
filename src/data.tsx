@@ -144,58 +144,58 @@ export const latestVidContent = [
 ];
 
 const GH_SEARCH_BASE_URL =
-  'https://github.com/brighambandersen?tab=repositories&q=';
+  'https://github.com/brighambandersen?tab=repositories';
 /* My top languages - used on '/#resume' */
 export const languages = [
   {
     name: 'JavaScript',
     className: 'devicon-javascript-plain colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}javascript`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=javascript`
   },
   {
     name: 'React',
     className: 'devicon-react-original-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}react`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=react`
   },
   {
     name: 'Vue',
     className: 'devicon-vuejs-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}vue`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=vue`
   },
   {
     name: 'Flutter',
     className: 'devicon-flutter-plain colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}flutter`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=flutter`
   },
   {
     name: 'HTML',
     className: 'devicon-html5-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}html`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=html`
   },
   {
     name: 'CSS',
     className: 'devicon-css3-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}css`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=css`
   },
   {
     name: 'Python',
     className: 'devicon-python-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}python`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=python`
   },
   {
     name: 'Java',
     className: 'devicon-java-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}java`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=java`
   },
   {
     name: 'Android',
     className: 'devicon-android-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}android`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=android`
   },
   {
     name: 'C++',
     className: 'devicon-cplusplus-plain-wordmark colored',
-    searchUrl: `${GH_SEARCH_BASE_URL}c-plus-plus`
+    searchUrl: `${GH_SEARCH_BASE_URL}&q=c-plus-plus`
   },
   {
     name: 'C',
