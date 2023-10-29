@@ -37,7 +37,7 @@ function Resume() {
           iconLink={
             <IconLink
               icon={<LinkedInIcon />}
-              link='https://www.linkedin.com/in/brighamandersen/details/experience/'
+              link='https://www.linkedin.com/in/brighambandersen/details/experience/'
               tooltipTitle='See all job experience on LinkedIn'
             />
           }
