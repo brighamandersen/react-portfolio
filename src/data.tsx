@@ -269,7 +269,7 @@ export const projects: Project[] = [
   {
     id: 'cs312',
     name: 'CS 312: Algorithm Design & Analysis',
-    url: 'https://drive.google.com/drive/folders/1kGcvIeh_SWjwiF1s5DWzY8AZ15t3tBfY?usp=sharing',
+    url: 'https://drive.google.com/drive/folders/1uCHKfDjcItc92e7b_SqlWgeXS_qkSRa8?usp=sharing',
     srcCode: 'https://github.com/brighambandersen/cs312',
     tags: ['school'],
     description:
